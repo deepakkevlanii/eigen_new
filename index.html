@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eigen</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="fixed w-[100vw] z-50 top-0">
+      <!-- Top Bar -->
+      <div class="bg-[#004990] text-white px-24">
+        <div class="flex justify-between items-center h-20">
+          <!-- Left Side -->
+          <div class="flex items-center justify-between gap-[30px]">
+            <div class="flex items-center justify-between w-[102px]">
+              <a href="#" class="hover:text-gray-300 text-2xl"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-300 text-2xl"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="hover:text-gray-300 text-2xl"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </div>
+            <div class="flex justify-between items-center gap-[30px]">
+              <div class="w-[140px]">
+                <a
+                  class="inline-block cursor-pointer text-nowrap font-montserrat font-semibold text-sm"
+                >
+                  <i class="fa-solid fa-phone text-xl"></i> (+91) 80 68476500</a
+                >
+              </div>
+              <div class="w-[140px]">
+                <a
+                  class="inline-block cursor-pointer text-nowrap font-montserrat font-semibold text-sm"
+                >
+                  <i class="fa-solid fa-envelope text-xl"></i>
+                  info@eigenengineering.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <p class="font-montserrat font-semibold text-center w-auto">
+            AS 9100 D, ISO 9001:2015, ISO 45001:2018, ISO 14001:2015, ISO 9001,
+            IATF 16949 Certified Company
+          </p>
+
+          <!-- Right Side -->
+          <div class="flex items-center justify-between w-[385px]">
+            <div class="relative w-[200px]">
+              <input
+                type="text"
+                placeholder="Search"
+                class="rounded-full text-white bg-[#002B55] placeholder:text-white outline-0 w-full px-12 py-2.5 font-montserrat font-semibold"
+              />
+              <button
+                class="absolute left-4 top-1/2 transform -translate-y-1/2"
+              >
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+              </button>
+            </div>
+            <div class="h-[50px] w-[150px]">
+              <img
+                src="/assets/home/image.png"
+                alt=""
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav
+        class="bg-[#002B55] text-white py-2 border-b border-white/50 border-t"
+      >
+        <div class="flex justify-between items-center h-20 px-24">
+          <!-- Logo -->
+          <div class="h-14 w-[120px]">
+            <img
+              src="/assets/home/logo.png"
+              alt="Eigen Logo"
+              class="h-full w-full"
+            />
+          </div>
+
+          <!-- Navigation Menu -->
+          <div class="">
+            <ul
+              class="flex justify-between items-center w-[1200px] font-montserrat font-normal text-lg"
+            >
+              <li><a href="#" class="hover:text-gray-300">Home</a></li>
+              <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Capabilities <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Industries <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li><a href="#" class="hover:text-gray-300">Quality</a></li>
+              <li><a href="#" class="hover:text-gray-300">Products</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300"
+                  >Media <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li><a href="#" class="hover:text-gray-300">News & Events</a></li>
+              <li><a href="#" class="hover:text-gray-300">Facility</a></li>
+              <li><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Button -->
+          <div class="flex-shrink-0">
+            <button
+              class="bg-white text-blue-800 cursor-pointer w-[175px] h-[40px] rounded-full font-montserrat font-semibold text-sm"
+            >
+              Request for Quote
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <section class="h-[1080px] bg-[#004990]">
+      <div>
+        <div
+          class="relative top-[186px] left-[100px] text-white w-[634px] h-[122px]"
+        >
+          <h1 class="w-full h-full font-montserrat font-bold text-[50px]">
+            Shaping the Future of Engineering Innovation
+          </h1>
+        </div>
+        <div
+          class="relative top-[138px] left-[825px] text-white h-[64px] w-[850px]"
+        >
+          <p class="h-full w-full font-montserrat font-normal text-2xl">
+            Delivering cutting-edge solutions in precision manufacturing and
+            engineering design, trusted by industries worldwide.
+          </p>
+        </div>
+      </div>
+    </section> -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector("nav");
+
+        if (window.scrollY > 0) {
+          navbar.style.backgroundColor = "rgba(0, 43, 85, 0.8)";
+        } else {
+          navbar.style.backgroundColor = "rgba(0, 43, 85, 1)";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1084,6 +1084,12 @@
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
   }
+  .py-\[50\] {
+    padding-block: 50;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
+  }
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
@@ -1261,6 +1267,12 @@
   }
   .opacity-80 {
     opacity: 80%;
+  }
+  .opacity-\[20\%\] {
+    opacity: 20%;
+  }
+  .opacity-\[55\%\] {
+    opacity: 55%;
   }
   .opacity-\[75\%\] {
     opacity: 75%;

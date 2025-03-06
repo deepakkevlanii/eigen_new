@@ -954,6 +954,10 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .translate-x-\[-100\%\] {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);

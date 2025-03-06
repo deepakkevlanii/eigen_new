@@ -22,7 +22,7 @@
     rel="stylesheet">
 </head>
 
-<body style="font-family: Montserrat">
+<body style="font-family: Montserrat" class="overflow-x-hidden w-[100vw]">
   <header class="fixed w-[100vw] z-[100] top-0">
     <!-- Top Bar -->
     <div class="bg-[#004990] text-white px-24 opacity-100">
@@ -820,7 +820,7 @@
                 <i class="fa-solid fa-arrow-left"></i>
               </button> -->
 
-            <button class="next-btn text-[#004990] text-3xl flex items-center justify-center transition ml-">
+            <button class="next-btn text-[#004990] text-3xl flex items-center justify-center transition cursor-pointer">
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
@@ -957,12 +957,12 @@
   </section>
 
   <footer class="h-[663px] bg-[#001D39] px-[101px] pt-[60px] font-montserrat relative">
-    <div class="bg-[#004990] px-10 py-5 flex justify-between items-center">
-      <p class="text-[#ffffff] text-lg font-medium">
+    <div class="bg-[#004990] px-10 py-[18px] flex justify-between items-center">
+      <p class="text-white text-lg font-[300] whitespace-normal">
         Backed by decades of expertise in design, development, manufacturing
         and supply of progressive met
       </p>
-      <button class="bg-[#FFFFFF] text-[#004990] text-lg font-semibold px-[30px] py-2.5 rounded-full cursor-pointer">
+      <button class="bg-[#FFFFFF] text-[#004990] text-lg font-semibold px-[30px] py-2 rounded-full cursor-pointer">
         Request a Quote
       </button>
     </div>
@@ -972,20 +972,30 @@
           <div class="h-[121px] w-[267px]">
             <img src="./assets/home/footer-logo.png" alt="" class="h-full w-full" />
           </div>
-          <p class="mt-[50px] font-sans text-[14px] w-[317px]">
+          <p class="mt-[50px] font-[100] text-[14px] w-[317px]">
             Empowering industry leaders with precision engineering,
             cutting-edge solutions, and unwavering commitment to quality.
           </p>
-          <div class="flex items-center justify-between w-[104px] mt-[40px]">
+          <!-- <div class="flex items-center justify-between w-[104px] mt-[40px]">
             <a href="#" class="text-2xl"><i class="fab fa-facebook"></i></a>
             <a href="#" class="text-2xl"><i class="fab fa-linkedin"></i></a>
             <a href="#" class="text-2xl"><i class="fas fa-globe"></i></a>
+          </div> -->
+          <div class="flex items-center justify-between w-[102px] mt-[40px]">
+            <a href="#" class="text-[22px]"><i class="fab fa-facebook"></i></a>
+            <!-- <a href="#" class="text-[22px]"><i class="fab fa-linkedin"></i></a> -->
+            <a href="#"
+              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"
+              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center"><i
+                class="fa-brands fa-x-twitter"></i></a>
           </div>
         </div>
-        <div class="ml-[120px] text-white font-medium text-[16px] flex justify-between items-start gap-[60px]">
+        <div class="ml-[120px] text-white text-xl font-[400] flex justify-between items-start gap-[60px]">
           <ul
-            class="flex flex-col items-start justify-between text-start text-sm text-white leading-relaxed space-y-2 mt-2 h-[231px] w-[202px]">
-            <li class="text-[21px] font-semibold text-[#94E3FF]">
+            class="flex flex-col items-start justify-between text-start text-sm text-white space-y-2 mt-2 h-[231px] w-[202px] leading-[1.9]">
+            <li class="text-[21px] font-[500] text-[#94E3FF]">
               Customer Services
             </li>
             <li>
@@ -1006,7 +1016,7 @@
           </ul>
           <ul
             class="flex flex-col items-start justify-between text-start text-sm text-white leading-relaxed space-y-2 mt-2 h-[257px] w-[300px]">
-            <li class="text-[21px] font-semibold text-[#94E3FF]">
+            <li class="text-[21px] font-[500] text-[#94E3FF]">
               Learn More
             </li>
             <li class="w-[250px]">
@@ -1026,12 +1036,12 @@
             </li>
           </ul>
           <ul
-            class="flex flex-col items-start justify-start text-start text-sm text-white leading-relaxed space-y-2 mt-2 h-[267px] w-[300px]">
-            <li class="text-[21px] font-semibold text-[#94E3FF]">
+            class="flex flex-col items-start justify-start text-start text-sm text-white space-y-2 mt-2 h-[267px] w-[300px] leading-[1.9]">
+            <li class="text-[21px] font-[500] text-[#94E3FF]">
               Eigen USA
             </li>
             <li class="mt-3">
-              <p class="font-semibold">Address - 1:</p>
+              <p class="font-[500]">Address - 1:</p>
               <p class="font-light">4201 Military Highway</p>
               <p class="font-light">McAllen, Texas 78503 USA.</p>
               <p class="font-light">
@@ -1040,7 +1050,7 @@
               </p>
             </li>
             <li>
-              <p class="font-semibold">Address - 2:</p>
+              <p class="font-[500]">Address - 2:</p>
               <p class="font-light">409 Rivanna Lane</p>
               <p class="font-light">Greenville, SC 29607.</p>
               <p class="font-light">
@@ -1050,12 +1060,12 @@
             </li>
           </ul>
           <ul
-            class="flex flex-col items-start justify-start text-start text-sm text-white leading-relaxed space-y-2 mt-2 h-[275px] w-[300px]">
-            <li class="text-[21px] font-semibold text-[#94E3FF] mt-3">
+            class="flex flex-col items-start justify-start text-start text-sm text-white space-y-2 mt-2 h-[275px] w-[300px] leading-[1.9]">
+            <li class="text-[21px] font-[500] text-[#94E3FF] mt-3">
               Eigen
             </li>
             <li>
-              <p class="font-semibold">KDDL Ltd. Unit Eigen</p>
+              <p class="font-[500]">KDDL Ltd. Unit Eigen</p>
               <p class="font-light">No.55-A, Hunachur Village, Jala Hobli,</p>
               <p class="font-light">Yelahanka Taluk, Bangalore North</p>
               <p class="font-light">Near Kiadb Aerospace Park</p>

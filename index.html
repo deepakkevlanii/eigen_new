@@ -1101,19 +1101,20 @@
         el.style.transition = "top 1s ease-out, opacity 1s ease-out";
         el.style.opacity = "0"; // Hide initially
       });
-
+      elements.forEach((el) => {
+        el.style.top = "0";
+        el.style.opacity = "1";
+      });
+      homeBox.style.bottom = "0";
+      homeBox.style.opacity = "1";
       function handleScroll() {
         if (window.scrollY > 50) {
           // Change navbar color when scrolling
           navbar.style.backgroundColor = "rgba(0, 43, 85, 0.8)";
 
           // Animate elements by setting bottom to 0
-          elements.forEach((el) => {
-            el.style.top = "0";
-            el.style.opacity = "1";
-          });
-          homeBox.style.bottom = "0";
-          homeBox.style.opacity = "1";
+
+
         } else {
           // Reset navbar color when at the top
           navbar.style.backgroundColor = "rgba(0, 43, 85, 1)";

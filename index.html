@@ -16,13 +16,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
     rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 </head>
 
-<body style="font-family: Montserrat" class="overflow-x-hidden w-[100vw]">
+<body style="font-family: Montserrat !important;" class="overflow-x-hidden w-[100vw]">
   <header class="fixed w-[100vw] z-[100] top-0">
     <!-- Top Bar -->
     <div class="bg-[#004990] text-white px-24 opacity-100">
@@ -30,27 +30,30 @@
         <!-- Left Side -->
         <div class="flex items-center justify-between gap-[25px] w-[444px]">
           <div class="flex items-center justify-between w-[102px]">
-            <a href="#" class="text-[22px]"><i class="fab fa-facebook"></i></a>
-            <!-- <a href="#" class="text-[22px]"><i class="fab fa-linkedin"></i></a> -->
-            <a href="#"
-              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"
-              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center"><i
-                class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" target="_blank" class="text-[22px] hover:text-gray-300 transition-all"
+              style="transition: all .5s ease-in-out;"><i class="fab fa-facebook"></i></a>
+            <!-- <a  href="#"  target="_blank"  class="text-[22px]"><i class="fab fa-linkedin"></i></a> -->
+            <a href="#" target="_blank"
+              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
+              style="transition: all .5s ease-in-out;"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"
+              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
+              style="transition: all .5s ease-in-out;"><i class="fa-brands fa-x-twitter"></i></a>
           </div>
           <div class="">
-            <a
-              class="flex justify-between items-center cursor-pointer text-nowrap font-montserrat font-[500] text-xs gap-[10px]">
+            <a href="tel:+918068476500"
+              class="flex justify-between items-center cursor-pointer text-nowrap font-[500] text-xs gap-[10px]"
+              style="font-family: Montserrat ;transition: all .5s ease-in-out;">
               <!-- <i class="fa-solid fa-phone"></i>  -->
               <img src="./assets/home/call.png" alt="" class="h-[15px]" />
-
               <p>(+91) 80 68476500</p>
             </a>
           </div>
+
           <div class="w-[140px] relative left-[35px]">
-            <a
-              class="flex justify-center items-center cursor-pointer text-nowrap font-montserrat font-[500] text-xs gap-[8px]">
+            <a href="mailto:info@eigenengineering.com"
+              class="flex justify-center items-center cursor-pointer text-nowrap font-[500] text-xs gap-[8px]"
+              style="font-family: Montserrat;transition: all .5s ease-in-out;">
               <i class="fa-solid fa-envelope text-[16px]"></i>
               <p>info@eigenengineering.com</p>
             </a>
@@ -58,7 +61,7 @@
         </div>
 
         <!-- Middle -->
-        <p class="font-montserrat font-[300] text-center w-[683px] text-[14px] text-nowrap">
+        <p class="font-[300] text-center w-[683px] text-[14px] text-nowrap" style="font-family: Montserrat">
           AS 9100 D, ISO 9001:2015, ISO 45001:2018, ISO 14001:2015, ISO 9001,
           IATF 16949 Certified Company
         </p>
@@ -69,7 +72,7 @@
               <input
                 type="text"
                 placeholder="Search"
-                class="rounded-full text-white bg-[#002B55] placeholder:text-white outline-0 w-full px-12 py-2.5 font-montserrat font-sans"
+                class="rounded-full text-white bg-[#002B55] placeholder:text-white outline-0 w-full px-12 py-2.5 font-['Montserrat'] font-sans"
               />
               <button
                 class="absolute left-[20px] top-1/2 -translate-y-1/2 flex items-center justify-center h-full"
@@ -79,12 +82,14 @@
               </button>
             </div> -->
 
-          <div class="relative h-[44px] w-[200px]">
+          <div class="relative h-[42px] w-[199px]">
             <input type="text" placeholder="Search"
-              class="rounded-full text-white bg-[rgba(0,43,85,.30)] placeholder:text-white outline-0 w-full px-12 py-2.5 font-montserrat font-sans" />
-            <button class="absolute left-[20px] transform -translate-y-1/2 flex items-center justify-center"
+              class="rounded-full text-white bg-[rgba(0,43,85,.30)] placeholder:text-white outline-0 w-full px-12 py-2.5 tracking-[1px] placeholder:text-sm placeholder:font-[500]"
+              style="font-family: Montserrat" />
+            <button class="absolute left-[24px] transform -translate-y-1/2 flex items-center justify-center"
               style="top: 50%">
-              <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+              <!-- <i class="fa-solid fa-magnifying-glass text-white text-sm"></i> -->
+              <img src="./assets/home/search.png" alt="" />
             </button>
           </div>
 
@@ -96,9 +101,9 @@
     </div>
 
     <!-- Main Navigation -->
-    <nav class="bg-[rgba(0,43,85,.6)] text-white" style="
-          border-top: 1px solid rgba(241, 241, 241, 0.36);
-          border-bottom: 1px solid rgba(241, 241, 241, 0.36);
+    <nav class="bg-[#003870] text-white" style="
+          border-top: 1px solid rgba(241, 241, 241, 0.144);
+          border-bottom: 1px solid rgba(241, 241, 241, 0.144);
           backdrop-filter: blur(4px);
           -webkit-backdrop-filter: blur(4px);
         ">
@@ -110,113 +115,174 @@
 
         <!-- Navigation Menu -->
         <div class="">
-          <ul class="flex justify-between items-center w-[1180px] font-montserrat font-[300] text-[17px]">
-            <li><a href="#" class="">Home</a></li>
-            <li><a href="#" class="">About Us</a></li>
+          <ul class="flex justify-between items-center w-[1180px] font-['Montserrat'] font-[300] text-[17px]">
+            <li>
+              <a href="./index.html" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">Home</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">About Us</a>
+            </li>
             <li class="relative group">
-              <a href="#" class="">Capabilities <i class="fa-solid fa-angle-down"></i></a>
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">Capabilities <i class="fa-solid fa-angle-down"></i></a>
 
-              <div class="absolute left-0 top-full hidden group-hover:block z-10 w-96">
+              <div class="absolute left-0 top-full hidden group-hover:block z-10 w-[460px]">
                 <ul
-                  class="py-2 text-white mt-9 bg-[rgba(7,36,65,.8)] border-l-8 border-[#004990] rounded-lg text-nowrap font-montserrat font-sans text-[19px]"
-                  style="
-                      backdrop-filter: blur(4px);
-                      -webkit-backdrop-filter: blur(4px);
-                    ">
-                  <li><a href="#" class="block px-4 py-2">Overview</a></li>
+                  class="py-10 px-10 text-white mt-9 bg-[rgba(7,36,65,0.8)] border-l-[15px] border-[#004990] rounded-3xl text-nowrap font-['Montserrat'] text-[19px] backdrop-blur-lg before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(7,36,65,0.3)] before:backdrop-blur-md before:rounded-3xl before:-z-10">
                   <li>
-                    <a href="#" class="block px-4 py-2">Precision Metal Stamping</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Overview</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Press Tool Design and Development</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Precision
+                      Metal Stamping</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Busbar Manufacturing</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Press Tool
+                      Design and Development</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Sub-Assembly</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Busbar
+                      Manufacturing</a>
                   </li>
-                  <li><a href="#" class="block px-4 py-2">Welding</a></li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Surface Treatment</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Sub-Assembly</a>
                   </li>
-                  <li><a href="#" class="block px-4 py-2">Prototyping</a></li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Other Services</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Welding</a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Surface
+                      Treatment</a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Prototyping</a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Other
+                      Services</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="relative group">
-              <a href="#" class="">Industries <i class="fa-solid fa-angle-down"></i></a>
-              <div class="absolute left-0 top-full hidden group-hover:block z-10 w-96">
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">Industries <i class="fa-solid fa-angle-down"></i></a>
+              <div class="absolute left-0 top-full hidden group-hover:block z-10 w-[460px]">
                 <ul
-                  class="py-2 text-white mt-9 bg-[#072441] opacity-80 border-l-8 border-[#004990] rounded-lg text-nowrap font-montserrat font-sans text-[19px]">
+                  class="py-10 px-10 text-white mt-9 bg-[rgba(7,36,65,0.8)] border-l-[15px] border-[#004990] rounded-3xl text-nowrap font-['Montserrat'] text-[19px] backdrop-blur-lg before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(7,36,65,0.3)] before:backdrop-blur-md before:rounded-3xl before:-z-10">
                   <li>
-                    <a href="#" class="block px-4 py-2">Overview</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Overview</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">E-Mobility</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">E-Mobility</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Battery Energy Storage Systems (BESS)</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Battery
+                      Energy Storage Systems (BESS)</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Connectors</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Connectors</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Aerospace</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Aerospace</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Electrical & Electronics</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Electrical &
+                      Electronics</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Automotive and Ancillary</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Automotive
+                      and Ancillary</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Mobile Device</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Mobile
+                      Device</a>
                   </li>
                 </ul>
+                <div class=""></div>
               </div>
             </li>
-            <li><a href="#" class="">Quality</a></li>
-            <li><a href="#" class="">Products</a></li>
+            <li>
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">Quality</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">Products</a>
+            </li>
             <li class="relative group">
-              <a href="#" class="">Media <i class="fa-solid fa-angle-down"></i></a>
-              <div class="absolute left-0 top-full hidden group-hover:block z-10 w-96">
+              <a class="hover:text-gray-300 transition-all cursor-pointer"
+                style="transition: all .5s ease-in-out;">Media <i class="fa-solid fa-angle-down"></i></a>
+              <div class="absolute left-0 top-full hidden group-hover:block z-10 w-[460px]">
                 <ul
-                  class="py-2 text-white mt-9 bg-[#072441] opacity-80 border-l-8 border-[#004990] rounded-lg text-nowrap font-montserrat font-sans text-[19px]">
+                  class="py-10 px-10 text-white mt-9 bg-[rgba(7,36,65,0.8)] border-l-[15px] border-[#004990] rounded-3xl text-nowrap font-['Montserrat'] text-[19px] backdrop-blur-lg before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(7,36,65,0.3)] before:backdrop-blur-md before:rounded-3xl before:-z-10">
                   <li>
-                    <a href="#" class="block px-4 py-2">FAQ</a>
+                    <a href="./faq.html" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">FAQ</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Videos</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Videos</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Infographics</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Infographics</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">E-Books</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">E-Books</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Case Study</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Case
+                      Study</a>
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2">Blogs</a>
+                    <a href="#" target="_blank" class="block px-4 py-2 hover:text-gray-300 transition-all"
+                      style="transition: all .5s ease-in-out;">Blogs</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li><a href="#" class="">News & Events</a></li>
-            <li><a href="#" class="">Facility</a></li>
-            <li><a href="#" class="">Contact Us</a></li>
+            <li>
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">News & Events</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">Facility</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="hover:text-gray-300 transition-all"
+                style="transition: all .5s ease-in-out;">Contact Us</a>
+            </li>
           </ul>
         </div>
 
         <!-- Button -->
         <div class="flex-shrink-0">
           <button
-            class="bg-white text-[#004990] cursor-pointer w-[175px] h-[40px] rounded-full font-montserrat font-semibold text-sm">
+            class="bg-white text-[#004990] cursor-pointer w-[175px] h-[40px] rounded-full font-['Montserrat'] font-semibold text-sm hover:bg-gray-300 hover:text-[#004990] transition-all"
+            style="transition: all .5s ease-in-out;">
             Request for Quote
           </button>
         </div>
@@ -227,43 +293,46 @@
     <div>
       <div class="relative top-[186px] left-[100px] text-white w-[634px] h-[122px]">
         <h1
-          class="w-full h-full font-montserrat font-bold text-[50px] relative top-[122px] transition-all opacity-0 leading-[1.25]"
+          class="w-full h-full font-['Montserrat'] font-bold text-[50px] relative top-[122px] transition-all opacity-0 leading-[1.25]"
           id="home_heading">
           Shaping the Future of Engineering Innovation
         </h1>
       </div>
       <div class="relative top-[108px] left-[825px] text-white h-[64px] w-[850px] overflow-hidden">
-        <p class="h-full w-full font-montserrat font-[300] text-2xl relative top-[64px] transition-all whitespace-normal"
+        <p class="h-full w-full font-['Montserrat'] font-[300] text-2xl relative top-[64px] transition-all tracking-[1px]"
           id="home_para">
           Delivering cutting-edge solutions in precision manufacturing and
           engineering design, trusted by industries worldwide.
         </p>
       </div>
     </div>
-    <div class="relative top-[200px] mx-auto w-[1720px]">
+    <div class="relative top-[200px] mx-auto w-[1720px] z-10">
       <img src="./assets/home/149.jpg" alt="" id="home_img" class="relative top-[697px]" />
     </div>
-    <div class="h-[245px] w-[678px] absolute bottom-[-410px] right-0 opacity-[20%] px-12 py-[50px]" id="home_box" style="
+    <div class="h-[245px] w-[678px] absolute bottom-[-410px] right-0 opacity-[20%] px-12 py-[50px] z-10" id="home_box"
+      style="
           background: rgba(0, 43, 85, 0.7);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           backdrop-filter: blur(6.9px);
           -webkit-backdrop-filter: blur(6.9px);
-          border: 3px solid rgba(31, 31, 31, 0.66);
+          border-top: 1.5px solid rgba(31, 31, 31, 0.66);
+          border: 0.5px solid rgba(31, 31, 31, 0.66);
         ">
-      <h1 class="text-[#A4E3FA] font-montserrat font-semibold text-[22px]">
+      <h1 class="text-[#A4E3FA] font-['Montserrat'] font-semibold text-[23px]">
         The Eigen Difference
       </h1>
-      <p class="font-montserrat font-extralight text-[14px] text-white mt-2">
+      <p class="font-['Montserrat'] font-extralight text-[14px] text-white mt-2">
         Leverage our technical expertise to produce less expensive parts:
       </p>
-      <ul class="font-montserrat font-extralight text-[14px] text-white list-disc px-6 leading-[1.9] marker:text-[8px]"
-        style="font-family: Open Sans, sans-serif">
+      <ul
+        class="font-['Montserrat'] font-extralight text-[14px] text-white list-disc px-[25px] leading-[1.5] marker:text-[8px] flex flex-col gap-[2px]"
+        style="font-family: 'Montserrat'">
         <li>Lower Part and Tooling costs</li>
         <li>More Precise parts can now be stamped</li>
         <li>End to End Metal Stamping Solutions Provider</li>
         <li>Plastic Part</li>
       </ul>
-      <div class="h-[120px] w-[120px] absolute top-[-120px] left-[-120px]" style="
+      <div class="h-[120px] w-[120px] absolute top-[-121px] left-[-121.5px]" style="
             background: rgba(164, 227, 250, 0.7);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(6.9px);
@@ -273,7 +342,7 @@
   </section>
 
   <section class="h-[940px] px-24 pt-[132px] z-30 relative">
-    <div class="w-[686px] h-[132px] font-montserrat overflow-hidden">
+    <div class="w-[686px] h-[132px] font-['Montserrat'] overflow-hidden">
       <h1 class="font-semibold text-[46px] text-[#4A4A4A] leading-[1.3]" data-aos="slide-up" data-aos-easing="linear"
         data-aos-duration="1000" data-aos-once="true">
         Eigen - the leader in <br />
@@ -310,7 +379,7 @@
         </div>
       </div>
     </div>
-    <div class="absolute top-[86px] right-0">
+    <div class="absolute top-[86px] right-[17px]">
       <div class="h-[80px] w-[80px] bg-[#004990] opacity-[20%]"></div>
       <div class="h-[72px] w-[72px] bg-[#D9D9D9] absolute bottom-[-72px] left-[-72px] opacity-[20%]"></div>
     </div>
@@ -337,7 +406,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/designing.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Design & Engineering
               </p>
             </div>
@@ -353,7 +422,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/tools.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Tooling
               </p>
             </div>
@@ -369,7 +438,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/stamping.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Precision Metal Stamping
               </p>
             </div>
@@ -385,7 +454,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/assembly.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Assembly & Sub-Assembly
               </p>
             </div>
@@ -401,7 +470,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/plating.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Plating
               </p>
             </div>
@@ -417,7 +486,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/plastic.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Plastic Injection Molding
               </p>
             </div>
@@ -433,7 +502,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/molding.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Insert Molding
               </p>
             </div>
@@ -449,7 +518,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/over-molding.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Over Molding
               </p>
             </div>
@@ -465,7 +534,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/prototyping.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Prototyping
               </p>
             </div>
@@ -481,7 +550,7 @@
           <div class="relative group overflow-hidden border-s-3 border-[#004990] bg-white w-[225px] h-[188px]">
             <div class="flex flex-col justify-center items-start h-full p-6">
               <img src="./assets/home/services.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-montserrat">
+              <p class="text-lg text-wrap text-left text-[#002B55] font-semibold mt-4 font-['Montserrat']">
                 Other Services
               </p>
             </div>
@@ -524,13 +593,13 @@
       <div class="w-1/2 flex flex-col justify-start h-[1080px] gap-0 border-l-1 border-white" data-aos="slide-down"
         data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
         <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white p-2 md:p-8 gap-[30px] font-montserrat">
+          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
           <img src="assets/home/cpu.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
             data-aos-duration="800" data-aos-once="true" />
           <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000"
             data-aos-once="true">
             <p class="font-semibold text-2xl">Electrical & Electronics</p>
-            <p class="font-sans text-lg w-[690px] text-wrap">
+            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
               O/L relays, circuit breakers, miniature motors, switch gears,
               electronic article surveillance, tube fuses, and electronic time
               locks.
@@ -538,26 +607,26 @@
           </div>
         </div>
         <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white p-2 md:p-8 gap-[30px] font-montserrat">
+          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
           <img src="assets/home/flight.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
             data-aos-duration="1000" data-aos-once="true" />
           <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1100"
             data-aos-once="true">
             <p class="font-semibold text-2xl">Aerospace</p>
-            <p class="font-sans text-lg w-[690px] text-wrap">
+            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
               HV relays, connectors, cabin light sensors, electromechanical
               relays, and aerospace batteries.
             </p>
           </div>
         </div>
         <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white p-2 md:p-8 gap-[30px] font-montserrat">
+          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
           <img src="assets/home/car.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
             data-aos-duration="1100" data-aos-once="true" />
           <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1200"
             data-aos-once="true">
             <p class="font-semibold text-2xl">Automotive & Ancillary</p>
-            <p class="font-sans text-lg w-[690px] text-wrap">
+            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
               Window lift motors, car door lock actuators, steering locks,
               coolant pump sealing, light indicators, engine knock sensors,
               starter solenoid valves, and safety applications.
@@ -565,24 +634,25 @@
           </div>
         </div>
         <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white p-2 md:p-8 gap-[30px] font-montserrat">
+          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
           <img src="assets/home/retail.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
             data-aos-duration="1200" data-aos-once="true" />
           <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1300"
             data-aos-once="true">
             <p class="font-semibold text-2xl">Consumer Durables</p>
-            <p class="font-sans text-lg w-[690px] text-wrap">
+            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
               Mobile charger contacts, LH & RH terminals, and connectors.
             </p>
           </div>
         </div>
-        <div class="h-[212px] flex justify-start items-center border-white p-2 md:p-8 gap-[30px] font-montserrat">
+        <div
+          class="h-[212px] flex justify-start items-center border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
           <img src="assets/home/claw.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
             data-aos-duration="1300" data-aos-once="true" />
           <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1400"
             data-aos-once="true">
             <p class="font-semibold text-2xl">Industrial Engineering</p>
-            <p class="font-sans text-lg w-[690px] text-wrap">
+            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
               Industrial batteries, current bars, and solder tags.
             </p>
           </div>
@@ -591,7 +661,7 @@
     </div>
   </section>
 
-  <section class="h-[1080px] font-montserrat bg-cover bg-no-repeat bg-center overflow-hidden"
+  <section class="h-[1080px] font-['Montserrat'] bg-cover bg-no-repeat bg-center overflow-hidden"
     style="background-image: url('./assets/home/bg.jpg')">
     <div class="pt-[122px] text-[#FFFFFF]">
       <div class="h-[75px] overflow-hidden">
@@ -691,7 +761,7 @@
     </div>
   </section>
 
-  <section class="h-[662px] font-montserrat">
+  <section class="h-[662px] font-['Montserrat']">
     <div class="mx-auto grid grid-cols-2 px-[100px]">
       <div class="flex">
         <div class="">
@@ -721,30 +791,30 @@
           </div>
         </div>
       </div>
-      <div class="mt-[100px] w-[890px] h-[463px]" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1200"
-        data-aos-once="true">
+      <div class="mt-[67px]" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1200" data-aos-once="true">
         <img src="./assets/home/brands.png" class="h-full w-full" alt="" />
       </div>
     </div>
   </section>
-  <section class="h-[1080px] font-montserrat relative">
+  <section class="h-[1080px] font-['Montserrat'] relative">
     <div class="flex">
       <div class="w-[612px] h-[1080px]">
         <img src="./assets/home/77214.jpg" alt="" class="w-full h-full" data-aos="zoom-in-right"
           data-aos-easing="linear" data-aos-duration="500" data-aos-once="true" />
       </div>
       <div class="pl-[60px] mt-[202px]">
-        <div class="h-[105px] overflow-hidden">
+        <div class="h-[120px] overflow-hidden">
           <p class="text-[46px] font-semibold text-[#4A4A4A]" data-aos="fade-up" data-aos-easing="linear"
             data-aos-duration="1000" data-aos-once="true">
             What Our Clients Say
           </p>
-          <p class="text-2xl" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+          <p class="text-[30px] font-['Montserrat'] font-[200] mt-2" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="1000" data-aos-once="true">
             Delivering Precision, Quality, and Trust
           </p>
         </div>
         <!-- owl -->
-        <div class="relative w-[1255px] overflow-hidden mt-20">
+        <div class="relative w-[1255px] overflow-hidden mt-20 font-[400]">
           <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
             <div class="owl-carousel owl-theme">
               <div class="pl-[30px]">
@@ -752,7 +822,7 @@
                   <h3 class="w-[270px] text-[21px] font-semibold text-[#004990]">
                     Exceptional Precision and Reliability
                   </h3>
-                  <p class="mt-2 text-sm leading-relaxed w-[387px] text-[#333333]">
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
                     Eigen Engineering has been a game-changer for our
                     manufacturing process. Their attention to detail,
                     precision, and consistent quality have significantly
@@ -761,7 +831,7 @@
                     standards.
                   </p>
                 </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#002B55] text-white px-4 py-2">
+                <div class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2">
                   <p class="mt-4 font-medium text-white/90">
                     – John D., Operations Manager
                   </p>
@@ -774,7 +844,7 @@
                   <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
                     A Partner, Not Just a Vendor
                   </h3>
-                  <p class="mt-2 text-sm leading-relaxed w-[387px] text-[#333333]">
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
                     We’ve been working with Eigen for years, and they’ve
                     always gone above and beyond to meet our custom
                     requirements. Their innovative solutions and commitment to
@@ -795,7 +865,7 @@
                   <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
                     Seamless Collaboration and Outstanding Results
                   </h3>
-                  <p class="mt-2 text-sm leading-relaxed w-[387px] text-[#333333]">
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
                     Eigen Engineering has been a game-changer for our
                     manufacturing process. Their attention to detail,
                     precision, and consistent quality have significantly
@@ -811,19 +881,124 @@
                   <p>Automotive Sector</p>
                 </div>
               </div>
+              <div class="pl-[30px]">
+                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
+                  <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    A Partner, Not Just a Vendor
+                  </h3>
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
+                    We’ve been working with Eigen for years, and they’ve
+                    always gone above and beyond to meet our custom
+                    requirements. Their innovative solutions and commitment to
+                    excellence have made them an invaluable partner in our
+                    supply chain.
+                  </p>
+                </div>
+                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
+                  <p class="mt-4 font-medium text-white/90">
+                    – Anna K., Supply Chain Director,
+                  </p>
+                  <p>Aerospace Industry</p>
+                </div>
+              </div>
+
+              <div class="pl-[30px]">
+                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
+                  <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    Seamless Collaboration and Outstanding Results
+                  </h3>
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
+                    Eigen Engineering has been a game-changer for our
+                    manufacturing process. Their attention to detail,
+                    precision, and consistent quality have significantly
+                    improved our product line. Their team truly understands
+                    the importance of delivering on time without compromising
+                    standards.
+                  </p>
+                </div>
+                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
+                  <p class="mt-4 font-medium text-white/90">
+                    – John D., Operations Manager
+                  </p>
+                  <p>Automotive Sector</p>
+                </div>
+              </div>
+              <div class="pl-[30px]">
+                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
+                  <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    A Partner, Not Just a Vendor
+                  </h3>
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
+                    We’ve been working with Eigen for years, and they’ve
+                    always gone above and beyond to meet our custom
+                    requirements. Their innovative solutions and commitment to
+                    excellence have made them an invaluable partner in our
+                    supply chain.
+                  </p>
+                </div>
+                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
+                  <p class="mt-4 font-medium text-white/90">
+                    – Anna K., Supply Chain Director,
+                  </p>
+                  <p>Aerospace Industry</p>
+                </div>
+              </div>
+
+              <div class="pl-[30px]">
+                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
+                  <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    Seamless Collaboration and Outstanding Results
+                  </h3>
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
+                    Eigen Engineering has been a game-changer for our
+                    manufacturing process. Their attention to detail,
+                    precision, and consistent quality have significantly
+                    improved our product line. Their team truly understands
+                    the importance of delivering on time without compromising
+                    standards.
+                  </p>
+                </div>
+                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
+                  <p class="mt-4 font-medium text-white/90">
+                    – John D., Operations Manager
+                  </p>
+                  <p>Automotive Sector</p>
+                </div>
+              </div>
+              <div class="pl-[30px] invisible">
+                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]">
+                  <h3 class="w-[270px] text-[21px] font-semibold text-[#004990]">
+                    Exceptional Precision and Reliability
+                  </h3>
+                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
+                    Eigen Engineering has been a game-changer for our
+                    manufacturing process. Their attention to detail,
+                    precision, and consistent quality have significantly
+                    improved our product line. Their team truly understands
+                    the importance of delivering on time without compromising
+                    standards.
+                  </p>
+                </div>
+                <div class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2">
+                  <p class="mt-4 font-medium text-white/90">
+                    – John D., Operations Manager
+                  </p>
+                  <p>Automotive Sector</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex gap-4 mt-8 pl-[30px]">
-            <!-- <button
-                class="prev-btn text-[#004a93] text-2xl flex items-center justify-center hover:text-blue-800 transition"
-              >
-                <i class="fa-solid fa-arrow-left"></i>
-              </button> -->
+        </div>
+        <div class="flex gap-4 mt-8 pl-[30px]">
+          <button class="prev-btn text-[#004990] opacity-40 text-xl flex items-center justify-center transition"
+            style="transition: all .5s ease-in-out;">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
 
-            <button class="next-btn text-[#004990] text-3xl flex items-center justify-center transition cursor-pointer">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
+          <button class="next-btn text-[#004990] text-3xl flex items-center justify-center transition cursor-pointer"
+            style="transition: all .5s ease-in-out;">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -832,7 +1007,7 @@
     </div>
   </section>
 
-  <section class="font-montserrat h-[636px]">
+  <section class="font-['Montserrat'] h-[636px]">
     <div class="flex justify-between">
       <div class="pt-[150px] pl-[100px]">
         <div class="w-[521px] h-[150px] overflow-hidden">
@@ -852,8 +1027,9 @@
         </div>
         <div class="w-[240px] h-[56px] overflow-hidden mt-10">
           <button
-            class="w-[231px] text-[21px] font-semibold text-[#FFFFFF] bg-[#004990] py-3 px-[30px] rounded-full cursor-pointer"
-            data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" data-aos-once="true">
+            class="w-[231px] text-[21px] font-semibold text-[#FFFFFF] bg-[#004990] py-3 px-[30px] rounded-full cursor-pointer hover:bg-[#046acd] transition-all duration-300 ease-in-out"
+            style="transition: all .5s ease-in-out;" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"
+            data-aos-once="true">
             Get in Touch <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -879,7 +1055,7 @@
     </div>
   </section>
 
-  <section class="h-[1080px] font-montserrat bg-[#E6F3F7]">
+  <section class="h-[1080px] font-['Montserrat'] bg-[#E6F3F7]">
     <div class="relative w-full pl-[100px]">
       <div class="absolute right-0 w-[614px] h-[584px]">
         <img src="assets/home/Vector.png" class="opacity-30 w-full h-full" alt="" />
@@ -897,7 +1073,7 @@
           </p>
         </div>
         <div class="flex justify-start gap-[60px] mt-[80px]">
-          <div class="w-[521px] h-[565px]" data-aos="slide-up" data-aos-easing="linear" data-aos="slide-up"
+          <div class="w-[521px] h-[590px]" data-aos="slide-up" data-aos-easing="linear" data-aos="slide-up"
             data-aos-easing="linear" data-aos-duration="500" data-aos-once="true">
             <img src="assets/home/blog1.jpg" alt="" class="w-full h-[350px] object-cover" />
             <div class="py-5">
@@ -910,12 +1086,14 @@
                 accuracy and efficiency in every component.
               </p>
 
-              <button class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg">
+              <button
+                class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg hover:text-[#004990] transition-all cursor-pointer"
+                style="transition: all .5s ease-in-out;">
                 Read More →
               </button>
             </div>
           </div>
-          <div class="w-[521px] h-[565px]" data-aos="slide-up" data-aos-easing="linear" data-aos="slide-up"
+          <div class="w-[521px] h-[590px]" data-aos="slide-up" data-aos-easing="linear" data-aos="slide-up"
             data-aos-easing="linear" data-aos-duration="800" data-aos-once="true">
             <img src="assets/home/blog2.jpg" alt="" class="w-full h-[350px] object-cover" />
             <div class="py-5">
@@ -928,12 +1106,14 @@
                 metal components at scale.
               </p>
 
-              <button class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg">
+              <button
+                class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg hover:text-[#004990] transition-all cursor-pointer"
+                style="transition: all .5s ease-in-out;">
                 Read More →
               </button>
             </div>
           </div>
-          <div class="w-[521px] h-[565px]" data-aos="slide-up" data-aos-easing="linear" data-aos="slide-up"
+          <div class="w-[521px] h-[590px]" data-aos="slide-up" data-aos-easing="linear" data-aos="slide-up"
             data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
             <img src="assets/home/blog3.jpg" alt="" class="w-full h-[350px] object-cover" />
             <div class="py-5">
@@ -946,7 +1126,9 @@
                 for a greener future.
               </p>
 
-              <button class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg">
+              <button
+                class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg hover:text-[#004990] transition-all cursor-pointer"
+                style="transition: all .5s ease-in-out;">
                 Read More →
               </button>
             </div>
@@ -956,13 +1138,15 @@
     </div>
   </section>
 
-  <footer class="h-[663px] bg-[#001D39] px-[101px] pt-[60px] font-montserrat relative whitespace-normal">
+  <footer class="h-[663px] bg-[#001D39] px-[101px] pt-[60px] font-['Montserrat'] relative tracking-[1px]">
     <div class="bg-[#004990] px-10 py-[18px] flex justify-between items-center">
-      <p class="text-white text-lg font-[300] whitespace-normal">
+      <p class="text-white text-lg font-[300] tracking-[1px]">
         Backed by decades of expertise in design, development, manufacturing
         and supply of progressive met
       </p>
-      <button class="bg-[#FFFFFF] text-[#004990] text-lg font-semibold px-[30px] py-2 rounded-full cursor-pointer">
+      <button
+        class="bg-[#FFFFFF] text-[#004990] text-lg font-semibold px-[30px] py-2 rounded-full cursor-pointer hover:bg-gray-300 hover:text-[#004990] transition-all"
+        style="transition: all .5s ease-in-out;">
         Request a Quote
       </button>
     </div>
@@ -977,69 +1161,92 @@
             cutting-edge solutions, and unwavering commitment to quality.
           </p>
           <!-- <div class="flex items-center justify-between w-[104px] mt-[40px]">
-            <a href="#" class="text-2xl"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-2xl"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="text-2xl"><i class="fas fa-globe"></i></a>
+            <a  href="#"  target="_blank"  class="text-2xl"><i class="fab fa-facebook"></i></a>
+            <a  href="#"  target="_blank"  class="text-2xl"><i class="fab fa-linkedin"></i></a>
+            <a  href="#"  target="_blank"  class="text-2xl"><i class="fas fa-globe"></i></a>
           </div> -->
           <div class="flex items-center justify-between w-[102px] mt-[40px]">
-            <a href="#" class="text-[22px]"><i class="fab fa-facebook"></i></a>
-            <!-- <a href="#" class="text-[22px]"><i class="fab fa-linkedin"></i></a> -->
-            <a href="#"
-              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center"><i
+            <a href="#" target="_blank" class="text-[22px] hover:text-gray-300 transition-all"><i
+                class="fab fa-facebook"></i></a>
+            <!-- <a  href="#"  target="_blank"  class="text-[22px]"><i class="fab fa-linkedin"></i></a> -->
+            <a href="#" target="_blank"
+              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"><i
                 class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"
-              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center"><i
+            <a href="#" target="_blank"
+              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"><i
                 class="fa-brands fa-x-twitter"></i></a>
           </div>
         </div>
         <div class="ml-[120px] text-white text-xl font-[400] flex justify-between items-start gap-[60px] relative">
           <ul
-            class="flex flex-col items-start justify-between text-start text-sm text-white space-y-2 mt-2 h-[231px] w-[202px] leading-[1.9]">
-            <li class="text-[21px] font-[500] text-[#94E3FF]">
+            class="flex flex-col items-start justify-between text-start text-sm text-white space-y-2 mt-2 h-[231px] w-[230px] leading-[1.9]">
+            <li class="text-[21px] font-[500] text-[#94E3FF] w-[226px]">
               Customer Services
             </li>
             <li>
-              <a href="#" class=" ">Company Fact Sheet</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Company
+                Fact Sheet</a>
             </li>
             <li>
-              <a href="#" class=" ">FAQ</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">FAQ</a>
             </li>
             <li>
-              <a href="#" class=" ">Request a Quote</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Request
+                a Quote</a>
             </li>
             <li>
-              <a href="#" class=" ">Terms of Use</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Terms
+                of Use</a>
             </li>
             <li>
-              <a href="#" class=" ">Privacy & Cookies</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Privacy
+                & Cookies</a>
             </li>
           </ul>
+
           <ul
             class="flex flex-col items-start justify-between text-start text-sm text-white leading-relaxed space-y-2 mt-3 h-[257px] w-[300px]">
-            <li class="text-[21px] font-[500] text-[#94E3FF]">
-              Learn More
-            </li>
+            <li class="text-[21px] font-[500] text-[#94E3FF]">Learn More</li>
             <li class="w-[250px]">
-              <a href="#" class="transition-all">Tool and Die Design Engineering Service</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-[65%]">
+                Tool and Die Design Engineering Service
+              </a>
             </li>
             <li>
-              <a href="#" class="transition-all">Tooling</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+                Tooling
+              </a>
             </li>
             <li>
-              <a href="#" class="transition-all">Assembly & Sub-Assembly</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+                Assembly & Sub-Assembly
+              </a>
             </li>
             <li>
-              <a href="#" class="transition-all">Plating</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+                Plating
+              </a>
             </li>
             <li>
-              <a href="#" class="transition-all">Plastic Injection Molding</a>
+              <a href="#" target="_blank"
+                class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+                Plastic Injection Molding
+              </a>
             </li>
           </ul>
+
           <ul
             class="flex flex-col items-start justify-start text-start text-sm text-white space-y-2 mt-2 h-[267px] w-[300px] leading-[1.9]">
-            <li class="text-[21px] font-[500] text-[#94E3FF]">
-              Eigen USA
-            </li>
+            <li class="text-[21px] font-[500] text-[#94E3FF]">Eigen USA</li>
             <li class="mt-[3px]">
               <p class="font-[500]">Address - 1:</p>
               <p class="font-light">4201 Military Highway</p>
@@ -1059,11 +1266,10 @@
               </p>
             </li>
           </ul>
+
           <ul
             class="flex flex-col items-start justify-start text-start text-sm text-white space-y-2 mt-[3px] h-[275px] w-[300px] leading-[1.95]">
-            <li class="text-[21px] font-[500] text-[#94E3FF] mt-1">
-              Eigen
-            </li>
+            <li class="text-[21px] font-[500] text-[#94E3FF] mt-1">Eigen</li>
             <li>
               <p class="font-[500]">KDDL Ltd. Unit Eigen</p>
               <p class="font-light">No.55-A, Hunachur Village, Jala Hobli,</p>
@@ -1078,7 +1284,7 @@
               <p class="font-light">Ext: 312</p>
               <p class="font-light">
                 Email:
-                <a href="mailto:info@eigenengineering.com" class="">info@eigenengineering.com</a>
+                <a href="mailto:info@eigenengineering.com">info@eigenengineering.com</a>
               </p>
             </li>
           </ul>
@@ -1123,8 +1329,6 @@
           navbar.style.backgroundColor = "rgba(0, 43, 85, 0.8)";
 
           // Animate elements by setting bottom to 0
-
-
         } else {
           // Reset navbar color when at the top
           navbar.style.backgroundColor = "rgba(0, 43, 85, 1)";
@@ -1136,41 +1340,77 @@
     });
 
     // owl
-    document.addEventListener("DOMContentLoaded", function () {
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true, // Enables infinite loop
-          margin: 20, // Space between items
-          nav: false, // Disable default navigation
-          dots: false, // Show dots navigation
-          autoplay: true, // Enables auto sliding
-          autoplayTimeout: 3000, // Auto slide every 3 seconds
-          autoplayHoverPause: true, // Pause on hover
-          responsive: {
-            0: {
-              items: 1, // 1 item per slide on small screens
-            },
-            768: {
-              items: 2, // 2 items per slide on medium screens
-            },
-            1024: {
-              items: 2.5, // 2 items per slide on large screens
-            },
-          },
-        });
+    $(document).ready(function () {
+      var owl = $(".owl-carousel");
+      var nextBtn = $(".next-btn");
+      var prevBtn = $(".prev-btn");
+      owl.owlCarousel({
+        loop: false, // No infinite loop
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 1 },
+          1400: { items: 2 },
+          1920: { items: 2.5 },
+        },
+      });
 
-        // Custom Navigation Controls
-        // document
-        //   .querySelector(".prev-btn")
-        //   .addEventListener("click", function () {
-        //     $(".owl-carousel").trigger("prev.owl.carousel");
-        //   });
+      owl.on("changed.owl.carousel", function (event) {
+        var currentIndex = event.item.index;
+        var totalItems = event.item.count;
+        var visibleItems = event.page.size;
 
-        document
-          .querySelector(".next-btn")
-          .addEventListener("click", function () {
-            $(".owl-carousel").trigger("next.owl.carousel");
-          });
+        // Hide left arrow when first item is active
+        if (currentIndex === 0) {
+          document
+            .querySelector(".prev-btn")
+            .classList.remove("text-3xl", "cursor-pointer");
+          document
+            .querySelector(".prev-btn")
+            .classList.add("opacity-40", "text-xl");
+          document.querySelector(".next-btn").disabled = true;
+        } else {
+          document
+            .querySelector(".prev-btn")
+            .classList.add("text-3xl", "cursor-pointer");
+          document
+            .querySelector(".prev-btn")
+            .classList.remove("opacity-40", "text-xl");
+          document.querySelector(".next-btn").disabled = false;
+        }
+
+        // Hide right arrow when last item is reached
+        if (Math.ceil(currentIndex + visibleItems) >= totalItems) {
+          document
+            .querySelector(".next-btn")
+            .classList.remove("text-3xl", "cursor-pointer");
+          document
+            .querySelector(".next-btn")
+            .classList.add("opacity-40", "text-xl");
+
+          document.querySelector(".next-btn").disabled = true;
+        } else {
+          document
+            .querySelector(".next-btn")
+            .classList.add("text-3xl", "cursor-pointer");
+          document
+            .querySelector(".next-btn")
+            .classList.remove("opacity-40", "text-xl");
+          document.querySelector(".next-btn").disabled = false;
+        }
+      });
+
+      prevBtn.click(function () {
+        owl.trigger("prev.owl.carousel");
+      });
+
+      nextBtn.click(function () {
+        owl.trigger("next.owl.carousel");
       });
     });
   </script>

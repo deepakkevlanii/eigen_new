@@ -7,11 +7,6 @@
     <title>Eigen</title>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
@@ -329,163 +324,92 @@
     <section class="relative w-full">
         <img src="./assets/home/banner.png" alt="" class="w-full">
         <h1 class="font-[700] text-[60px] text-white absolute z-20 top-[244px] left-[100px]"
-            style="font-family: 'Montserrat'">Frequently Asked
-            Questions</h1>
+            style="font-family: 'Montserrat'">Company Fact Sheet</h1>
     </section>
 
     <section class="min-h-[1080px] py-[100px] px-[205px]">
         <div class="py-[40px] px-[40px] bg-[#f8f8f8] rounded-[20px]">
-            <div class="px-[40px] py-[30px] bg-white rounded-[10px] border-[1px] border-[#E0E0E0] w-full">
-                <button class="flex justify-between items-center w-full text-left font-[600] text-2xl"
-                    onclick="toggleAccordion(this)">
-                    <p>Who is Eigen Engineering?</p>
-                    <div class="relative w-12 h-12 flex items-center justify-center">
-                        <!-- Horizontal Bar -->
-                        <div class="absolute w-[21px] h-[5px] bg-[#0B90BF] rounded-full"></div>
-                        <!-- Vertical Bar with transition -->
-                        <div class="absolute h-[21px] w-[5px] bg-[#0B90BF] rounded-full transition-transform duration-300"
-                            id="vertical-bar"></div>
-                    </div>
-                </button>
+            <ul class="pl-2 text-[#4A4A4A] font-[500] text-[18px] leading-[32px] space-y-[20px]"
+                style="font-family: 'Montserrat'; list-style: none;">
 
-                <!-- Answer with smooth transition -->
-                <div class="overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-0 text-[#4A4A4A] text-[20px] leading-[1.5]"
-                    id="answer" style="font-family: 'Montserrat';">
-                    <p class="mt-[30px]">
-                        EIGEN is an AS 9100 D and ISO 9001:2015, ISO 45001:2018, ISO 14001:2015 certified company
-                        located in
-                        Bangalore, India. We specialize in precision press die design, progressive die development, and
-                        manufacturing of metal stamping components, plastic injection moldings, Insert and Over Molding,
-                        Electroplating (Barrel), Sub-Assemblies, and Value Added Services for industries like Electrical
-                        & Electronics,
-                        Aerospace, Automotive, Consumer durables, and other Engineering industries in India, Europe, and
-                        US markets.
-                    </p>
-                </div>
-            </div>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Established in 2006 with its corporate headquarters and manufacturing facilities located in India’s
+                    high-tech capital Bangalore.
+                </li>
 
-            <div class="px-[40px] py-[30px] bg-white rounded-[10px] border-[1px] border-[#E0E0E0] w-full mt-[30px]">
-                <button class="flex justify-between items-center w-full text-left font-[600] text-2xl"
-                    onclick="toggleAccordion(this)">
-                    <p>What is the minimum and maximum gauge/thickness part you can manufacture?</p>
-                    <div class="relative w-12 h-12 flex items-center justify-center">
-                        <!-- Horizontal Bar -->
-                        <div class="absolute w-[21px] h-[5px] bg-[#0B90BF] rounded-full"></div>
-                        <!-- Vertical Bar with transition -->
-                        <div class="absolute h-[21px] w-[5px] bg-[#0B90BF] rounded-full transition-transform duration-300"
-                            id="vertical-bar"></div>
-                    </div>
-                </button>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    More than 200 employees
+                </li>
 
-                <!-- Answer with smooth transition -->
-                <div class="overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-0 text-[#4A4A4A] text-[20px] leading-[1.5]"
-                    id="answer" style="font-family: 'Montserrat';">
-                    <p class="mt-[30px]">
-                        EIGEN is an AS 9100 D and ISO 9001:2015, ISO 45001:2018, ISO 14001:2015 certified company
-                        located in
-                        Bangalore, India. We specialize in precision press die design, progressive die development, and
-                        manufacturing of metal stamping components, plastic injection moldings, Insert and Over Molding,
-                        Electroplating (Barrel), Sub-Assemblies, and Value Added Services for industries like Electrical
-                        & Electronics,
-                        Aerospace, Automotive, Consumer durables, and other Engineering industries in India, Europe, and
-                        US markets.
-                    </p>
-                </div>
-            </div>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Over 100,000 sq. ft. of manufacturing space – new facility spread across 85,000 Sq. Ft near
+                    Bengaluru International Airport
+                </li>
 
-            <div class="px-[40px] py-[30px] bg-white rounded-[10px] border-[1px] border-[#E0E0E0] w-full mt-[30px]">
-                <button class="flex justify-between items-center w-full text-left font-[600] text-2xl"
-                    onclick="toggleAccordion(this)">
-                    <p>What material types can you work with?</p>
-                    <div class="relative w-12 h-12 flex items-center justify-center">
-                        <!-- Horizontal Bar -->
-                        <div class="absolute w-[21px] h-[5px] bg-[#0B90BF] rounded-full"></div>
-                        <!-- Vertical Bar with transition -->
-                        <div class="absolute h-[21px] w-[5px] bg-[#0B90BF] rounded-full transition-transform duration-300"
-                            id="vertical-bar"></div>
-                    </div>
-                </button>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Specialize in Precision progressive press tools, precision stamping parts, EDM, Plastic Injection
+                    Molds, and components, Insert and Over Molding Electroplating (Barrel),
+                    <a href="" class="text-[#0B90BF]">Assembly & Sub-Assembly</a>, and Value Added Services.
+                </li>
 
-                <!-- Answer with smooth transition -->
-                <div class="overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-0 text-[#4A4A4A] text-[20px] leading-[1.5]"
-                    id="answer" style="font-family: 'Montserrat';">
-                    <p class="mt-[30px]">
-                        EIGEN is an AS 9100 D and ISO 9001:2015, ISO 45001:2018, ISO 14001:2015 certified company
-                        located in
-                        Bangalore, India. We specialize in precision press die design, progressive die development, and
-                        manufacturing of metal stamping components, plastic injection moldings, Insert and Over Molding,
-                        Electroplating (Barrel), Sub-Assemblies, and Value Added Services for industries like Electrical
-                        & Electronics,
-                        Aerospace, Automotive, Consumer durables, and other Engineering industries in India, Europe, and
-                        US markets.
-                    </p>
-                </div>
-            </div>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    We are IATF 16949, ISO AS 9100 D, and ISO 9001:2015 QMS certified organization.
+                </li>
 
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    International sales and support
+                </li>
 
-            <div class="px-[40px] py-[30px] bg-white rounded-[10px] border-[1px] border-[#E0E0E0] w-full mt-[30px]">
-                <button class="flex justify-between items-center w-full text-left font-[600] text-2xl"
-                    onclick="toggleAccordion(this)">
-                    <p>What is your standard lead time for Tool development?</p>
-                    <div class="relative w-12 h-12 flex items-center justify-center">
-                        <!-- Horizontal Bar -->
-                        <div class="absolute w-[21px] h-[5px] bg-[#0B90BF] rounded-full"></div>
-                        <!-- Vertical Bar with transition -->
-                        <div class="absolute h-[21px] w-[5px] bg-[#0B90BF] rounded-full transition-transform duration-300"
-                            id="vertical-bar"></div>
-                    </div>
-                </button>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Market focus:
+                    <a href="" class="text-[#0B90BF]"> Electrical & Electronics,</a>
+                    <a href="" class="text-[#0B90BF]">Aerospace,</a>
+                    <a href="" class="text-[#0B90BF]">Automotive & Ancillary,</a>
+                    and Consumer/Industrial.
+                </li>
 
-                <!-- Answer with smooth transition -->
-                <div class="overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-0 text-[#4A4A4A] text-[20px] leading-[1.5]"
-                    id="answer" style="font-family: 'Montserrat';">
-                    <p class="mt-[30px]">
-                        EIGEN is an AS 9100 D and ISO 9001:2015, ISO 45001:2018, ISO 14001:2015 certified company
-                        located in
-                        Bangalore, India. We specialize in precision press die design, progressive die development, and
-                        manufacturing of metal stamping components, plastic injection moldings, Insert and Over Molding,
-                        Electroplating (Barrel), Sub-Assemblies, and Value Added Services for industries like Electrical
-                        & Electronics,
-                        Aerospace, Automotive, Consumer durables, and other Engineering industries in India, Europe, and
-                        US markets.
-                    </p>
-                </div>
-            </div>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    In-house technology group develops creative manufacturing solutions to provide customers with a
+                    competitive advantage.
+                </li>
 
-            <div class="px-[40px] py-[30px] bg-white rounded-[10px] border-[1px] border-[#E0E0E0] w-full mt-[30px]">
-                <button class="flex justify-between items-center w-full text-left font-[600] text-2xl"
-                    onclick="toggleAccordion(this)">
-                    <p>How do I request a quote from Eigen?</p>
-                    <div class="relative w-12 h-12 flex items-center justify-center">
-                        <!-- Horizontal Bar -->
-                        <div class="absolute w-[21px] h-[5px] bg-[#0B90BF] rounded-full"></div>
-                        <!-- Vertical Bar with transition -->
-                        <div class="absolute h-[21px] w-[5px] bg-[#0B90BF] rounded-full transition-transform duration-300"
-                            id="vertical-bar"></div>
-                    </div>
-                </button>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Stamping presses with capacities from 15 to 200 tons.
+                </li>
 
-                <!-- Answer with smooth transition -->
-                <div class="overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-0 text-[#4A4A4A] text-[20px] leading-[1.5]"
-                    id="answer" style="font-family: 'Montserrat';">
-                    <p class="mt-[30px]">
-                        EIGEN is an AS 9100 D and ISO 9001:2015, ISO 45001:2018, ISO 14001:2015 certified company
-                        located in
-                        Bangalore, India. We specialize in precision press die design, progressive die development, and
-                        manufacturing of metal stamping components, plastic injection moldings, Insert and Over Molding,
-                        Electroplating (Barrel), Sub-Assemblies, and Value Added Services for industries like Electrical
-                        & Electronics,
-                        Aerospace, Automotive, Consumer durables, and other Engineering industries in India, Europe, and
-                        US markets.
-                    </p>
-                </div>
-            </div>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Focus on integrating new technology to enhance
+                    <a href="" class="text-[#0B90BF]">design-for-manufacturing (DFM)</a>.
+                </li>
 
-            <p class="font-[600] text-xl text-[#4A4A4A] mt-[60px]" style="font-family: 'Montserrat';">For more
-                information, <a href="" class="text-[#0B90BF]">Click
-                    here</a></p>
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Custom automation and work cell experts.
+                </li>
+
+                <li
+                    class="relative pl-6 before:content-['•'] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:text-[15px] before:text-[#4A4A4A]">
+                    Continual investments in new equipment and technology.
+                </li>
+            </ul>
+
+            <p class="font-[600] text-xl text-[#4A4A4A] mt-[60px]" style="font-family: 'Montserrat';">
+                For more information, <a href="" class="text-[#0B90BF]">Click here</a>
+            </p>
         </div>
     </section>
+
+
 
 
     <!--  -->
@@ -649,8 +573,6 @@
             </p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         AOS.init();
         document.addEventListener("DOMContentLoaded", function () {
@@ -671,21 +593,6 @@
             window.addEventListener("scroll", handleScroll);
         });
 
-
-        function toggleAccordion(element) {
-            const content = element.nextElementSibling;
-            const verticalBar = element.querySelector('#vertical-bar');
-            const questionText = element.querySelector('button > p');
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null; // Close accordion
-                verticalBar.classList.remove('-rotate-90');
-                questionText.style.color = "";
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px"; // Open accordion
-                verticalBar.classList.add('-rotate-90');
-                questionText.style.color = "#0B90BF";
-            }
-        }
     </script>
 </body>
 

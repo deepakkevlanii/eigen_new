@@ -564,6 +564,9 @@
   .mt-\[202px\] {
     margin-top: 202px;
   }
+  .mb-\[191px\] {
+    margin-bottom: 191px;
+  }
   .ml-\[120px\] {
     margin-left: 120px;
   }
@@ -1259,6 +1262,9 @@
   .px-\[205px\] {
     padding-inline: 205px;
   }
+  .px-\[260px\] {
+    padding-inline: 260px;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -1458,6 +1464,18 @@
     --tw-leading: 1.95;
     line-height: 1.95;
   }
+  .leading-\[20px\] {
+    --tw-leading: 20px;
+    line-height: 20px;
+  }
+  .leading-\[28px\] {
+    --tw-leading: 28px;
+    line-height: 28px;
+  }
+  .leading-\[30px\] {
+    --tw-leading: 30px;
+    line-height: 30px;
+  }
   .leading-\[32px\] {
     --tw-leading: 32px;
     line-height: 32px;
@@ -1566,6 +1584,9 @@
   }
   .text-white\/90 {
     color: color-mix(in oklab, var(--color-white) 90%, transparent);
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;

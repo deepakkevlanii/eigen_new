@@ -564,6 +564,9 @@
   .mt-\[202px\] {
     margin-top: 202px;
   }
+  .mb-\[76px\] {
+    margin-bottom: 76px;
+  }
   .mb-\[191px\] {
     margin-bottom: 191px;
   }
@@ -873,6 +876,9 @@
   .w-\[371px\] {
     width: 371px;
   }
+  .w-\[380px\] {
+    width: 380px;
+  }
   .w-\[385px\] {
     width: 385px;
   }
@@ -1020,11 +1026,17 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -1067,6 +1079,9 @@
   }
   .gap-\[30px\] {
     gap: 30px;
+  }
+  .gap-\[50px\] {
+    gap: 50px;
   }
   .gap-\[60px\] {
     gap: 60px;
@@ -1223,6 +1238,9 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .p-\[30px\] {
+    padding: 30px;
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -1246,6 +1264,12 @@
   }
   .px-\[50px\] {
     padding-inline: 50px;
+  }
+  .px-\[58px\] {
+    padding-inline: 58px;
+  }
+  .px-\[68px\] {
+    padding-inline: 68px;
   }
   .px-\[70px\] {
     padding-inline: 70px;

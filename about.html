@@ -530,196 +530,221 @@
         </div>
       </nav>
     </header>
-    <section class="relative h-[1080px] bg-[#004990] overflow-hidden">
-      <div>
-        <div
-          class="relative top-[186px] left-[100px] text-white w-[634px] h-[122px]"
-        >
+
+    <section class="bg-[#FFFFFF] h-[1080px]" style="font-family: 'Montserrat'">
+      <div class="flex justify-between px-[100px] pt-[200px]">
+        <div class="">
+          <h2 class="text-[#004990] font-[600] leading-[100%] text-[32px]">
+            About Us
+          </h2>
           <h1
-            class="w-full h-full font-['Montserrat'] font-bold text-[50px] relative top-[122px] transition-all opacity-0 leading-[1.25]"
-            id="home_heading"
+            class="text-[#333333] font-[700] text-[50px] leading-[100%] mt-[25px] w-[749px]"
           >
-            Shaping the Future of Engineering Innovation
+            Precision Beyond Limits: Engineering Excellence for Tomorrow
           </h1>
-        </div>
-        <div
-          class="relative top-[108px] left-[825px] text-white h-[64px] w-[850px] overflow-hidden"
-        >
           <p
-            class="h-full w-full font-['Montserrat'] font-[300] text-2xl relative top-[64px] transition-all tracking-[1px]"
-            id="home_para"
+            class="mt-[41px] font-[400] text-[20px] leading-[32px] w-[626px] text-[#606060]"
           >
-            Delivering cutting-edge solutions in precision manufacturing and
-            engineering design, trusted by industries worldwide.
+            Welcome! We, are Eigen. Established as a precision metal
+            stamping unit in 2006, in Bangalore, Eigen has made a name for
+            itself as one of the world’s foremost metal stamping service
+            providers. We have grown in leaps and bounds to where we are today
+            and are now able to offer tailor made solutions to our customers.
+          </p>
+        </div>
+        <div>
+          <div class="relative h-[517px] w-[870px]">
+            <img
+              src="./assets/home/about_hero.png"
+              alt=""
+              class="h-full w-full"
+            />
+
+            <div
+              class="flex justify-between items-center px-[38px] py-4 absolute bottom-0 z-50 w-full"
+            >
+              <div
+                class="border-l-[12px] border-[#2393FF] px-[20px] overflow-hidden h-[80px] flex items-center"
+              >
+                <p class="font-[600] text-[36px] leading-[50px] text-[#FFFFFF]">
+                  All about Eigen Engineering
+                </p>
+              </div>
+              <div
+                class="bg-white rounded-full h-[50px] w-[50px] xl:h-[90px] xl:w-[90px] flex justify-center items-center cursor-pointer"
+                id="openVideo"
+              >
+                <i
+                  class="fa-solid fa-play text-2xl xl:text-4xl leading-none text-[#2393FF]"
+                ></i>
+              </div>
+            </div>
+            <div
+              id="videoModal"
+              class="fixed inset-0 bg-[rgba(0,0,0,.9)] bg-opacity-70 hidden flex items-center justify-center z-50 overflow-y-auto"
+            >
+              <div
+                class="relative bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2"
+              >
+                <!-- Close Button -->
+                <button
+                  id="closeVideo"
+                  class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl hover:bg-red-800 transition z-50"
+                >
+                  &times;
+                </button>
+
+                <!-- Video Box -->
+                <div
+                  class="relative w-full pt-[45%] border-4 border-black rounded-lg overflow-hidden"
+                >
+                  <video
+                    id="videoPlayer"
+                    class="absolute top-0 left-0 w-full h-full"
+                    controls
+                  >
+                    <source
+                      src="https://www.w3schools.com/html/mov_bbb.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="mt-[50px] font-[400] text-[20px] leading-[32px] w-[867px] text-[#606060]"
+          >
+            We specialise in the design, development and manufacturing of high
+            speed stamping progressive tools, prototype tools, plastic injection
+            molds and electroplating. We manufacture complex, close tolerance
+            precision stamped components, plastic injection molded parts, insert
+            & over molded parts and sub-assemblies for India and global markets
+            including Europe and the USA.
           </p>
         </div>
       </div>
-      <div class="relative top-[200px] mx-auto w-[1720px] z-10">
-        <img
-          src="./assets/home/149.jpg"
-          alt=""
-          id="home_img"
-          class="relative top-[697px]"
-        />
-      </div>
-      <div
-        class="h-[245px] w-[678px] absolute bottom-[-410px] right-0 opacity-[20%] px-12 py-[50px] z-10"
-        id="home_box"
-        style="
-          background: rgba(0, 43, 85, 0.7);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          backdrop-filter: blur(6.9px);
-          -webkit-backdrop-filter: blur(6.9px);
-          border-top: 1.5px solid rgba(31, 31, 31, 0.66);
-          border: 0.5px solid rgba(31, 31, 31, 0.66);
-        "
-      >
-        <h1
-          class="text-[#A4E3FA] font-['Montserrat'] font-semibold text-[23px]"
-        >
-          The Eigen Difference
-        </h1>
-        <p class="font-['Montserrat'] font-light text-[15px] text-white mt-2">
-          Leverage our technical expertise to produce less expensive parts:
-        </p>
-        <ul
-          class="font-['Montserrat'] font-light text-[15px] text-white list-disc px-[25px] leading-[1.5] marker:text-[8px] flex flex-col gap-[2px]"
-          style="font-family: 'Montserrat'"
-        >
-          <li>Lower Part and Tooling costs</li>
-          <li>More Precise parts can now be stamped</li>
-          <li>End to End Metal Stamping Solutions Provider</li>
-          <li>Plastic Part</li>
-        </ul>
-        <div
-          class="h-[120px] w-[120px] absolute top-[-121px] left-[-121.5px]"
-          style="
-            background: rgba(164, 227, 250, 0.7);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(6.9px);
-            -webkit-backdrop-filter: blur(6.9px);
-          "
-        ></div>
-      </div>
-      <div>
-        <img
-          src="./assets/home/hero-vector.png"
-          alt=""
-          class="absolute top-0 right-0"
-        />
+    </section>
+
+    <section class="bg-[#FFFFFF] h-[969px]" style="font-family: 'Montserrat'">
+      <div class="py-[107px] px-[100px]">
+        <div class="h-[755px] relative">
+          <img
+            src="./assets/home/about_path.png"
+            alt=""
+            class="h-full w-full"
+          />
+          <div class="absolute top-[100px] left-[100px]">
+            <h1 class="font-[700] text-[50px] leading-[100%] text-[#FFFFFF]">
+              Eigen Excellence
+            </h1>
+            <ul
+              class="mt-[40px] text-[18px] font-[300] leading-[32px] text-[#FFFFFF] w-[589px] list-disc px-[25px] marker:text-[10px]"
+            >
+              <li>Kanban and JIT delivery system</li>
+              <li>Green Channel Supplier – Approved for Direct Line Supply</li>
+              <li>
+                100% customer satisfaction on quality and delivery performance
+                with major customers
+              </li>
+              <li>Quality circle, Kaizen are adopted to enhance quality</li>
+              <li>
+                Lean and Six Sigma methodologies are incorporated within our own
+                Production System to enable continuous improvement and progress
+                in all aspects of our Business
+              </li>
+              <li>
+                Technical expertise and dedicated technical team to support
+                product/process development
+              </li>
+              <li>Proven supply chain offering</li>
+              <li>
+                Customer Service levels monitored and maintained through
+                effective communication, standardized work, KPI’s, scorecards
+                and regular customer feedback surveys
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="h-[940px] px-24 pt-[132px] z-30 relative">
-      <div class="w-[686px] h-[132px] font-['Montserrat'] overflow-hidden">
-        <h1
-          class="font-semibold text-[46px] text-[#4A4A4A] leading-[1.3]"
-          data-aos="slide-up"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          Eigen - the leader in <br />
-          Precision Metal Stamping
-        </h1>
-      </div>
-      <div
-        class="font-[500] text-[18px] text-[#606060] flex justify-between items-start w-full mt-6 overflow-hidden"
-      >
-        <p
-          class="w-[812px]"
-          data-aos="slide-up"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          Eigen is an IATF 16949, ISO AS 9100 D, ISO 45001:2018, ISO 14001:2015
-          and ISO 9001:2015 certified company that specializes in precision
-          press die design, progressive die development and the manufacture of
-          metal stamping components, plastic injection molds, insert and over
-          molds, Electroplating (Barrel), Sub-Assemblies and Value Added
-          Services.
-        </p>
-        <p
-          class="w-[540px]"
-          data-aos="slide-up"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          We work with a wide range of industries, such as Electrical &
-          Electronics, Aerospace , Automotive, Consumer durables and others in
-          India, Europe and US markets.
-        </p>
-      </div>
-
-      <div
-        class="relative w-[1430px] mx-auto mt-20"
-        data-aos="slide-up"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
-        data-aos-once="true"
-      >
-        <img src="./assets/home/DSC06952.jpg" alt="" />
-        <div
-          class="flex justify-between items-center px-12 py-4 absolute bottom-[35px] z-50 w-full"
-        >
-          <div class="border-l-[12px] border-[#2393FF] px-12 overflow-hidden">
-            <p class="text-white w-[490px] text-4xl p-0 leading-[1.5]">
-              Custom Engineered Close Tolerance Components
-            </p>
-          </div>
-          <div
-            class="bg-white rounded-full h-[50px] w-[50px] xl:h-[90px] xl:w-[90px] flex justify-center items-center cursor-pointer"
-            id="openVideo"
+    <section class="h-[698px] bg-[#FFFFFF]" style="font-family: 'Montserrat'">
+      <div class="flex justify-between py-[100px] px-[269px]">
+        <div class="h-[498px] w-[747px] relative">
+          <img src="./assets/home/workforce.png" alt="" class="h-full w-full" />
+          <h1
+            class="w-[523px] h-[113px] pt-[28px] pl-[55px] bg-[#FFFFFF] absolute right-[-481px] top-[48px] font-[700] text-[#333333] leading-[100%] text-[50px]"
           >
-            <i
-              class="fa-solid fa-play text-2xl xl:text-4xl leading-none text-[#2393FF]"
-            ></i>
-          </div>
-        </div>
-        <div
-          id="videoModal"
-          class="fixed inset-0 bg-[rgba(0,0,0,.9)] bg-opacity-70 hidden flex items-center justify-center z-50 overflow-y-auto"
-        >
-          <div
-            class="relative bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2"
-          >
-            <!-- Close Button -->
-            <button
-              id="closeVideo"
-              class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl hover:bg-red-800 transition z-50"
-            >
-              &times;
-            </button>
-
-            <!-- Video Box -->
+            Workforce
             <div
-              class="relative w-full pt-[45%] border-4 border-black rounded-lg overflow-hidden"
-            >
-              <video
-                id="videoPlayer"
-                class="absolute top-0 left-0 w-full h-full"
-                controls
+              class="absolute h-[43px] w-[43px] bg-[#0049901A] top-[-13px] right-[103px]"
+            ></div>
+          </h1>
+        </div>
+        <div class="w-[590px] mt-[169px]">
+          <p class="text-[#333333] text-[18px] leading-[32px] font-[400]">
+            Our workforce undergoes arduous training to keep pace with the ever
+            changing trends, and we work 3 shifts a day, 6 days a week to render
+            outstanding service to our clientele. With a team of over 200
+            skilled personnel comprising of talented engineers and technicians,
+            we strive to realise our mission guided by our vision.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="h-[1189px] overflow-hidden"
+      style="font-family: 'Montserrat'"
+    >
+      <div class="relative">
+        <img src="./assets/home/about-our.png" alt="" class="h-full w-full" />
+        <div class="absolute top-[142px] left-[100px]">
+          <div class="flex gap-[108px]">
+            <div class="mt-[58px] text-[#FFFFFF]">
+              <h1 class="font-[700] text-[50px] leading-[100%]">Our Mission</h1>
+              <p
+                class="mt-[20px] text-[18px] font-[300] leading-[32px] w-[592px] pl-[5px]"
               >
-                <source
-                  src="https://www.w3schools.com/html/mov_bbb.mp4"
-                  type="video/mp4"
-                />
-              </video>
+                To be a reliable, preferred global solutions provider and
+                supplier to customers in the different segments of the precision
+                engineering industry by efficiently developing, nurturing, and
+                leveraging the capabilities and technologies.
+              </p>
+            </div>
+            <div class="h-[489px] w-[483px]">
+              <img
+                src="./assets/home/our-mission.png"
+                alt=""
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+          <div class="flex gap-[183px] mt-[74px] ml-[435px]">
+            <div class="mt-[58px] text-[#FFFFFF]">
+              <h1 class="font-[700] text-[50px] leading-[100%]">Our Vision</h1>
+              <p
+                class="mt-[20px] text-[18px] font-[300] leading-[32px] w-[592px] pl-[5px]"
+              >
+                To become a reputed mega enterprise in the engineering sector
+                through business excellence while upholding the ethics and core
+                values for the benefit of stakeholders at large.
+              </p>
+            </div>
+            <div class="w-[476px] h-[430px]">
+              <img
+                src="./assets/home/our-vision.png"
+                alt=""
+                class="w-full h-full"
+              />
             </div>
           </div>
         </div>
-      </div>
-      <div class="absolute top-[86px] right-[30px]">
-        <div class="h-[80px] w-[80px] bg-[#004990] opacity-[20%]"></div>
-        <div
-          class="h-[72px] w-[72px] bg-[#D9D9D9] absolute bottom-[-72px] left-[-72px] opacity-[20%]"
-        ></div>
+        <div></div>
       </div>
     </section>
-
-    <section class="h-[1125px] z-0 bg-[#F7F7F7]">
+<section class="h-[1125px] z-0 bg-[#F7F7F7]">
       <div class="flex justify-between">
         <div class="">
           <div class="mt-[200px] pl-[100px]">
@@ -1015,728 +1040,112 @@
         </div>
       </div>
     </section>
-
-    <section class="h-[1080px] bg-[#001D39] overflow-hidden">
-      <div class="flex">
-        <div class="w-1/2">
-          <!-- images -->
+    <section class="h-[698px]" style="font-family: 'Montserrat'">
+      <div class="flex justify-between pl-[140px] pt-[212px] pr-[137px]">
+        <div class="bg-[#E3EBF287] w-[350px] h-[344px] px-[20px] relative">
           <div
-            class="relative h-[439px] w-[468px] top-[182px] left-[100px] z-50"
+            class="absolute top-[-72px] left-[96px] h-[143px] w-[145px] rounded-full overflow-hidden"
           >
-            <img
-              src="./assets/home/DSC07066.jpg"
-              alt=""
-              class="h-full w-full"
-              data-aos="fade-up-left"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            />
-            <div
-              class="w-[112px] h-[112px] bg-[#0B90BF] absolute top-[-56px] right-[-56px] z-[-1]"
-              data-aos="fade-up-right"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            ></div>
+            <img src="./assets/home/person1.png" alt="" />
           </div>
-          <div
-            class="relative h-[410px] w-[418px] left-[425px] top-[88px] z-20"
-          >
-            <img
-              src="./assets/home/DSC06864.jpg"
-              alt=""
-              class="h-full w-full"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            />
-
-            <div
-              class="w-[77px] h-[77px] bg-[#004990] absolute top-[65px] left-[-55px] z-[-1]"
-              data-aos="fade-up-right"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            ></div>
-            <div
-              class="w-[48px] h-[48px] bg-[#004990] absolute bottom-[-30px] right-[-30px] z-[-1]"
-              data-aos="fade-right"
-              data-aos-easing=" linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            ></div>
-          </div>
-        </div>
-        <div
-          class="w-1/2 flex flex-col justify-start h-[1080px] gap-0 border-l-1 border-white"
-          data-aos="slide-down"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
-          >
-            <img
-              src="assets/home/cpu.png"
-              class="w-14 h-14"
-              alt=""
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="800"
-              data-aos-once="true"
-            />
-            <div
-              class="text-white"
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              <p class="font-semibold text-2xl">Electrical & Electronics</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-                O/L relays, circuit breakers, miniature motors, switch gears,
-                electronic article surveillance, tube fuses, and electronic time
-                locks.
-              </p>
-            </div>
-          </div>
-          <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
-          >
-            <img
-              src="assets/home/flight.png"
-              class="w-14 h-14"
-              alt=""
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            />
-            <div
-              class="text-white"
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1100"
-              data-aos-once="true"
-            >
-              <p class="font-semibold text-2xl">Aerospace</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-                HV relays, connectors, cabin light sensors, electromechanical
-                relays, and aerospace batteries.
-              </p>
-            </div>
-          </div>
-          <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
-          >
-            <img
-              src="assets/home/car.png"
-              class="w-14 h-14"
-              alt=""
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1100"
-              data-aos-once="true"
-            />
-            <div
-              class="text-white"
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            >
-              <p class="font-semibold text-2xl">Automotive & Ancillary</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-                Window lift motors, car door lock actuators, steering locks,
-                coolant pump sealing, light indicators, engine knock sensors,
-                starter solenoid valves, and safety applications.
-              </p>
-            </div>
-          </div>
-          <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
-          >
-            <img
-              src="assets/home/retail.png"
-              class="w-14 h-14"
-              alt=""
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1200"
-              data-aos-once="true"
-            />
-            <div
-              class="text-white"
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1300"
-              data-aos-once="true"
-            >
-              <p class="font-semibold text-2xl">Consumer Durables</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-                Mobile charger contacts, LH & RH terminals, and connectors.
-              </p>
-            </div>
-          </div>
-          <div
-            class="h-[212px] flex justify-start items-center border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
-          >
-            <img
-              src="assets/home/claw.png"
-              class="w-14 h-14"
-              alt=""
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1300"
-              data-aos-once="true"
-            />
-            <div
-              class="text-white"
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1400"
-              data-aos-once="true"
-            >
-              <p class="font-semibold text-2xl">Industrial Engineering</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-                Industrial batteries, current bars, and solder tags.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="h-[1080px] font-['Montserrat'] bg-cover bg-no-repeat bg-center overflow-hidden"
-      style="background-image: url('./assets/home/bg.jpg')"
-    >
-      <div class="pt-[122px] text-[#FFFFFF]">
-        <div class="h-[75px] overflow-hidden">
           <h1
-            class="font-bold text-[50px] text-center"
-            data-aos="slide-up"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-            data-aos-once="true"
+            class="font-[600] text-lg leading-[100%] text-[#002B55] text-center mt-[91px]"
           >
-            Eigen Core Values
+            Mr.Yashovardhan Saboo
           </h1>
-        </div>
-
-        <div class="h-[48px] mt-5">
-          <p
-            class="mx-auto w-[791px] text-center"
-            data-aos="slide-up"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-            data-aos-once="true"
+          <h2
+            class="mt-[8px] font-[600] text-[16px] leading-[100%] text-center text-[#004990]"
           >
-            Eigen’s work ethic is built upon the cornerstones of Quality,
-            Persistence and Valuable Service. These are our top priorities, and
-            they apply to all aspects of our business.
+            ( CEO )
+          </h2>
+          <p
+            class="text-center mt-[15px] font-[400] text-[14px] leading-[20px] text-[#002B55]"
+          >
+            Mr.Yashovardhan Saboo Chief Executive Officer of the Company is a
+            management graduate from IIM-A. He is an artist by heart but
+            businessman by choice. Through a unique combination of creativity
+            and entrepreneurship, the company under his leadership, has been
+            delivering profits consistently.
           </p>
         </div>
-        <div
-          class="mt-[68px] mx-auto h-[667px] w-[1000px] relative"
-          data-aos="slide-up"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          <img src="./assets/home/core.jpg" alt="" class="h-full w-full" />
-
+        <div class="bg-[#E3EBF287] w-[350px] h-[344px] px-[20px] relative">
           <div
-            class="absolute top-[-55px] left-[-336px] w-[408px] h-[111px] text-[24px] flex justify-center items-center font-bold"
-            style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            "
+            class="absolute top-[-72px] left-[96px] h-[143px] w-[145px] rounded-full overflow-hidden"
           >
-            <p>Continuous Improvement</p>
+            <img src="./assets/home/person2.png" alt="" />
           </div>
+          <h1
+            class="font-[600] text-lg leading-[100%] text-[#002B55] text-center mt-[91px]"
+          >
+            Mr. Sanjeev Masown
+          </h1>
+          <h2
+            class="mt-[8px] font-[600] text-[16px] leading-[100%] text-center text-[#004990]"
+          >
+            ( Executive Director & Group CFO )
+          </h2>
+          <p
+            class="text-center mt-[15px] font-[400] text-[14px] leading-[20px] text-[#002B55]"
+          >
+            Mr. Masown is Executive Director on the Board of KDDL Limited and is
+            responsible for EIGEN Engineering business growth through strategic
+            direction and leadership initiatives.
+          </p>
+        </div>
+        <div class="bg-[#E3EBF287] w-[350px] h-[344px] px-[20px] relative">
           <div
-            class="absolute top-[106px] left-[-257px] w-[371px] h-[140px] text-[24px] flex justify-center items-center font-bold"
-            style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            "
+            class="absolute top-[-72px] left-[96px] h-[143px] w-[145px] rounded-full overflow-hidden"
           >
-            <p class="w-[287px]">Reliability, Flexibility and Consistency</p>
+            <img src="./assets/home/person3.png" alt="" />
           </div>
+          <h1
+            class="font-[600] text-lg leading-[100%] text-[#002B55] text-center mt-[91px]"
+          >
+            Mr. V. Srinivasan
+          </h1>
+          <h2
+            class="mt-[8px] font-[600] text-[16px] leading-[100%] text-center text-[#004990]"
+          >
+            ( Business Head  )
+          </h2>
+          <p
+            class="text-center mt-[15px] font-[400] text-[14px] leading-[20px] text-[#002B55]"
+          >
+            Mr. Srinivasan is a graduate in Mechanical Engineering from Anna
+            University and has undergone Executive Education Program at IIM-B
+            and is a Six Sigma Black Belt.Has 30 years of experience in the
+            Automotive Industry proficiently managing Product Development,
+            Tooling, Manufacturing Operations...
+          </p>
+        </div>
+        <div class="bg-[#E3EBF287] w-[350px] h-[344px] px-[20px] relative">
           <div
-            class="absolute top-[298px] left-[-177px] w-[368px] h-[140px] text-[24px] flex justify-center items-center font-bold"
-            style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            "
+            class="absolute top-[-72px] left-[96px] h-[143px] w-[145px] rounded-full overflow-hidden"
           >
-            <p class="w-[287px]">Quality, Persistence and Valuable Service</p>
+            <img src="./assets/home/person4.png" alt="" />
           </div>
-          <div
-            class="absolute top-[82px] right-[-285px] w-[407px] h-[140px] text-[24px] flex justify-center items-center font-bold px-[30px]"
-            style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            "
+          <h1
+            class="font-[600] text-lg leading-[100%] text-[#002B55] text-center mt-[91px]"
           >
-            <p class="w-w-[360px]">Innovation, Adaptability and Creativity</p>
-          </div>
-          <div
-            class="absolute top-[274px] right-[-366px] w-[407px] h-[140px] text-[24px] flex justify-center items-center font-bold"
-            style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            "
+            Mr. Jagadeesh B Patil
+          </h1>
+          <h2
+            class="mt-[8px] font-[600] text-[16px] leading-[100%] text-center text-[#004990]"
           >
-            <p class="w-[340px]">Proposition and Responsive Development</p>
-          </div>
-
-          <div class="absolute top-[-2px] left-[71px]">
-            <img src="./assets/home/Vector2.png" alt="" />
-            <div class="absolute top-[41px] left-[38px]">
-              <img src="./assets/home/box.png" alt="" />
-            </div>
-            <div class="absolute top-[241px] left-[126px]">
-              <img src="./assets/home/box.png" alt="" />
-            </div>
-            <div class="absolute top-[490px] left-[158px]">
-              <img src="./assets/home/box.png" alt="" />
-            </div>
-            <div class="absolute top-[255px] right-[98px]">
-              <img src="./assets/home/box.png" alt="" />
-            </div>
-            <div class="absolute top-[462px] right-[115px]">
-              <img src="./assets/home/box.png" alt="" />
-            </div>
-          </div>
+            ( Chief Marketing Officer )
+          <p
+            class="text-center mt-[15px] font-[400] text-[14px] leading-[20px] text-[#002B55]"
+          >
+            Mr. Jagadeesh B Patil, leads the Sales, Marketing & Business
+            Development matters for EIGEN and oversee the execution of Business
+            Growth Strategy for the Division focusing on developing and managing
+            multiple capabilities for expanding Customer base in both domestic &
+            overseas markets.
+          </p>
         </div>
       </div>
     </section>
-
-    <section class="h-[662px] font-['Montserrat']">
-      <div class="mx-auto grid grid-cols-2 px-[100px]">
-        <div class="flex">
-          <div class="">
-            <div class="mt-[162px] w-[521px] h-[150px] overflow-hidden">
-              <p
-                class="text-[50px] font-bold text-[#333333] leading-[1.4]"
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="800"
-                data-aos-once="true"
-              >
-                Trusted by<br />
-                Great Brands
-              </p>
-            </div>
-            <div class="mt-[10px] w-[560px] h-[112px] overflow-hidden">
-              <p
-                class="text-[#606060] text-lg"
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="1000"
-                data-aos-once="true"
-                style="font-family: 'Montserrat'"
-              >
-                Empowering industry leaders with precision engineering,
-                cutting-edge solutions, and unwavering commitment to quality.
-                Our partnerships are built on trust, innovation, and proven
-                excellence.
-              </p>
-            </div>
-
-            <div class="mt-[25px] w-[560px] h-[80px] overflow-hidden">
-              <p
-                class="w-[560px] text-[#606060] text-lg font-sans"
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-                data-aos-once="true"
-                style="font-family: 'Montserrat'"
-              >
-                Eigen works and delivers precision to the best in the industry.
-                Here s a look at some of the companies we ve partnered with
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="relative">
-          <div
-            class="mt-[80px] h-[500px] w-[890px] relative"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <img src="./assets/home/brands.png" class="h-full w-full" alt="" />
-          </div>
-
-          <div
-            class="my-[100px] w-[890px] absolute bottom-[-150px]"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <img src="./assets/home/blur.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="h-[1080px] font-['Montserrat'] relative bg-[#F7F7F7]">
-      <div class="flex">
-        <div class="w-[612px] h-[1080px]">
-          <img
-            src="./assets/home/77214.jpg"
-            alt=""
-            class="w-full h-full"
-            data-aos="zoom-in-right"
-            data-aos-easing="linear"
-            data-aos-duration="500"
-            data-aos-once="true"
-          />
-        </div>
-        <div class="pl-[60px] mt-[202px]">
-          <div class="h-[120px] overflow-hidden">
-            <p
-              class="text-[46px] font-semibold text-[#4A4A4A]"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              What Our Clients Say
-            </p>
-            <p
-              class="text-[30px] font-['Montserrat'] font-[200] mt-2"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              Delivering Precision, Quality, and Trust
-            </p>
-          </div>
-          <!-- owl -->
-          <div class="relative w-[1255px] overflow-hidden mt-20 font-[400]">
-            <div
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              <div class="owl-carousel owl-theme">
-                <div class="pl-[30px]">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#004990]"
-                    >
-                      Exceptional Precision and Reliability
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
-                  </div>
-                </div>
-
-                <div class="pl-[30px]">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#0B90BF]"
-                    >
-                      A Partner, Not Just a Vendor
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      We’ve been working with Eigen for years, and they’ve
-                      always gone above and beyond to meet our custom
-                      requirements. Their innovative solutions and commitment to
-                      excellence have made them an invaluable partner in our
-                      supply chain.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – Anna K., Supply Chain Director,
-                    </p>
-                    <p>Aerospace Industry</p>
-                  </div>
-                </div>
-
-                <div class="pl-[30px]">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#0B90BF]"
-                    >
-                      Seamless Collaboration and Outstanding Results
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
-                  </div>
-                </div>
-                <div class="pl-[30px]">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#0B90BF]"
-                    >
-                      A Partner, Not Just a Vendor
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      We’ve been working with Eigen for years, and they’ve
-                      always gone above and beyond to meet our custom
-                      requirements. Their innovative solutions and commitment to
-                      excellence have made them an invaluable partner in our
-                      supply chain.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – Anna K., Supply Chain Director,
-                    </p>
-                    <p>Aerospace Industry</p>
-                  </div>
-                </div>
-
-                <div class="pl-[30px]">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#0B90BF]"
-                    >
-                      Seamless Collaboration and Outstanding Results
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
-                  </div>
-                </div>
-                <div class="pl-[30px]">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#0B90BF]"
-                    >
-                      A Partner, Not Just a Vendor
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      We’ve been working with Eigen for years, and they’ve
-                      always gone above and beyond to meet our custom
-                      requirements. Their innovative solutions and commitment to
-                      excellence have made them an invaluable partner in our
-                      supply chain.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – Anna K., Supply Chain Director,
-                    </p>
-                    <p>Aerospace Industry</p>
-                  </div>
-                </div>
-
-                <div class="pl-[30px]">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#0B90BF]"
-                    >
-                      Seamless Collaboration and Outstanding Results
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
-                  </div>
-                </div>
-                <div class="pl-[30px] invisible">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#004990]"
-                    >
-                      Exceptional Precision and Reliability
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
-                  </div>
-                </div>
-                <div class="pl-[30px] invisible">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#004990]"
-                    >
-                      Exceptional Precision and Reliability
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex gap-4 mt-8 pl-[30px]">
-            <button
-              class="prev-btn text-[#004990] opacity-40 text-xl flex items-center justify-center transition"
-              style="transition: all 0.5s ease-in-out"
-            >
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-
-            <button
-              class="next-btn text-[#004990] text-3xl flex items-center justify-center transition cursor-pointer"
-              style="transition: all 0.5s ease-in-out"
-            >
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="absolute right-0 top-[130px] z-30">
-        <img
-          src="./assets/home/format_quote.png"
-          alt=""
-          class="h-[186px] grayscale-[100%] opacity-5"
-        />
-      </div>
-    </section>
-
-    <section class="font-['Montserrat'] h-[636px]">
+<section class="font-['Montserrat'] h-[636px]">
       <div class="flex justify-between">
         <div class="pt-[150px] pl-[100px]">
           <div class="w-[521px] h-[150px] overflow-hidden">
@@ -1835,140 +1244,6 @@
         </div>
       </div>
     </section>
-
-    <section class="h-[1080px] font-['Montserrat'] bg-[#E6F3F7]">
-      <div class="relative w-full pl-[100px]">
-        <div class="absolute right-0 w-[614px] h-[584px]">
-          <img
-            src="assets/home/Vector.png"
-            class="opacity-30 w-full h-full"
-            alt=""
-          />
-        </div>
-        <div class="top-0 w-full h-full overflow-hidden">
-          <div class="mt-[150px] h-[155px] overflow-hidden">
-            <p
-              class="w-[521px] font-bold text-[50px] text-[#333333]"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
-              data-aos-once="true"
-            >
-              Our Latest Blogs
-            </p>
-            <p
-              class="w-[415px] text-[#606060] mt-5 text-lg font-sans"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
-              data-aos-once="true"
-            >
-              Discover insights, innovations, and industry trends that drive
-              precision and performance
-            </p>
-          </div>
-          <div class="flex justify-start gap-[60px] mt-[80px]">
-            <div
-              class="w-[521px] h-[590px]"
-              data-aos="slide-up"
-              data-aos-easing="linear"
-              data-aos="slide-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
-              data-aos-once="true"
-            >
-              <img
-                src="assets/home/blog1.jpg"
-                alt=""
-                class="w-full h-[350px] object-cover"
-              />
-              <div class="py-5">
-                <h2 class="text-[#004990] text-2xl font-semibold mt-[40px]">
-                  Revolutionizing Precision Engineering
-                </h2>
-                <p class="text-gray-600 mt-2.5">
-                  Discover how cutting-edge technology and innovative techniques
-                  are shaping the future of precision manufacturing, ensuring
-                  accuracy and efficiency in every component.
-                </p>
-
-                <button
-                  class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg hover:text-[#004990] transition-all cursor-pointer"
-                  style="transition: all 0.5s ease-in-out"
-                >
-                  Read More →
-                </button>
-              </div>
-            </div>
-            <div
-              class="w-[521px] h-[590px]"
-              data-aos="slide-up"
-              data-aos-easing="linear"
-              data-aos="slide-up"
-              data-aos-easing="linear"
-              data-aos-duration="800"
-              data-aos-once="true"
-            >
-              <img
-                src="assets/home/blog2.jpg"
-                alt=""
-                class="w-full h-[350px] object-cover"
-              />
-              <div class="py-5">
-                <h2 class="text-[#004990] text-2xl font-semibold mt-[40px]">
-                  The Art of Progressive Tooling
-                </h2>
-                <p class="text-gray-600 mt-2.5">
-                  Dive into the world of progressive tooling and learn how this
-                  advanced process enables the creation of complex, high-quality
-                  metal components at scale.
-                </p>
-
-                <button
-                  class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg hover:text-[#004990] transition-all cursor-pointer"
-                  style="transition: all 0.5s ease-in-out"
-                >
-                  Read More →
-                </button>
-              </div>
-            </div>
-            <div
-              class="w-[521px] h-[590px]"
-              data-aos="slide-up"
-              data-aos-easing="linear"
-              data-aos="slide-up"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            >
-              <img
-                src="assets/home/blog3.jpg"
-                alt=""
-                class="w-full h-[350px] object-cover"
-              />
-              <div class="py-5">
-                <h2 class="text-[#004990] text-2xl font-semibold mt-[40px]">
-                  Sustainability in Manufacturing
-                </h2>
-                <p class="text-gray-600 mt-2.5">
-                  Explore how sustainable practices and eco-friendly solutions
-                  are transforming the manufacturing industry, paving the way
-                  for a greener future.
-                </p>
-
-                <button
-                  class="mt-[40px] py-2 text-[#0B90BF] font-medium rounded-lg hover:text-[#004990] transition-all cursor-pointer"
-                  style="transition: all 0.5s ease-in-out"
-                >
-                  Read More →
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer
       class="h-[663px] bg-[#001D39] px-[101px] pt-[60px] font-['Montserrat'] relative tracking-[1px]"
     >

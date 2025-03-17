@@ -6,6 +6,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-600: oklch(0.577 0.245 27.325);
     --color-red-800: oklch(0.444 0.177 26.899);
     --color-gray-300: oklch(0.872 0.01 258.338);
@@ -231,9 +232,6 @@
   .top-\[-2px\] {
     top: -2px;
   }
-  .top-\[-13\] {
-    top: -13;
-  }
   .top-\[-13px\] {
     top: -13px;
   }
@@ -300,9 +298,6 @@
   .top-\[142px\] {
     top: 142px;
   }
-  .top-\[148px\] {
-    top: 148px;
-  }
   .top-\[182px\] {
     top: 182px;
   }
@@ -363,9 +358,6 @@
   .right-\[-56px\] {
     right: -56px;
   }
-  .right-\[-99px\] {
-    right: -99px;
-  }
   .right-\[-285px\] {
     right: -285px;
   }
@@ -377,9 +369,6 @@
   }
   .right-\[30px\] {
     right: 30px;
-  }
-  .right-\[42px\] {
-    right: 42px;
   }
   .right-\[98px\] {
     right: 98px;
@@ -404,9 +393,6 @@
   }
   .right-\[420px\] {
     right: 420px;
-  }
-  .right-\[705px\] {
-    right: 705px;
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -441,9 +427,6 @@
   .left-\[-72px\] {
     left: -72px;
   }
-  .left-\[-99px\] {
-    left: -99px;
-  }
   .left-\[-121\.5px\] {
     left: -121.5px;
   }
@@ -467,9 +450,6 @@
   }
   .left-\[38px\] {
     left: 38px;
-  }
-  .left-\[42px\] {
-    left: 42px;
   }
   .left-\[71px\] {
     left: 71px;
@@ -500,9 +480,6 @@
   }
   .left-\[425px\] {
     left: 425px;
-  }
-  .left-\[705px\] {
-    left: 705px;
   }
   .left-\[825px\] {
     left: 825px;
@@ -585,11 +562,11 @@
   .mt-\[20px\] {
     margin-top: 20px;
   }
+  .mt-\[24px\] {
+    margin-top: 24px;
+  }
   .mt-\[25px\] {
     margin-top: 25px;
-  }
-  .mt-\[28px\] {
-    margin-top: 28px;
   }
   .mt-\[30px\] {
     margin-top: 30px;
@@ -605,6 +582,9 @@
   }
   .mt-\[50px\] {
     margin-top: 50px;
+  }
+  .mt-\[56px\] {
+    margin-top: 56px;
   }
   .mt-\[58px\] {
     margin-top: 58px;
@@ -626,6 +606,9 @@
   }
   .mt-\[91px\] {
     margin-top: 91px;
+  }
+  .mt-\[92px\] {
+    margin-top: 92px;
   }
   .mt-\[150px\] {
     margin-top: 150px;
@@ -656,12 +639,6 @@
   }
   .mb-\[191px\] {
     margin-bottom: 191px;
-  }
-  .ml-\[55ox\] {
-    margin-left: 55ox;
-  }
-  .ml-\[55px\] {
-    margin-left: 55px;
   }
   .ml-\[120px\] {
     margin-left: 120px;
@@ -816,6 +793,9 @@
   .h-\[350px\] {
     height: 350px;
   }
+  .h-\[399px\] {
+    height: 399px;
+  }
   .h-\[400px\] {
     height: 400px;
   }
@@ -830,12 +810,6 @@
   }
   .h-\[450px\] {
     height: 450px;
-  }
-  .h-\[476px\] {
-    height: 476px;
-  }
-  .h-\[483px\] {
-    height: 483px;
   }
   .h-\[489px\] {
     height: 489px;
@@ -873,6 +847,9 @@
   .h-\[755px\] {
     height: 755px;
   }
+  .h-\[757px\] {
+    height: 757px;
+  }
   .h-\[940px\] {
     height: 940px;
   }
@@ -887,6 +864,9 @@
   }
   .h-\[1189px\] {
     height: 1189px;
+  }
+  .h-\[2004px\] {
+    height: 2004px;
   }
   .h-full {
     height: 100%;
@@ -1068,9 +1048,6 @@
   .w-\[483px\] {
     width: 483px;
   }
-  .w-\[489\] {
-    width: 489;
-  }
   .w-\[490px\] {
     width: 490px;
   }
@@ -1098,12 +1075,6 @@
   .w-\[565px\] {
     width: 565px;
   }
-  .w-\[578px\] {
-    width: 578px;
-  }
-  .w-\[582px\] {
-    width: 582px;
-  }
   .w-\[589px\] {
     width: 589px;
   }
@@ -1112,6 +1083,12 @@
   }
   .w-\[592px\] {
     width: 592px;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
+  .w-\[609px\] {
+    width: 609px;
   }
   .w-\[612px\] {
     width: 612px;
@@ -1137,11 +1114,17 @@
   .w-\[690px\] {
     width: 690px;
   }
+  .w-\[705px\] {
+    width: 705px;
+  }
   .w-\[747px\] {
     width: 747px;
   }
   .w-\[749px\] {
     width: 749px;
+  }
+  .w-\[765px\] {
+    width: 765px;
   }
   .w-\[791px\] {
     width: 791px;
@@ -1164,8 +1147,20 @@
   .w-\[960px\] {
     width: 960px;
   }
+  .w-\[992px\] {
+    width: 992px;
+  }
   .w-\[1000px\] {
     width: 1000px;
+  }
+  .w-\[1014px\] {
+    width: 1014px;
+  }
+  .w-\[1020px\] {
+    width: 1020px;
+  }
+  .w-\[1024px\] {
+    width: 1024px;
   }
   .w-\[1076px\] {
     width: 1076px;
@@ -1250,6 +1245,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .justify-start {
     justify-content: flex-start;
@@ -1533,6 +1531,9 @@
   .px-\[99px\] {
     padding-inline: 99px;
   }
+  .px-\[100\] {
+    padding-inline: 100;
+  }
   .px-\[100px\] {
     padding-inline: 100px;
   }
@@ -1614,8 +1615,17 @@
   .pt-\[45\%\] {
     padding-top: 45%;
   }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
   .pt-\[60px\] {
     padding-top: 60px;
+  }
+  .pt-\[80px\] {
+    padding-top: 80px;
+  }
+  .pt-\[120px\] {
+    padding-top: 120px;
   }
   .pt-\[122px\] {
     padding-top: 122px;
@@ -1623,8 +1633,14 @@
   .pt-\[132px\] {
     padding-top: 132px;
   }
+  .pt-\[133px\] {
+    padding-top: 133px;
+  }
   .pt-\[150px\] {
     padding-top: 150px;
+  }
+  .pt-\[194px\] {
+    padding-top: 194px;
   }
   .pt-\[200px\] {
     padding-top: 200px;
@@ -1782,6 +1798,9 @@
   }
   .text-\[60px\] {
     font-size: 60px;
+  }
+  .text-\[64px\] {
+    font-size: 64px;
   }
   .leading-\[1\.3\] {
     --tw-leading: 1.3;
@@ -1955,6 +1974,30 @@
   .underline {
     text-decoration-line: underline;
   }
+  .decoration-\[\#4A4A4A\] {
+    text-decoration-color: #4A4A4A;
+  }
+  .decoration-\[\#8a8787\] {
+    text-decoration-color: #8a8787;
+  }
+  .decoration-\[\#afafaf\] {
+    text-decoration-color: #afafaf;
+  }
+  .decoration-red-500 {
+    text-decoration-color: var(--color-red-500);
+  }
+  .underline-offset-0 {
+    text-underline-offset: 0px;
+  }
+  .underline-offset-1 {
+    text-underline-offset: 1px;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+  .underline-offset-auto {
+    text-underline-offset: auto;
+  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -2081,14 +2124,6 @@
     }
     &::marker {
       font-size: 10px;
-    }
-  }
-  .marker\:text-\[15px\] {
-    & *::marker {
-      font-size: 15px;
-    }
-    &::marker {
-      font-size: 15px;
     }
   }
   .placeholder\:text-sm {

@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-600: oklch(0.577 0.245 27.325);
     --color-red-800: oklch(0.444 0.177 26.899);
     --color-gray-300: oklch(0.872 0.01 258.338);
@@ -331,6 +330,9 @@
   .top-\[347px\] {
     top: 347px;
   }
+  .top-\[423px\] {
+    top: 423px;
+  }
   .top-\[445px\] {
     top: 445px;
   }
@@ -378,6 +380,9 @@
   }
   .right-\[115px\] {
     right: 115px;
+  }
+  .right-\[120px\] {
+    right: 120px;
   }
   .right-\[131px\] {
     right: 131px;
@@ -562,8 +567,8 @@
   .mt-\[20px\] {
     margin-top: 20px;
   }
-  .mt-\[24px\] {
-    margin-top: 24px;
+  .mt-\[20x\] {
+    margin-top: 20x;
   }
   .mt-\[25px\] {
     margin-top: 25px;
@@ -625,6 +630,9 @@
   .mt-\[202px\] {
     margin-top: 202px;
   }
+  .mt-\[365px\] {
+    margin-top: 365px;
+  }
   .mb-\[49px\] {
     margin-bottom: 49px;
   }
@@ -639,6 +647,9 @@
   }
   .mb-\[191px\] {
     margin-bottom: 191px;
+  }
+  .mb-\[252px\] {
+    margin-bottom: 252px;
   }
   .ml-\[120px\] {
     margin-left: 120px;
@@ -850,6 +861,9 @@
   .h-\[757px\] {
     height: 757px;
   }
+  .h-\[800px\] {
+    height: 800px;
+  }
   .h-\[940px\] {
     height: 940px;
   }
@@ -867,6 +881,9 @@
   }
   .h-\[2004px\] {
     height: 2004px;
+  }
+  .h-fit {
+    height: fit-content;
   }
   .h-full {
     height: 100%;
@@ -1126,6 +1143,9 @@
   .w-\[765px\] {
     width: 765px;
   }
+  .w-\[777px\] {
+    width: 777px;
+  }
   .w-\[791px\] {
     width: 791px;
   }
@@ -1137,6 +1157,9 @@
   }
   .w-\[867px\] {
     width: 867px;
+  }
+  .w-\[869px\] {
+    width: 869px;
   }
   .w-\[870px\] {
     width: 870px;
@@ -1531,9 +1554,6 @@
   .px-\[99px\] {
     padding-inline: 99px;
   }
-  .px-\[100\] {
-    padding-inline: 100;
-  }
   .px-\[100px\] {
     padding-inline: 100px;
   }
@@ -1591,6 +1611,9 @@
   .py-\[50px\] {
     padding-block: 50px;
   }
+  .py-\[61px\] {
+    padding-block: 61px;
+  }
   .py-\[80px\] {
     padding-block: 80px;
   }
@@ -1647,6 +1670,12 @@
   }
   .pt-\[212px\] {
     padding-top: 212px;
+  }
+  .pt-\[240px\] {
+    padding-top: 240px;
+  }
+  .pt-\[365px\] {
+    padding-top: 365px;
   }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
@@ -1790,6 +1819,9 @@
   .text-\[36px\] {
     font-size: 36px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .text-\[46px\] {
     font-size: 46px;
   }
@@ -1801,6 +1833,9 @@
   }
   .text-\[64px\] {
     font-size: 64px;
+  }
+  .text-\[96px\] {
+    font-size: 96px;
   }
   .leading-\[1\.3\] {
     --tw-leading: 1.3;
@@ -1841,6 +1876,10 @@
   .leading-\[32px\] {
     --tw-leading: 32px;
     line-height: 32px;
+  }
+  .leading-\[40px\] {
+    --tw-leading: 40px;
+    line-height: 40px;
   }
   .leading-\[45px\] {
     --tw-leading: 45px;
@@ -1956,6 +1995,9 @@
   .text-\[\#A4E3FA\] {
     color: #A4E3FA;
   }
+  .text-\[\#E8E8E8\] {
+    color: #E8E8E8;
+  }
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
   }
@@ -1974,29 +2016,8 @@
   .underline {
     text-decoration-line: underline;
   }
-  .decoration-\[\#4A4A4A\] {
-    text-decoration-color: #4A4A4A;
-  }
-  .decoration-\[\#8a8787\] {
-    text-decoration-color: #8a8787;
-  }
   .decoration-\[\#afafaf\] {
     text-decoration-color: #afafaf;
-  }
-  .decoration-red-500 {
-    text-decoration-color: var(--color-red-500);
-  }
-  .underline-offset-0 {
-    text-underline-offset: 0px;
-  }
-  .underline-offset-1 {
-    text-underline-offset: 1px;
-  }
-  .underline-offset-4 {
-    text-underline-offset: 4px;
-  }
-  .underline-offset-auto {
-    text-underline-offset: auto;
   }
   .opacity-0 {
     opacity: 0%;

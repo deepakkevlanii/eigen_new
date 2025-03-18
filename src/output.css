@@ -412,9 +412,6 @@
   .bottom-\[-72px\] {
     bottom: -72px;
   }
-  .bottom-\[-80px\] {
-    bottom: -80px;
-  }
   .bottom-\[-150px\] {
     bottom: -150px;
   }
@@ -438,9 +435,6 @@
   }
   .left-\[-72px\] {
     left: -72px;
-  }
-  .left-\[-80px\] {
-    left: -80px;
   }
   .left-\[-121\.5px\] {
     left: -121.5px;
@@ -589,6 +583,9 @@
   .mt-\[25px\] {
     margin-top: 25px;
   }
+  .mt-\[29px\] {
+    margin-top: 29px;
+  }
   .mt-\[30px\] {
     margin-top: 30px;
   }
@@ -612,6 +609,9 @@
   }
   .mt-\[60px\] {
     margin-top: 60px;
+  }
+  .mt-\[62px\] {
+    margin-top: 62px;
   }
   .mt-\[68px\] {
     margin-top: 68px;
@@ -853,6 +853,12 @@
   .h-\[450px\] {
     height: 450px;
   }
+  .h-\[460px\] {
+    height: 460px;
+  }
+  .h-\[462px\] {
+    height: 462px;
+  }
   .h-\[489px\] {
     height: 489px;
   }
@@ -865,8 +871,14 @@
   .h-\[517px\] {
     height: 517px;
   }
+  .h-\[539px\] {
+    height: 539px;
+  }
   .h-\[542px\] {
     height: 542px;
+  }
+  .h-\[562px\] {
+    height: 562px;
   }
   .h-\[584px\] {
     height: 584px;
@@ -1078,6 +1090,9 @@
   .w-\[287px\] {
     width: 287px;
   }
+  .w-\[288px\] {
+    width: 288px;
+  }
   .w-\[300px\] {
     width: 300px;
   }
@@ -1174,8 +1189,14 @@
   .w-\[560px\] {
     width: 560px;
   }
+  .w-\[560x\] {
+    width: 560x;
+  }
   .w-\[565px\] {
     width: 565px;
+  }
+  .w-\[569px\] {
+    width: 569px;
   }
   .w-\[589px\] {
     width: 589px;
@@ -1285,23 +1306,41 @@
   .w-\[1285px\] {
     width: 1285px;
   }
+  .w-\[1311px\] {
+    width: 1311px;
+  }
   .w-\[1425px\] {
     width: 1425px;
   }
   .w-\[1430px\] {
     width: 1430px;
   }
-  .w-\[1500px\] {
-    width: 1500px;
+  .w-\[1590px\] {
+    width: 1590px;
+  }
+  .w-\[1678px\] {
+    width: 1678px;
+  }
+  .w-\[1698px\] {
+    width: 1698px;
+  }
+  .w-\[1704px\] {
+    width: 1704px;
   }
   .w-\[1720px\] {
     width: 1720px;
+  }
+  .w-\[1740px\] {
+    width: 1740px;
   }
   .w-fit {
     width: fit-content;
   }
   .w-full {
     width: 100%;
+  }
+  .min-w-\[340px\] {
+    min-width: 340px;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1354,6 +1393,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -1389,6 +1431,9 @@
   }
   .gap-\[10px\] {
     gap: 10px;
+  }
+  .gap-\[15px\] {
+    gap: 15px;
   }
   .gap-\[20px\] {
     gap: 20px;
@@ -1445,6 +1490,12 @@
   }
   .gap-x-\[50px\] {
     column-gap: 50px;
+  }
+  .gap-x-\[180px\] {
+    column-gap: 180px;
+  }
+  .gap-y-\[30px\] {
+    row-gap: 30px;
   }
   .gap-y-\[100px\] {
     row-gap: 100px;
@@ -1642,6 +1693,9 @@
   .px-24 {
     padding-inline: calc(var(--spacing) * 24);
   }
+  .px-\[7px\] {
+    padding-inline: 7px;
+  }
   .px-\[15px\] {
     padding-inline: 15px;
   }
@@ -1674,6 +1728,9 @@
   }
   .px-\[80px\] {
     padding-inline: 80px;
+  }
+  .px-\[93px\] {
+    padding-inline: 93px;
   }
   .px-\[99px\] {
     padding-inline: 99px;
@@ -1723,6 +1780,9 @@
   .py-\[8px\] {
     padding-block: 8px;
   }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
   .py-\[14px\] {
     padding-block: 14px;
   }
@@ -1752,6 +1812,9 @@
   }
   .py-\[150px\] {
     padding-block: 150px;
+  }
+  .py-\[220px\] {
+    padding-block: 220px;
   }
   .pt-\[22\.5px\] {
     padding-top: 22.5px;
@@ -1828,6 +1891,9 @@
   .pr-\[7px\] {
     padding-right: 7px;
   }
+  .pr-\[48px\] {
+    padding-right: 48px;
+  }
   .pr-\[111px\] {
     padding-right: 111px;
   }
@@ -1845,6 +1911,12 @@
   }
   .pb-\[25px\] {
     padding-bottom: 25px;
+  }
+  .pb-\[56px\] {
+    padding-bottom: 56px;
+  }
+  .pb-\[58px\] {
+    padding-bottom: 58px;
   }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
@@ -2182,6 +2254,9 @@
   .decoration-\[\#4A4A4A\] {
     text-decoration-color: #4A4A4A;
   }
+  .decoration-\[\#FFFFFF\] {
+    text-decoration-color: #FFFFFF;
+  }
   .decoration-\[\#afafaf\] {
     text-decoration-color: #afafaf;
   }
@@ -2217,12 +2292,6 @@
   }
   .opacity-\[20\%\] {
     opacity: 20%;
-  }
-  .opacity-\[40\%\] {
-    opacity: 40%;
-  }
-  .opacity-\[50\%\] {
-    opacity: 50%;
   }
   .opacity-\[60\%\] {
     opacity: 60%;

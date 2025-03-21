@@ -9,6 +9,8 @@
     --color-red-600: oklch(0.577 0.245 27.325);
     --color-red-800: oklch(0.444 0.177 26.899);
     --color-amber-50: oklch(0.987 0.022 95.277);
+    --color-blue-600: oklch(0.546 0.245 262.881);
+    --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-300: oklch(0.872 0.01 258.338);
     --color-gray-600: oklch(0.446 0.03 256.802);
     --color-black: #000;
@@ -331,6 +333,9 @@
   .top-\[347px\] {
     top: 347px;
   }
+  .top-\[383px\] {
+    top: 383px;
+  }
   .top-\[423px\] {
     top: 423px;
   }
@@ -589,6 +594,9 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .mt-\[34px\] {
+    margin-top: 34px;
+  }
   .mt-\[35px\] {
     margin-top: 35px;
   }
@@ -612,6 +620,9 @@
   }
   .mt-\[62px\] {
     margin-top: 62px;
+  }
+  .mt-\[66px\] {
+    margin-top: 66px;
   }
   .mt-\[68px\] {
     margin-top: 68px;
@@ -669,6 +680,9 @@
   }
   .mb-\[252px\] {
     margin-bottom: 252px;
+  }
+  .mb-\[292px\] {
+    margin-bottom: 292px;
   }
   .ml-\[120px\] {
     margin-left: 120px;
@@ -846,6 +860,9 @@
   }
   .h-\[410px\] {
     height: 410px;
+  }
+  .h-\[422px\] {
+    height: 422px;
   }
   .h-\[430px\] {
     height: 430px;
@@ -1144,6 +1161,9 @@
   .w-\[450px\] {
     width: 450px;
   }
+  .w-\[456px\] {
+    width: 456px;
+  }
   .w-\[460px\] {
     width: 460px;
   }
@@ -1273,6 +1293,9 @@
   .w-\[890px\] {
     width: 890px;
   }
+  .w-\[900px\] {
+    width: 900px;
+  }
   .w-\[960px\] {
     width: 960px;
   }
@@ -1309,6 +1332,9 @@
   .w-\[1311px\] {
     width: 1311px;
   }
+  .w-\[1400px\] {
+    width: 1400px;
+  }
   .w-\[1425px\] {
     width: 1425px;
   }
@@ -1338,6 +1364,9 @@
   }
   .min-w-\[340px\] {
     min-width: 340px;
+  }
+  .min-w-full {
+    min-width: 100%;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1567,11 +1596,20 @@
   .border-\[\#004990\] {
     border-color: #004990;
   }
+  .border-\[\#D2D2D2\] {
+    border-color: #D2D2D2;
+  }
   .border-\[\#E0E0E0\] {
     border-color: #E0E0E0;
   }
+  .border-\[\#FFFFFF\] {
+    border-color: #FFFFFF;
+  }
   .border-black {
     border-color: var(--color-black);
+  }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
   }
   .border-white {
     border-color: var(--color-white);
@@ -1651,6 +1689,9 @@
   .bg-\[rgba\(7\,36\,65\,0\.8\)\] {
     background-color: rgba(7,36,65,0.8);
   }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
   .bg-red-600 {
     background-color: var(--color-red-600);
   }
@@ -1677,6 +1718,9 @@
   }
   .p-\[30px\] {
     padding: 30px;
+  }
+  .p-\[50px\] {
+    padding: 50px;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -1747,11 +1791,26 @@
   .px-\[205px\] {
     padding-inline: 205px;
   }
+  .px-\[245px\] {
+    padding-inline: 245px;
+  }
+  .px-\[250px\] {
+    padding-inline: 250px;
+  }
+  .px-\[258px\] {
+    padding-inline: 258px;
+  }
   .px-\[260px\] {
     padding-inline: 260px;
   }
   .px-\[269px\] {
     padding-inline: 269px;
+  }
+  .px-\[354px\] {
+    padding-inline: 354px;
+  }
+  .px-\[394px\] {
+    padding-inline: 394px;
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -1785,6 +1844,9 @@
   }
   .py-\[18px\] {
     padding-block: 18px;
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
   }
   .py-\[30px\] {
     padding-block: 30px;
@@ -1842,6 +1904,9 @@
   }
   .pt-\[83px\] {
     padding-top: 83px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
   }
   .pt-\[120px\] {
     padding-top: 120px;
@@ -1915,6 +1980,9 @@
   .pb-\[58px\] {
     padding-bottom: 58px;
   }
+  .pb-\[112px\] {
+    padding-bottom: 112px;
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
@@ -1926,6 +1994,9 @@
   }
   .pl-\[30px\] {
     padding-left: 30px;
+  }
+  .pl-\[40px\] {
+    padding-left: 40px;
   }
   .pl-\[50px\] {
     padding-left: 50px;
@@ -2203,6 +2274,9 @@
   .text-\[\#4A4A4A\] {
     color: #4A4A4A;
   }
+  .text-\[\#006ED9\] {
+    color: #006ED9;
+  }
   .text-\[\#8E8E8E\] {
     color: #8E8E8E;
   }
@@ -2232,6 +2306,9 @@
   }
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
+  }
+  .text-blue-600 {
+    color: var(--color-blue-600);
   }
   .text-gray-600 {
     color: var(--color-gray-600);

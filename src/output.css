@@ -200,6 +200,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .collapse {
     visibility: collapse;
   }
@@ -382,6 +385,9 @@
   }
   .right-\[17px\] {
     right: 17px;
+  }
+  .right-\[21px\] {
+    right: 21px;
   }
   .right-\[30px\] {
     right: 30px;
@@ -578,6 +584,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-\[-224px\] {
+    margin-top: -224px;
+  }
   .mt-\[3px\] {
     margin-top: 3px;
   }
@@ -586,6 +595,9 @@
   }
   .mt-\[10px\] {
     margin-top: 10px;
+  }
+  .mt-\[12px\] {
+    margin-top: 12px;
   }
   .mt-\[15px\] {
     margin-top: 15px;
@@ -628,6 +640,9 @@
   }
   .mt-\[58px\] {
     margin-top: 58px;
+  }
+  .mt-\[59px\] {
+    margin-top: 59px;
   }
   .mt-\[60px\] {
     margin-top: 60px;
@@ -691,9 +706,6 @@
   }
   .mb-\[167px\] {
     margin-bottom: 167px;
-  }
-  .mb-\[175px\] {
-    margin-bottom: 175px;
   }
   .mb-\[191px\] {
     margin-bottom: 191px;
@@ -779,6 +791,9 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[62px\] {
+    height: 62px;
+  }
   .h-\[64px\] {
     height: 64px;
   }
@@ -844,9 +859,6 @@
   }
   .h-\[231px\] {
     height: 231px;
-  }
-  .h-\[240px\] {
-    height: 240px;
   }
   .h-\[245px\] {
     height: 245px;
@@ -926,8 +938,14 @@
   .h-\[590px\] {
     height: 590px;
   }
+  .h-\[605px\] {
+    height: 605px;
+  }
   .h-\[617px\] {
     height: 617px;
+  }
+  .h-\[635px\] {
+    height: 635px;
   }
   .h-\[636px\] {
     height: 636px;
@@ -937,6 +955,9 @@
   }
   .h-\[663px\] {
     height: 663px;
+  }
+  .h-\[665px\] {
+    height: 665px;
   }
   .h-\[667px\] {
     height: 667px;
@@ -973,6 +994,9 @@
   }
   .h-\[977px\] {
     height: 977px;
+  }
+  .h-\[1036px\] {
+    height: 1036px;
   }
   .h-\[1080px\] {
     height: 1080px;
@@ -1106,6 +1130,9 @@
   .w-\[200px\] {
     width: 200px;
   }
+  .w-\[214px\] {
+    width: 214px;
+  }
   .w-\[225px\] {
     width: 225px;
   }
@@ -1141,9 +1168,6 @@
   }
   .w-\[303px\] {
     width: 303px;
-  }
-  .w-\[310px\] {
-    width: 310px;
   }
   .w-\[317px\] {
     width: 317px;
@@ -1186,6 +1210,9 @@
   }
   .w-\[418px\] {
     width: 418px;
+  }
+  .w-\[420px\] {
+    width: 420px;
   }
   .w-\[444px\] {
     width: 444px;
@@ -1316,6 +1343,9 @@
   .w-\[850px\] {
     width: 850px;
   }
+  .w-\[865px\] {
+    width: 865px;
+  }
   .w-\[867px\] {
     width: 867px;
   }
@@ -1336,6 +1366,9 @@
   }
   .w-\[960px\] {
     width: 960px;
+  }
+  .w-\[985px\] {
+    width: 985px;
   }
   .w-\[992px\] {
     width: 992px;
@@ -1447,8 +1480,14 @@
   .resize {
     resize: both;
   }
+  .resize-none {
+    resize: none;
+  }
   .list-disc {
     list-style-type: disc;
+  }
+  .appearance-none {
+    appearance: none;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1648,8 +1687,14 @@
   .border-\[\#004990\] {
     border-color: #004990;
   }
+  .border-\[\#BFBFBF\] {
+    border-color: #BFBFBF;
+  }
   .border-\[\#D2D2D2\] {
     border-color: #D2D2D2;
+  }
+  .border-\[\#D9D9D9\] {
+    border-color: #D9D9D9;
   }
   .border-\[\#E0E0E0\] {
     border-color: #E0E0E0;
@@ -1717,6 +1762,9 @@
   .bg-\[\#F3F3F3\] {
     background-color: #F3F3F3;
   }
+  .bg-\[\#F5F5F5\] {
+    background-color: #F5F5F5;
+  }
   .bg-\[\#F7F7F7\] {
     background-color: #F7F7F7;
   }
@@ -1776,6 +1824,9 @@
   }
   .p-\[50px\] {
     padding: 50px;
+  }
+  .p-\[60px\] {
+    padding: 60px;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -1894,8 +1945,14 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .py-\[12px\] {
+    padding-block: 12px;
+  }
   .py-\[14px\] {
     padding-block: 14px;
+  }
+  .py-\[15px\] {
+    padding-block: 15px;
   }
   .py-\[18px\] {
     padding-block: 18px;
@@ -2016,6 +2073,12 @@
   }
   .pr-\[7px\] {
     padding-right: 7px;
+  }
+  .pr-\[21px\] {
+    padding-right: 21px;
+  }
+  .pr-\[40px\] {
+    padding-right: 40px;
   }
   .pr-\[48px\] {
     padding-right: 48px;
@@ -2572,6 +2635,11 @@
     &::placeholder {
       --tw-font-weight: 500;
       font-weight: 500;
+    }
+  }
+  .placeholder\:text-\[\#4A4A4A\] {
+    &::placeholder {
+      color: #4A4A4A;
     }
   }
   .placeholder\:text-white {

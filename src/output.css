@@ -623,6 +623,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[51px\] {
+    margin-top: 51px;
+  }
   .mt-\[56px\] {
     margin-top: 56px;
   }
@@ -692,14 +695,14 @@
   .mb-\[167px\] {
     margin-bottom: 167px;
   }
-  .mb-\[175px\] {
-    margin-bottom: 175px;
-  }
   .mb-\[191px\] {
     margin-bottom: 191px;
   }
   .mb-\[252px\] {
     margin-bottom: 252px;
+  }
+  .mb-\[260px\] {
+    margin-bottom: 260px;
   }
   .mb-\[292px\] {
     margin-bottom: 292px;
@@ -757,6 +760,9 @@
   }
   .h-\[25px\] {
     height: 25px;
+  }
+  .h-\[34px\] {
+    height: 34px;
   }
   .h-\[40px\] {
     height: 40px;
@@ -845,9 +851,6 @@
   .h-\[231px\] {
     height: 231px;
   }
-  .h-\[240px\] {
-    height: 240px;
-  }
   .h-\[245px\] {
     height: 245px;
   }
@@ -914,6 +917,9 @@
   .h-\[517px\] {
     height: 517px;
   }
+  .h-\[537px\] {
+    height: 537px;
+  }
   .h-\[539px\] {
     height: 539px;
   }
@@ -925,6 +931,9 @@
   }
   .h-\[590px\] {
     height: 590px;
+  }
+  .h-\[608px\] {
+    height: 608px;
   }
   .h-\[617px\] {
     height: 617px;
@@ -1142,9 +1151,6 @@
   .w-\[303px\] {
     width: 303px;
   }
-  .w-\[310px\] {
-    width: 310px;
-  }
   .w-\[317px\] {
     width: 317px;
   }
@@ -1259,6 +1265,12 @@
   .w-\[592px\] {
     width: 592px;
   }
+  .w-\[593\] {
+    width: 593;
+  }
+  .w-\[593px\] {
+    width: 593px;
+  }
   .w-\[600px\] {
     width: 600px;
   }
@@ -1276,6 +1288,9 @@
   }
   .w-\[634px\] {
     width: 634px;
+  }
+  .w-\[640px\] {
+    width: 640px;
   }
   .w-\[678px\] {
     width: 678px;
@@ -1626,6 +1641,10 @@
     border-inline-start-style: var(--tw-border-style);
     border-inline-start-width: 3px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
@@ -1665,6 +1684,9 @@
   }
   .border-b-\[\#D6D6D6\] {
     border-bottom-color: #D6D6D6;
+  }
+  .border-b-\[\#FFFFFF\] {
+    border-bottom-color: #FFFFFF;
   }
   .bg-\[\#0B90BF\] {
     background-color: #0B90BF;
@@ -1776,6 +1798,9 @@
   }
   .p-\[50px\] {
     padding: 50px;
+  }
+  .p-\[60px\] {
+    padding: 60px;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -1896,6 +1921,9 @@
   }
   .py-\[14px\] {
     padding-block: 14px;
+  }
+  .py-\[15px\] {
+    padding-block: 15px;
   }
   .py-\[18px\] {
     padding-block: 18px;
@@ -2572,6 +2600,11 @@
     &::placeholder {
       --tw-font-weight: 500;
       font-weight: 500;
+    }
+  }
+  .placeholder\:text-\[\#FFFFFF\] {
+    &::placeholder {
+      color: #FFFFFF;
     }
   }
   .placeholder\:text-white {

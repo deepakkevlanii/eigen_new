@@ -1,467 +1,1375 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eigen</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eigen</title>
-  <link rel="stylesheet" href="./src/output.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-
-<body style="font-family: Montserrat !important" class="overflow-x-hidden w-[100vw]">
-  <section class="relative min-h-[900px] md:min-h-[1080px] px-4 lg:px-8 bg-[#004990] overflow-hidden">
-    <div class="max-w-[1700px] mx-auto pt-[100px] md:pt-[186px]">
-      <!-- Heading + Paragraph Container -->
-      <div class="max-w-[1575px] flex flex-col lg:flex-row justify-between gap-6 lg:gap-0">
-        <!-- Heading -->
-        <div class="text-white w-full lg:max-w-[634px]">
-          <h1 id="home_heading"
-            class="font-['Montserrat'] font-bold text-[28px] sm:text-[36px] lg:text-[42px] xl:text-[50px] leading-snug md:leading-[1.25] transition-all opacity-0">
-            Shaping the Future of Engineering Innovation
-          </h1>
+  <body
+    style="font-family: Montserrat !important"
+    class="overflow-x-hidden w-[100vw]"
+  >
+    <header class="fixed z-[999] w-full">
+      <!-- Mobile Layout (Below lg) -->
+      <div class="bg-[#004990] text-white opacity-100 h-20 pt-2 md:pt-0">
+        <div
+          class="flex justify-between items-center w-[95%] 2xl:w-[90%] mx-auto lg:hidden"
+        >
+          <div>
+            <a
+              href="tel:+918068476500"
+              class="flex justify-start items-center cursor-pointer text-nowrap font-[500] text-xs gap-[4px] my-1 2xl:my-0"
+              style="font-family: Montserrat"
+            >
+              <img src="./assets/images/call.png" alt="" class="h-[15px]" />
+              <p>(+91) 80 68476500</p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="mailto:info@eigenengineering.com"
+              class="flex justify-center items-center cursor-pointer text-nowrap font-[500] text-xs gap-[4px] my-1 2xl:my-0"
+              style="font-family: Montserrat"
+            >
+              <i class="fa-solid fa-envelope text-[16px]"></i>
+              <p>info@eigenengineering.com</p>
+            </a>
+          </div>
         </div>
+        <div
+          class="flex justify-between items-center lg:h-full w-[95%] 2xl:w-[90%] mx-auto"
+        >
+          <!-- Left Side -->
+          <div
+            class="flex items-center justify-between gap-[10px] 2xl:gap-[20px]"
+          >
+            <div class="flex items-center justify-between gap-1">
+              <a
+                href="#"
+                target="_blank"
+                class="text-[22px] hover:text-gray-300 transition-all"
+                style="transition: all 0.5s ease-in-out"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
+                style="transition: all 0.5s ease-in-out"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
+                style="transition: all 0.5s ease-in-out"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <div
+              class="hidden lg:block 2xl:flex items-center justify-between gap-3"
+            >
+              <div>
+                <a
+                  href="tel:+918068476500"
+                  class="flex justify-start items-center cursor-pointer text-nowrap font-[500] text-xs gap-[4px] my-1 2xl:my-0"
+                  style="font-family: Montserrat"
+                >
+                  <img src="./assets/images/call.png" alt="" class="h-[15px]" />
+                  <p>(+91) 80 68476500</p>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="mailto:info@eigenengineering.com"
+                  class="flex justify-center items-center cursor-pointer text-nowrap font-[500] text-xs gap-[4px] my-1 2xl:my-0"
+                  style="font-family: Montserrat"
+                >
+                  <i class="fa-solid fa-envelope text-[16px]"></i>
+                  <p>info@eigenengineering.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
 
-        <!-- Paragraph -->
-        <div class="text-white w-full lg:max-w-[850px]">
-          <p id="home_para"
-            class="font-['Montserrat'] font-light text-[16px] sm:text-[18px] lg:text-[22px] leading-snug transition-all tracking-[0.5px] md:tracking-[1px] opacity-0">
-            Delivering cutting-edge solutions in precision manufacturing and
-            engineering design, trusted by industries worldwide.
+          <!-- Middle -->
+          <p
+            class="font-[400] text-center text-[10px] 2xl:text-[14px] hidden lg:block"
+            style="font-family: Montserrat"
+          >
+            AS 9100 D, ISO 9001:2015, ISO 45001:2018, ISO 14001:2015, ISO 9001,
+            IATF 16949 Certified Company
           </p>
+
+          <!-- Right Side -->
+          <div class="flex items-center justify-between gap-[20px]">
+            <div
+              class="2xl:w-[200px] h-[40px] bg-[#003F7F] rounded-full flex items-center px-4 space-x-2"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"
+                />
+              </svg>
+              <input
+                type="search"
+                placeholder="Search"
+                class="bg-transparent text-white placeholder-white font-medium text-base focus:outline-none w-full"
+              />
+            </div>
+
+            <div class="h-[50px] max-w-[150px] hidden lg:block">
+              <img
+                src="./assets/images/image.png"
+                alt=""
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Swiper Carousel -->
-    <div class="max-w-[1714px] mx-auto mt-10 lg:mt-[75px]" data-aos="fade-up" data-aos-easing="linear"
-      data-aos-duration="1000" data-aos-once="true">
-      <div class="swiper mySwiper relative">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/images/149.jpg" alt="Slide 1" class="w-full h-auto object-cover" />
+      <!-- Main Navigation -->
+      <nav
+        class="bg-[rgb(0,49,97,0.95)] text-white relative"
+        style="
+          border-top: 1px solid rgba(76, 128, 177, 0.9);
+          border-bottom: 1px solid rgba(76, 128, 177, 0.9);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+        "
+      >
+        <div
+          class="flex justify-between items-center h-20 w-[95%] 2xl:w-[90%] mx-auto relative z-50"
+        >
+          <div class="flex justify-center items-center gap-[20px]">
+            <button
+              id="menu-toggle"
+              class="text-white focus:outline-none text-4xl xl:hidden"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Logo -->
+            <div class="h-8 w-[70px] sm:h-14 sm:w-[100px] 2xl:w-[120px]">
+              <img
+                src="./assets/images/logo.png"
+                alt="Eigen Logo"
+                class="h-full w-full"
+              />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/149.jpg" alt="Slide 2" class="w-full h-auto object-cover" />
+
+          <!-- Navigation Menu -->
+          <div class="hidden xl:block">
+            <ul
+              class="flex justify-between items-center 2xl:max-w-[1180px] font-['Montserrat'] font-[400] text-[12px] 2xl:text-[17px] gap-5"
+            >
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >About Us</a
+                >
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Capabilities <i class="fa-solid fa-angle-down"></i
+                ></a>
+
+                <div
+                  class="absolute left-0 top-full hidden group-hover:block z-10 w-[460px]"
+                >
+                  <div class="relative">
+                    <ul
+                      class="p-6 2xl:p-10 text-white mt-8 bg-[rgba(7,36,65,0.8)] rounded-r-3xl rounded-l-2xl text-nowrap font-['Montserrat'] text-[19px] backdrop-blur-lg relative overflow-hidden before:content-[''] before:rounded-r-3xl before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(7,36,65,0.3)] before:backdrop-blur-md before:-z-10 before:rounded-3xl"
+                      style="
+                        border: 1px solid rgba(241, 241, 241, 0.3);
+                        backdrop-filter: blur(4px);
+                        -webkit-backdrop-filter: blur(4px);
+                      "
+                    >
+                      <div
+                        class="absolute h-full w-3 bg-[#004990] top-0 left-0"
+                      ></div>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Overview</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Precision Metal Stamping</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Press Tool Design and Development</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Busbar Manufacturing</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Sub-Assembly</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Welding</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Surface Treatment</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Prototyping</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="block px-4 py-2 hover:text-gray-300 transition-all"
+                          style="transition: all 0.5s ease-in-out"
+                          >Other Services</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Industries <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div
+                  class="absolute left-0 top-full hidden group-hover:block z-10 w-[460px]"
+                >
+                  <ul
+                    class="p-6 2xl:p-10 text-white mt-8 bg-[rgba(7,36,65,0.8)] rounded-r-3xl rounded-l-2xl text-nowrap font-['Montserrat'] text-[19px] backdrop-blur-lg relative overflow-hidden before:content-[''] before:rounded-r-3xl before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(7,36,65,0.3)] before:backdrop-blur-md before:-z-10 before:rounded-3xl"
+                    style="
+                      border: 1px solid rgba(241, 241, 241, 0.3);
+                      backdrop-filter: blur(4px);
+                      -webkit-backdrop-filter: blur(4px);
+                    "
+                  >
+                    <div
+                      class="absolute h-full w-3 bg-[#004990] top-0 left-0"
+                    ></div>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Overview</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >E-Mobility</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Battery Energy Storage Systems (BESS)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Connectors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Aerospace</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Electrical & Electronics</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Automotive and Ancillary</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Mobile Device</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Quality</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Products</a
+                >
+              </li>
+              <li class="relative group">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Media <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div
+                  class="absolute left-0 top-full hidden group-hover:block z-10 w-[460px]"
+                >
+                  <ul
+                    class="p-6 2xl:p-10 text-white mt-8 bg-[rgba(7,36,65,0.8)] rounded-r-3xl rounded-l-2xl text-nowrap font-['Montserrat'] text-[19px] backdrop-blur-lg relative overflow-hidden before:content-[''] before:rounded-r-3xl before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(7,36,65,0.3)] before:backdrop-blur-md before:-z-10 before:rounded-3xl"
+                    style="
+                      border: 1px solid rgba(241, 241, 241, 0.3);
+                      backdrop-filter: blur(4px);
+                      -webkit-backdrop-filter: blur(4px);
+                    "
+                  >
+                    <div
+                      class="absolute h-full w-3 bg-[#004990] top-0 left-0"
+                    ></div>
+                    <li>
+                      <a
+                        href="./faq.html"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >FAQ</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Videos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./Infographics.html"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Infographics</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >E-Books</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Case Study</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="block px-4 py-2 hover:text-gray-300 transition-all"
+                        style="transition: all 0.5s ease-in-out"
+                        >Blogs</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >News & Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Facility</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-gray-300 transition-all"
+                  style="transition: all 0.5s ease-in-out"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/149.jpg" alt="Slide 3" class="w-full h-auto object-cover" />
+          <!-- Button -->
+          <div>
+            <button
+              class="bg-white text-[#004990] cursor-pointer px-2 2xl:px-0 w-[140px] 2xl:w-[175px] h-[40px] rounded-full font-['Montserrat'] font-semibold text-[12px] 2xl:text-sm hover:bg-gray-300 hover:text-[#004990] transition-all"
+              style="transition: all 0.5s ease-in-out"
+            >
+              Request for Quote
+            </button>
           </div>
         </div>
+      </nav>
+      <!-- Overlay -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black/70 bg-opacity-50 hidden z-40"
+      ></div>
 
-        <div class="swiper-button-next text-white"></div>
-        <div class="swiper-button-prev text-white"></div>
+      <!-- Slide-out Sidebar Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 left-0 w-64 h-full bg-[#004990] text-white shadow-lg -translate-x-full transition-transform duration-300 z-50"
+      >
+        <div class="p-6 space-y-4 font-['Montserrat'] text-[17px] relative">
+          <!-- Close Button -->
+          <button
+            id="close-menu"
+            class="absolute top-4 right-4 text-white text-4xl"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+
+          <!-- Accordion Container -->
+          <div class="space-y-2 mt-10" id="accordion-container">
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <button
+                class="accordion-toggle w-full flex justify-between items-center py-2 text-lg font-semibold"
+              >
+                Capabilities
+                <i class="fa-solid fa-angle-down transition-transform"></i>
+              </button>
+              <ul class="accordion-content pl-4 mt-2 space-y-2 hidden">
+                <li><a href="#" class="hover:underline">Overview</a></li>
+                <li>
+                  <a href="#" class="hover:underline"
+                    >Precision Metal Stamping</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline"
+                    >Press Tool Design and Development</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="accordion-item">
+              <button
+                class="accordion-toggle w-full flex justify-between items-center py-2 text-lg font-semibold"
+              >
+                Industries
+                <i class="fa-solid fa-angle-down transition-transform"></i>
+              </button>
+              <ul class="accordion-content pl-4 mt-2 space-y-2 hidden">
+                <li><a href="#" class="hover:underline">Overview</a></li>
+                <li><a href="#" class="hover:underline">E-Mobility</a></li>
+                <li><a href="#" class="hover:underline">BESS</a></li>
+              </ul>
+            </div>
+
+            <div class="accordion-item">
+              <button
+                class="accordion-toggle w-full flex justify-between items-center py-2 text-lg font-semibold"
+              >
+                Media
+                <i class="fa-solid fa-angle-down transition-transform"></i>
+              </button>
+              <ul class="accordion-content pl-4 mt-2 space-y-2 hidden">
+                <li><a href="./faq.html" class="hover:underline">FAQ</a></li>
+                <li><a href="#" class="hover:underline">Videos</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Simple Menu Items -->
+          <div class="pt-4 space-y-2 border-t border-white/30">
+            <a href="#" class="block hover:underline">About Us</a>
+            <a href="#" class="block hover:underline">Quality</a>
+            <a href="#" class="block hover:underline">Products</a>
+            <a href="#" class="block hover:underline">News & Events</a>
+            <a href="#" class="block hover:underline">Facility</a>
+            <a href="#" class="block hover:underline">Contact Us</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    <section
+      class="relative min-h-[900px] md:min-h-[1080px] px-4 lg:px-8 bg-[#004990] overflow-hidden"
+    >
+      <div class="max-w-[1700px] mx-auto pt-[100px] md:pt-[186px]">
+        <!-- Heading + Paragraph Container -->
+        <div
+          class="max-w-[1575px] flex flex-col lg:flex-row justify-between gap-6 lg:gap-0"
+        >
+          <!-- Heading -->
+          <div class="text-white w-full lg:max-w-[634px]">
+            <h1
+              id="home_heading"
+              class="font-['Montserrat'] font-bold text-[28px] sm:text-[36px] lg:text-[42px] xl:text-[50px] leading-snug md:leading-[1.25] transition-all opacity-0"
+            >
+              Shaping the Future of Engineering Innovation
+            </h1>
+          </div>
 
-    <!-- Info Box -->
-    <div
-      class="absolute right-0 bottom-[-360px] md:bottom-[-410px] z-10 w-[90%] lg:w-[500px] 2xl:w-[678px] px-4 py-6 2xl:px-12 2xl:py-[50px]"
-      id="home_box" style="
+          <!-- Paragraph -->
+          <div class="text-white w-full lg:max-w-[850px]">
+            <p
+              id="home_para"
+              class="font-['Montserrat'] font-light text-[16px] sm:text-[18px] lg:text-[22px] leading-snug transition-all tracking-[0.5px] md:tracking-[1px] opacity-0"
+            >
+              Delivering cutting-edge solutions in precision manufacturing and
+              engineering design, trusted by industries worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper Carousel -->
+      <div
+        class="max-w-[1714px] mx-auto mt-10 lg:mt-[75px]"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <div class="swiper mySwiper relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/149.jpg"
+                alt="Slide 1"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/149.jpg"
+                alt="Slide 2"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/149.jpg"
+                alt="Slide 3"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="swiper-button-next text-white"></div>
+          <div class="swiper-button-prev text-white"></div>
+        </div>
+      </div>
+
+      <!-- Info Box -->
+      <div
+        class="absolute right-0 bottom-[-360px] md:bottom-[-410px] z-10 w-[90%] lg:w-[500px] 2xl:w-[678px] px-4 py-6 2xl:px-12 2xl:py-[50px]"
+        id="home_box"
+        style="
           background: rgba(0, 43, 85, 0.7);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           backdrop-filter: blur(6.9px);
           -webkit-backdrop-filter: blur(6.9px);
           border-top: 1.5px solid rgba(31, 31, 31, 0.66);
           border: 0.5px solid rgba(31, 31, 31, 0.66);
-        ">
-      <h1 class="text-[#A4E3FA] font-['Montserrat'] font-semibold text-[18px] sm:text-[20px] md:text-[23px]">
-        The Eigen Difference
-      </h1>
-      <p class="font-['Montserrat'] font-light text-white text-[14px] sm:text-[15px] mt-2">
-        Leverage our technical expertise to produce less expensive parts:
-      </p>
-      <ul
-        class="font-['Montserrat'] font-light text-white text-[13px] sm:text-[15px] list-disc px-6 leading-relaxed marker:text-[8px] flex flex-col gap-[4px]">
-        <li>Lower Part and Tooling costs</li>
-        <li>More Precise parts can now be stamped</li>
-        <li>End to End Metal Stamping Solutions Provider</li>
-        <li>Plastic Part</li>
-      </ul>
+        "
+      >
+        <h1
+          class="text-[#A4E3FA] font-['Montserrat'] font-semibold text-[18px] sm:text-[20px] md:text-[23px]"
+        >
+          The Eigen Difference
+        </h1>
+        <p
+          class="font-['Montserrat'] font-light text-white text-[14px] sm:text-[15px] mt-2"
+        >
+          Leverage our technical expertise to produce less expensive parts:
+        </p>
+        <ul
+          class="font-['Montserrat'] font-light text-white text-[13px] sm:text-[15px] list-disc px-6 leading-relaxed marker:text-[8px] flex flex-col gap-[4px]"
+        >
+          <li>Lower Part and Tooling costs</li>
+          <li>More Precise parts can now be stamped</li>
+          <li>End to End Metal Stamping Solutions Provider</li>
+          <li>Plastic Part</li>
+        </ul>
 
-      <!-- Decorative Circle -->
-      <div
-        class="h-[80px] w-[80px] md:h-[120px] md:w-[120px] absolute -top-[80px] md:-top-[121px] -left-[80px] md:-left-[121.5px]"
-        style="
+        <!-- Decorative Circle -->
+        <div
+          class="h-[80px] w-[80px] md:h-[120px] md:w-[120px] absolute -top-[80px] md:-top-[121px] -left-[80px] md:-left-[121.5px]"
+          style="
             background: rgba(164, 227, 250, 0.7);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(6.9px);
             -webkit-backdrop-filter: blur(6.9px);
-          "></div>
-    </div>
-
-    <!-- Vector Background -->
-    <div>
-      <img src="./assets/images/hero-vector.png" alt="Vector"
-        class="absolute top-0 right-0 w-[280px] sm:w-[400px] lg:w-[500px] -z-10" />
-    </div>
-  </section>
-
-  <section class="max-w-[1728px] mx-auto px-4 lg:px-8 pt-[100px] md:pt-[132px] z-30 relative">
-    <!-- Heading -->
-    <div class="w-full max-w-4xl font-['Montserrat'] overflow-hidden">
-      <h1 class="font-semibold text-[28px] sm:text-[36px] lg:text-[42px] xl:text-[46px] text-[#4A4A4A] leading-[1.3]"
-        data-aos="slide-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-        Eigen - the leader in <br />
-        Precision Metal Stamping
-      </h1>
-    </div>
-
-    <!-- Paragraphs -->
-    <div
-      class="font-semibold text-[#606060] flex flex-col lg:flex-row justify-between items-start w-full mt-6 gap-6 overflow-hidden">
-      <p class="w-full lg:w-[60%] text-[16px] sm:text-[18px]" data-aos="slide-up" data-aos-easing="linear"
-        data-aos-duration="1000" data-aos-once="true">
-        Eigen is an IATF 16949, ISO AS 9100 D, ISO 45001:2018, ISO 14001:2015
-        and ISO 9001:2015 certified company that specializes in precision
-        press die design, progressive die development and the manufacture of
-        metal stamping components, plastic injection molds, insert and over
-        molds, Electroplating (Barrel), Sub-Assemblies and Value Added
-        Services.
-      </p>
-
-      <p class="w-full lg:w-[38%] text-[16px] sm:text-[18px]" data-aos="slide-up" data-aos-easing="linear"
-        data-aos-duration="1000" data-aos-once="true">
-        We work with a wide range of industries, such as Electrical &
-        Electronics, Aerospace, Automotive, Consumer durables and others in
-        India, Europe and US markets.
-      </p>
-    </div>
-
-    <!-- Image & Video CTA -->
-    <div class="relative w-full max-w-[1430px] mx-auto mt-12 md:mt-20" data-aos="slide-up" data-aos-easing="linear"
-      data-aos-duration="1000" data-aos-once="true">
-      <img src="./assets/images/DSC06952.jpg" alt="Close Tolerance Components" class="w-full h-auto object-cover" />
-
-      <!-- Text + Play Button Row -->
-      <div class="absolute bottom-4 sm:bottom-6 lg:bottom-[35px] z-50 w-full px-4 sm:px-6 lg:px-12">
-        <div class="flex flex-row justify-between items-center gap-4">
-          <!-- Left Text -->
-          <div class="border-l-4 sm:border-l-6 lg:border-l-[12px] border-[#2393FF] pl-4 sm:pl-6 lg:pl-12 max-w-[80%]">
-            <p class="text-white text-[16px] sm:text-[18px] md:text-[22px] lg:text-2xl xl:text-3xl leading-snug">
-              Custom Engineered Close Tolerance Components
-            </p>
-          </div>
-
-          <!-- Play Button -->
-          <div
-            class="flex-shrink-0 bg-white rounded-full h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 xl:h-[90px] xl:w-[90px] flex justify-center items-center cursor-pointer"
-            id="openVideo">
-            <i class="fa-solid fa-play text-sm sm:text-base md:text-xl xl:text-4xl text-[#2393FF]"></i>
-          </div>
-        </div>
+          "
+        ></div>
       </div>
 
-      <!-- Video Modal -->
-      <div id="videoModal"
-        class="fixed inset-0 bg-[rgba(0,0,0,.9)] bg-opacity-70 hidden flex items-center justify-center z-50 overflow-y-auto px-4">
-        <div class="relative bg-white rounded-lg shadow-lg w-full max-w-3xl mx-auto">
-          <!-- Close Button -->
-          <button id="closeVideo"
-            class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl hover:bg-red-800 transition z-50">
-            &times;
-          </button>
-
-          <!-- Video Box -->
-          <div class="relative w-full pt-[56.25%] border-4 border-black rounded-lg overflow-hidden">
-            <iframe class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/xHLPxEBpZa8?rel=0&showinfo=0&autoplay=0" title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
+      <!-- Vector Background -->
+      <div>
+        <img
+          src="./assets/images/hero-vector.png"
+          alt="Vector"
+          class="absolute top-0 right-0 w-[280px] sm:w-[400px] lg:w-[500px] -z-10"
+        />
       </div>
-    </div>
+    </section>
 
-    <!-- Decorative Boxes -->
-    <div class="absolute top-[86px] right-[0px]">
-      <div class="h-[50px] w-[50px] md:h-[80px] md:w-[80px] bg-[#004990] opacity-[20%]"></div>
+    <section
+      class="max-w-[1728px] mx-auto px-4 lg:px-8 pt-[100px] md:pt-[132px] z-30 relative"
+    >
+      <!-- Heading -->
+      <div class="w-full max-w-4xl font-['Montserrat'] overflow-hidden">
+        <h1
+          class="font-semibold text-[28px] sm:text-[36px] lg:text-[42px] xl:text-[46px] text-[#4A4A4A] leading-[1.3]"
+          data-aos="slide-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Eigen - the leader in <br />
+          Precision Metal Stamping
+        </h1>
+      </div>
+
+      <!-- Paragraphs -->
       <div
-        class="h-[44px] w-[44px] md:h-[72px] md:w-[72px] bg-[#D9D9D9] absolute -bottom-[44px] md:-bottom-[72px] -left-[44px] md:-left-[72px] opacity-[20%]">
+        class="font-semibold text-[#606060] flex flex-col lg:flex-row justify-between items-start w-full mt-6 gap-6 overflow-hidden"
+      >
+        <p
+          class="w-full lg:w-[60%] text-[16px] sm:text-[18px]"
+          data-aos="slide-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Eigen is an IATF 16949, ISO AS 9100 D, ISO 45001:2018, ISO 14001:2015
+          and ISO 9001:2015 certified company that specializes in precision
+          press die design, progressive die development and the manufacture of
+          metal stamping components, plastic injection molds, insert and over
+          molds, Electroplating (Barrel), Sub-Assemblies and Value Added
+          Services.
+        </p>
+
+        <p
+          class="w-full lg:w-[38%] text-[16px] sm:text-[18px]"
+          data-aos="slide-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          We work with a wide range of industries, such as Electrical &
+          Electronics, Aerospace, Automotive, Consumer durables and others in
+          India, Europe and US markets.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <section class="relative z-0 bg-[#F7F7F7]">
-    <div class="relative flex h-full lg:min-h-[1125px] overflow-hidden">
-      <!-- Right Side Background Image -->
-      <div class="absolute top-0 right-0 w-[50%] 2xl:w-full h-[100%] bg-contain bg-right z-0 bg-no-repeat"
-        style="background-image: url('./assets/images/DSC00777.jpg')" data-aos="zoom-in" data-aos-easing="linear"
-        data-aos-duration="1000" data-aos-once="true"></div>
+      <!-- Image & Video CTA -->
+      <div
+        class="relative w-full max-w-[1430px] mx-auto mt-12 md:mt-20"
+        data-aos="slide-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <img
+          src="./assets/images/DSC06952.jpg"
+          alt="Close Tolerance Components"
+          class="w-full h-auto object-cover"
+        />
 
-      <!-- Left Content -->
-      <div class="relative z-10 w-full px-4 lg:px-8 max-w-[1720px] mx-auto py-[100px]">
-        <!-- Heading -->
-        <div class="max-w-[800px]">
-          <h1
-            class="font-semibold text-[32px] md:text-[38px] lg:text-[46px] text-[#4A4A4A] max-w-[515px] leading-[1.3] mb-6"
-            data-aos="slide-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-            We offer a wide array of services
-          </h1>
-          <p class="max-w-[520px] text-base md:text-lg font-[400] text-[#606060] mb-12" data-aos="slide-up"
-            data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" style="font-family: 'Montserrat'">
-            We work with a wide range of industries such as E-Mobility,
-            Battery Energy Storage Systems, Aerospace, Automotive, Electrical
-            & Electronics and others in India, Europe, and US markets.
-          </p>
+        <!-- Text + Play Button Row -->
+        <div
+          class="absolute bottom-4 sm:bottom-6 lg:bottom-[35px] z-50 w-full px-4 sm:px-6 lg:px-12"
+        >
+          <div class="flex flex-row justify-between items-center gap-4">
+            <!-- Left Text -->
+            <div
+              class="border-l-4 sm:border-l-6 lg:border-l-[12px] border-[#2393FF] pl-4 sm:pl-6 lg:pl-12 max-w-[80%]"
+            >
+              <p
+                class="text-white text-[16px] sm:text-[18px] md:text-[22px] lg:text-2xl xl:text-3xl leading-snug"
+              >
+                Custom Engineered Close Tolerance Components
+              </p>
+            </div>
+
+            <!-- Play Button -->
+            <div
+              class="flex-shrink-0 bg-white rounded-full h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 xl:h-[90px] xl:w-[90px] flex justify-center items-center cursor-pointer"
+              id="openVideo"
+            >
+              <i
+                class="fa-solid fa-play text-sm sm:text-base md:text-xl xl:text-4xl text-[#2393FF]"
+              ></i>
+            </div>
+          </div>
         </div>
 
-        <!-- Cards -->
-        <div class="max-w-[980px] flex justify-start flex-wrap gap-[25px]" data-aos="slide-up" data-aos-easing="linear"
-          data-aos-duration="1000" data-aos-once="true">
-          <!-- Card Template -->
-          <!-- Repeat this block for each card with different icon & text -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/designing.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Precision Metal Stamping
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
-            </div>
-          </div>
+        <!-- Video Modal -->
+        <div
+          id="videoModal"
+          class="fixed inset-0 bg-[rgba(0,0,0,.9)] bg-opacity-70 hidden flex items-center justify-center z-50 overflow-y-auto px-4"
+        >
+          <div
+            class="relative bg-white rounded-lg shadow-lg w-full max-w-3xl mx-auto"
+          >
+            <!-- Close Button -->
+            <button
+              id="closeVideo"
+              class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl hover:bg-red-800 transition z-50"
+            >
+              &times;
+            </button>
 
-          <!-- Card 2 -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/tools.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Press Tool Design and Development
-              </p>
-            </div>
+            <!-- Video Box -->
             <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/stamping.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Busbar manufacturing
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/assembly.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Sub - Assembly
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/plating.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Welding
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/plastic.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Surface Treatment
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/molding.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Prototyping
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 8 -->
-          <div class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]">
-            <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-              <img src="./assets/images/over-molding.png" alt="" class="w-[60px] h-[60px]" />
-              <p class="text-lg text-[#002B55] font-semibold font-['Montserrat']">
-                Other Services
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0">
-              <p class="text-center text-sm">
-                We Help Design and Manufacture complex die design with close
-                tolerance
-              </p>
+              class="relative w-full pt-[56.25%] border-4 border-black rounded-lg overflow-hidden"
+            >
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/xHLPxEBpZa8?rel=0&showinfo=0&autoplay=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="h-[1080px] bg-[#001D39] overflow-hidden">
-    <div class="flex">
-      <div class="w-1/2">
-        <!-- images -->
-        <div class="relative h-[439px] w-[468px] top-[182px] left-[100px] z-50">
-          <img src="./assets/images/DSC07066.jpg" alt="" class="h-full w-full" data-aos="fade-up-left"
-            data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" />
-          <div class="w-[112px] h-[112px] bg-[#0B90BF] absolute top-[-56px] right-[-56px] z-[-1]"
-            data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"></div>
-        </div>
-        <div class="relative h-[410px] w-[418px] left-[425px] top-[88px] z-20">
-          <img src="./assets/images/DSC06864.jpg" alt="" class="h-full w-full" data-aos="fade-in"
-            data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" />
+      <!-- Decorative Boxes -->
+      <div class="absolute top-[86px] right-[0px]">
+        <div
+          class="h-[50px] w-[50px] md:h-[80px] md:w-[80px] bg-[#004990] opacity-[20%]"
+        ></div>
+        <div
+          class="h-[44px] w-[44px] md:h-[72px] md:w-[72px] bg-[#D9D9D9] absolute -bottom-[44px] md:-bottom-[72px] -left-[44px] md:-left-[72px] opacity-[20%]"
+        ></div>
+      </div>
+    </section>
 
-          <div class="w-[77px] h-[77px] bg-[#004990] absolute top-[65px] left-[-55px] z-[-1]" data-aos="fade-up-right"
-            data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"></div>
-          <div class="w-[48px] h-[48px] bg-[#004990] absolute bottom-[-30px] right-[-30px] z-[-1]" data-aos="fade-right"
-            data-aos-easing=" linear" data-aos-duration="1000" data-aos-once="true"></div>
+    <section class="relative z-0 bg-[#F7F7F7]">
+      <div class="relative flex h-full lg:min-h-[1125px] overflow-hidden">
+        <!-- Right Side Background Image -->
+        <div
+          class="absolute top-0 right-0 w-[50%] 2xl:w-full h-[100%] bg-contain bg-right z-0 bg-no-repeat"
+          style="background-image: url('./assets/images/DSC00777.jpg')"
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        ></div>
+
+        <!-- Left Content -->
+        <div
+          class="relative z-10 w-full px-4 lg:px-8 max-w-[1720px] mx-auto py-[100px]"
+        >
+          <!-- Heading -->
+          <div class="max-w-[800px]">
+            <h1
+              class="font-semibold text-[32px] md:text-[38px] lg:text-[46px] text-[#4A4A4A] max-w-[515px] leading-[1.3] mb-6"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              We offer a wide array of services
+            </h1>
+            <p
+              class="max-w-[520px] text-base md:text-lg font-[400] text-[#606060] mb-12"
+              data-aos="slide-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              style="font-family: 'Montserrat'"
+            >
+              We work with a wide range of industries such as E-Mobility,
+              Battery Energy Storage Systems, Aerospace, Automotive, Electrical
+              & Electronics and others in India, Europe, and US markets.
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div
+            class="max-w-[980px] flex justify-start flex-wrap gap-[25px]"
+            data-aos="slide-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <!-- Card Template -->
+            <!-- Repeat this block for each card with different icon & text -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/designing.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Precision Metal Stamping
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/tools.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Press Tool Design and Development
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/stamping.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Busbar manufacturing
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/assembly.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Sub - Assembly
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/plating.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Welding
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/plastic.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Surface Treatment
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/molding.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Prototyping
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div
+              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+            >
+              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
+                <img
+                  src="./assets/images/over-molding.png"
+                  alt=""
+                  class="w-[60px] h-[60px]"
+                />
+                <p
+                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                >
+                  Other Services
+                </p>
+              </div>
+              <div
+                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+              >
+                <p class="text-center text-sm">
+                  We Help Design and Manufacture complex die design with close
+                  tolerance
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="w-1/2 flex flex-col justify-start h-[1080px] gap-0 border-l-1 border-white" data-aos="slide-down"
-        data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-        <!-- Electrical & Electronics 1 -->
-        <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
-          <img src="assets/images/cpu.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="800" data-aos-once="true" />
-          <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000"
-            data-aos-once="true">
-            <p class="font-semibold text-2xl">Electrical & Electronics</p>
-            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-              O/L relays, circuit breakers, miniature motors, switch gears,
-              electronic article surveillance, tube fuses, and electronic time
-              locks.
-            </p>
+    </section>
+
+    <section class="h-[1080px] bg-[#001D39] overflow-hidden">
+      <div class="flex">
+        <div class="w-1/2">
+          <!-- images -->
+          <div
+            class="relative h-[439px] w-[468px] top-[182px] left-[100px] z-50"
+          >
+            <img
+              src="./assets/images/DSC07066.jpg"
+              alt=""
+              class="h-full w-full"
+              data-aos="fade-up-left"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+            <div
+              class="w-[112px] h-[112px] bg-[#0B90BF] absolute top-[-56px] right-[-56px] z-[-1]"
+              data-aos="fade-up-right"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            ></div>
+          </div>
+          <div
+            class="relative h-[410px] w-[418px] left-[425px] top-[88px] z-20"
+          >
+            <img
+              src="./assets/images/DSC06864.jpg"
+              alt=""
+              class="h-full w-full"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+
+            <div
+              class="w-[77px] h-[77px] bg-[#004990] absolute top-[65px] left-[-55px] z-[-1]"
+              data-aos="fade-up-right"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            ></div>
+            <div
+              class="w-[48px] h-[48px] bg-[#004990] absolute bottom-[-30px] right-[-30px] z-[-1]"
+              data-aos="fade-right"
+              data-aos-easing=" linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            ></div>
           </div>
         </div>
-        <!-- Aerospace 2 -->
         <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
-          <img src="assets/images/flight.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="1000" data-aos-once="true" />
-          <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1100"
-            data-aos-once="true">
-            <p class="font-semibold text-2xl">Aerospace</p>
-            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-              HV relays, connectors, cabin light sensors, electromechanical
-              relays, and aerospace batteries.
-            </p>
+          class="w-1/2 flex flex-col justify-start h-[1080px] gap-0 border-l-1 border-white"
+          data-aos="slide-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <!-- Electrical & Electronics 1 -->
+          <div
+            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+          >
+            <img
+              src="assets/images/cpu.png"
+              class="w-14 h-14"
+              alt=""
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+              data-aos-once="true"
+            />
+            <div
+              class="text-white"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <p class="font-semibold text-2xl">Electrical & Electronics</p>
+              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+                O/L relays, circuit breakers, miniature motors, switch gears,
+                electronic article surveillance, tube fuses, and electronic time
+                locks.
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- Automotive & Ancillary 3 -->
-        <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
-          <img src="assets/images/car.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="1100" data-aos-once="true" />
-          <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1200"
-            data-aos-once="true">
-            <p class="font-semibold text-2xl">Automotive & Ancillary</p>
-            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-              Window lift motors, car door lock actuators, steering locks,
-              coolant pump sealing, light indicators, engine knock sensors,
-              starter solenoid valves, and safety applications.
-            </p>
+          <!-- Aerospace 2 -->
+          <div
+            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+          >
+            <img
+              src="assets/images/flight.png"
+              class="w-14 h-14"
+              alt=""
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            />
+            <div
+              class="text-white"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1100"
+              data-aos-once="true"
+            >
+              <p class="font-semibold text-2xl">Aerospace</p>
+              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+                HV relays, connectors, cabin light sensors, electromechanical
+                relays, and aerospace batteries.
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- Consumer Durables 4 -->
-        <div
-          class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
-          <img src="assets/images/retail.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="1200" data-aos-once="true" />
-          <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1300"
-            data-aos-once="true">
-            <p class="font-semibold text-2xl">Mobile Device</p>
-            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-              Mobile charger contacts, LH & RH terminals, and connectors.
-            </p>
+          <!-- Automotive & Ancillary 3 -->
+          <div
+            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+          >
+            <img
+              src="assets/images/car.png"
+              class="w-14 h-14"
+              alt=""
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1100"
+              data-aos-once="true"
+            />
+            <div
+              class="text-white"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <p class="font-semibold text-2xl">Automotive & Ancillary</p>
+              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+                Window lift motors, car door lock actuators, steering locks,
+                coolant pump sealing, light indicators, engine knock sensors,
+                starter solenoid valves, and safety applications.
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- Industrial Engineering 5 -->
-        <div
-          class="h-[212px] flex justify-start items-center border-white px-[80px] py-8 gap-[30px] font-['Montserrat']">
-          <img src="assets/images/claw.png" class="w-14 h-14" alt="" data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="1300" data-aos-once="true" />
-          <div class="text-white" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1400"
-            data-aos-once="true">
-            <p class="font-semibold text-2xl">Connectors</p>
-            <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
-              Industrial batteries, current bars, and solder tags.
-            </p>
+          <!-- Consumer Durables 4 -->
+          <div
+            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+          >
+            <img
+              src="assets/images/retail.png"
+              class="w-14 h-14"
+              alt=""
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            />
+            <div
+              class="text-white"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1300"
+              data-aos-once="true"
+            >
+              <p class="font-semibold text-2xl">Mobile Device</p>
+              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+                Mobile charger contacts, LH & RH terminals, and connectors.
+              </p>
+            </div>
+          </div>
+          <!-- Industrial Engineering 5 -->
+          <div
+            class="h-[212px] flex justify-start items-center border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+          >
+            <img
+              src="assets/images/claw.png"
+              class="w-14 h-14"
+              alt=""
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1300"
+              data-aos-once="true"
+            />
+            <div
+              class="text-white"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1400"
+              data-aos-once="true"
+            >
+              <p class="font-semibold text-2xl">Connectors</p>
+              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+                Industrial batteries, current bars, and solder tags.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- <section class="h-[1080px] font-['Montserrat'] bg-cover bg-no-repeat bg-center overflow-hidden"
+    <!-- <section class="h-[1080px] font-['Montserrat'] bg-cover bg-no-repeat bg-center overflow-hidden"
     style="background-image: url('./assets/images/bg.jpg')">
     <div class="pt-[122px] text-[#FFFFFF]">
       <div class="h-[75px] overflow-hidden">
@@ -561,784 +1469,1192 @@
     </div>
   </section> -->
 
-  <section class="w-full bg-cover bg-center bg-no-repeat overflow-hidden"
-    style="background-image: url('./assets/images/core-bg.png'); font-family: 'Montserrat';">
-    <div class="max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8" style="height: auto;">
+    <section
+      class="w-full bg-cover bg-center bg-no-repeat overflow-hidden"
+      style="
+        background-image: url('./assets/images/core-bg.png');
+        font-family: 'Montserrat';
+      "
+    >
       <div
-        class="flex flex-col lg:flex-row justify-between items-center lg:gap-[25px] gap-[40px] py-[60px] min-h-[751px] max-w-[1582px]">
-        <!-- Left Image -->
-        <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true"
-          class="w-full max-w-[517px] flex justify-center">
-          <img src="./assets/images/value-wheel.png" alt="Eigen Value Wheel" class="w-full max-w-[517px]" />
+        class="max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8"
+        style="height: auto"
+      >
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center lg:gap-[25px] gap-[40px] py-[60px] min-h-[751px] max-w-[1582px]"
+        >
+          <!-- Left Image -->
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="w-full max-w-[517px] flex justify-center"
+          >
+            <img
+              src="./assets/images/value-wheel.png"
+              alt="Eigen Value Wheel"
+              class="w-full max-w-[517px]"
+            />
+          </div>
+
+          <!-- Right Content -->
+          <div
+            class="w-full max-w-[930px] flex flex-col gap-[22px] lg:text-left"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
+            data-aos-once="true"
+          >
+            <h2
+              class="text-[#FFFFFF] text-[30px] sm:text-[36px] lg:text-[42px] font-bold text-center"
+            >
+              EIGEN CORE VALUES
+            </h2>
+            <p
+              class="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[22px] font-[400] leading-[27px] lg:leading-[31px]"
+            >
+              Eigen’s work ethic is built upon the cornerstones of Quality,
+              Persistence, and Valuable Service. These are our top priorities,
+              and they apply to all aspects of our business. We believe in:
+            </p>
+            <ul
+              class="list-disc pl-6 sm:pl-[35px] flex flex-col items-start gap-[10px]"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="linear"
+              data-aos-once="true"
+            >
+              <li
+                class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]"
+              >
+                Continuous Improvement
+              </li>
+              <li
+                class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]"
+              >
+                Innovation, Adaptability and Creativity
+              </li>
+              <li
+                class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]"
+              >
+                Reliability, Flexibility and Consistency
+              </li>
+              <li
+                class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]"
+              >
+                Proposition and Responsive Development
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 font-['Montserrat'] bg-white">
+      <div class="max-w-[1720px] mx-auto px-4 lg:px-8">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-start gap-10"
+        >
+          <!-- Left Content -->
+          <div class="max-w-[560px]">
+            <div class="mb-6">
+              <p
+                class="text-[32px] sm:text-[40px] md:text-[48px] font-bold text-[#333333] leading-[1.3]"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                Trusted by<br />
+                Great Brands
+              </p>
+            </div>
+
+            <div class="mb-6">
+              <p
+                class="text-[#606060] text-base sm:text-lg"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                Empowering industry leaders with precision engineering,
+                cutting-edge solutions, and unwavering commitment to quality.
+                Our partnerships are built on trust, innovation, and proven
+                excellence.
+              </p>
+            </div>
+
+            <div class="mb-6">
+              <p
+                class="text-[#606060] text-base sm:text-lg"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                data-aos-once="true"
+              >
+                Eigen works and delivers precision to the best in the industry.
+                Here's a look at some of the companies we've partnered with.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Brands Grid -->
+          <div class="relative max-w-[890px]">
+            <div
+              class="flex justify-start flex-wrap gap-2"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <!-- Brand Logos -->
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand1.png"
+                  alt="Brand 1"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand2.png"
+                  alt="Brand 2"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand3.png"
+                  alt="Brand 3"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand4.png"
+                  alt="Brand 4"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand5.png"
+                  alt="Brand 5"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand6.png"
+                  alt="Brand 6"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand7.png"
+                  alt="Brand 7"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand8.jpg"
+                  alt="Brand 8"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand9.png"
+                  alt="Brand 9"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand10.png"
+                  alt="Brand 10"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand11.png"
+                  alt="Brand 11"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand12.png"
+                  alt="Brand 12"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand13.png"
+                  alt="Brand 13"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand14.png"
+                  alt="Brand 14"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand15.png"
+                  alt="Brand 15"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand16.png"
+                  alt="Brand 16"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand17.png"
+                  alt="Brand 17"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand18.png"
+                  alt="Brand 18"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand19.png"
+                  alt="Brand 19"
+                  class="max-w-[120px]"
+                />
+              </div>
+              <div
+                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+              >
+                <img
+                  src="./assets/images/brand20.png"
+                  alt="Brand 20"
+                  class="max-w-[120px]"
+                />
+              </div>
+            </div>
+
+            <!-- Blur Effect -->
+            <div
+              class="absolute bottom-[-80px] left-0 w-full"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
+              <img
+                src="./assets/images/blur.png"
+                alt="Blur Effect"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-[1080px] font-['Montserrat'] relative bg-[#F7F7F7]">
+      <div class="flex">
+        <div class="w-[612px] h-[1080px]">
+          <img
+            src="./assets/images/77214.jpg"
+            alt=""
+            class="w-full h-full"
+            data-aos="zoom-in-right"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            data-aos-once="true"
+          />
+        </div>
+        <div class="pl-[60px] mt-[202px]">
+          <div class="h-[120px] overflow-hidden">
+            <p
+              class="text-[46px] font-semibold text-[#4A4A4A]"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              What Our Clients Say
+            </p>
+            <p
+              class="text-[30px] font-['Montserrat'] font-[200] mt-2"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Delivering Precision, Quality, and Trust
+            </p>
+          </div>
+          <!-- owl -->
+          <div class="relative w-[1255px] overflow-hidden mt-20 font-[400]">
+            <div
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <div class="owl-carousel owl-theme">
+                <div class="pl-[30px]">
+                  <div
+                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
+                  >
+                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#004990]">
+                    Exceptional Precision and Reliability
+                  </h3> -->
+                    <p
+                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                    >
+                      Good experience in fine stamping.
+                    </p>
+                  </div>
+                  <div
+                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
+                  >
+                    <p class="mt-4 font-medium text-white/90">Steiner Jurgen</p>
+                    <p>Bosch, Germany</p>
+                  </div>
+                </div>
+
+                <div class="pl-[30px]">
+                  <div
+                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                  >
+                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    A Partner, Not Just a Vendor
+                  </h3> -->
+                    <p
+                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                    >
+                      Good management makes good association – good association
+                      makes good products. That is Eigen for you!
+                    </p>
+                  </div>
+                  <div
+                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                  >
+                    <p class="mt-4 font-medium text-white/90">Ashida Koji</p>
+                    <p>Denso corporation, Japan,</p>
+                  </div>
+                </div>
+
+                <div class="pl-[30px]">
+                  <div
+                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                  >
+                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    Seamless Collaboration and Outstanding Results
+                  </h3> -->
+                    <p
+                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                    >
+                      Great systems and organisation. You are our potential
+                      supplier for stamped parts.
+                    </p>
+                  </div>
+                  <div
+                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                  >
+                    <p class="mt-4 font-medium text-white/90">Umesh Kini</p>
+                    <p>Global sourcing, Tyco Health care</p>
+                  </div>
+                </div>
+                <div class="pl-[30px]">
+                  <div
+                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                  >
+                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    A Partner, Not Just a Vendor
+                  </h3> -->
+                    <p
+                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                    >
+                      The parts I saw adds to my conviction that you are a
+                      quality Operation. This lends credibility to the nation
+                      and you will be successful in making our parts.
+                    </p>
+                  </div>
+                  <div
+                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                  >
+                    <p class="mt-4 font-medium text-white/90">
+                      Leonard Challenger
+                    </p>
+                    <p>Saft, USA</p>
+                  </div>
+                </div>
+
+                <div class="pl-[30px]">
+                  <div
+                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                  >
+                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
+                    Seamless Collaboration and Outstanding Results
+                  </h3> -->
+                    <p
+                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                    >
+                      Excellent tool room facilities, very satisfied customers.
+                    </p>
+                  </div>
+                  <div
+                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                  >
+                    <p class="mt-4 font-medium text-white/90">
+                      Anil.K.Srivastava
+                    </p>
+                    <p>DGM, Connectwell Industries (P) Ltd.</p>
+                  </div>
+                </div>
+                <div class="pl-[30px] invisible">
+                  <div
+                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
+                  >
+                    <h3
+                      class="w-[270px] text-[21px] font-semibold text-[#004990]"
+                    >
+                      Exceptional Precision and Reliability
+                    </h3>
+                    <p
+                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                    >
+                      Eigen Engineering has been a game-changer for our
+                      manufacturing process. Their attention to detail,
+                      precision, and consistent quality have significantly
+                      improved our product line. Their team truly understands
+                      the importance of delivering on time without compromising
+                      standards.
+                    </p>
+                  </div>
+                  <div
+                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
+                  >
+                    <p class="mt-4 font-medium text-white/90">
+                      – John D., Operations Manager
+                    </p>
+                    <p>Automotive Sector</p>
+                  </div>
+                </div>
+                <div class="pl-[30px] invisible">
+                  <div
+                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
+                  >
+                    <h3
+                      class="w-[270px] text-[21px] font-semibold text-[#004990]"
+                    >
+                      Exceptional Precision and Reliability
+                    </h3>
+                    <p
+                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                    >
+                      Eigen Engineering has been a game-changer for our
+                      manufacturing process. Their attention to detail,
+                      precision, and consistent quality have significantly
+                      improved our product line. Their team truly understands
+                      the importance of delivering on time without compromising
+                      standards.
+                    </p>
+                  </div>
+                  <div
+                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
+                  >
+                    <p class="mt-4 font-medium text-white/90">
+                      – John D., Operations Manager
+                    </p>
+                    <p>Automotive Sector</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 mt-8 pl-[30px]">
+            <button
+              class="prev-btn text-[#004990] opacity-40 text-xl flex items-center justify-center transition"
+              style="transition: all 0.5s ease-in-out"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button
+              class="next-btn text-[#004990] text-3xl flex items-center justify-center transition cursor-pointer"
+              style="transition: all 0.5s ease-in-out"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 top-[130px] z-30">
+        <img
+          src="./assets/images/format_quote.png"
+          alt=""
+          class="h-[186px] grayscale-[100%] opacity-5"
+        />
+      </div>
+    </section>
+
+    <section class="font-['Montserrat'] py-12 lg:h-[636px]">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-start lg:items-center max-w-[1720px] mx-auto px-4 lg:px-8 gap-10"
+      >
+        <!-- Left Content -->
+        <div class="w-full lg:w-[50%]">
+          <div class="overflow-hidden">
+            <h1
+              class="font-bold text-[32px] sm:text-[40px] lg:text-[50px] leading-snug"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+              data-aos-once="true"
+            >
+              A Multinational Clientele
+            </h1>
+          </div>
+          <div class="overflow-hidden mt-5">
+            <p
+              class="text-[16px] sm:text-[18px] lg:text-[20px] text-[#606060] font-[400] max-w-[100%] sm:max-w-[90%] lg:max-w-[565px]"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+              data-aos-once="true"
+            >
+              With operations around the world, chances are Eigen has a presence
+              where you are. Find out what we do in your country, who our
+              partners are and how we're working to develop an even stronger,
+              more satisfied clientele across the globe.
+            </p>
+          </div>
+          <div class="mt-8">
+            <button
+              class="text-[18px] sm:text-[20px] lg:text-[21px] font-semibold text-white bg-[#004990] py-3 px-6 rounded-full hover:bg-[#046acd] transition-all duration-300 ease-in-out"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+              data-aos-once="true"
+            >
+              Get in Touch <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
         </div>
 
-        <!-- Right Content -->
-        <div class="w-full max-w-[930px] flex flex-col gap-[22px]  lg:text-left" data-aos="fade-left"
-          data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
-          <h2 class="text-[#FFFFFF] text-[30px] sm:text-[36px] lg:text-[42px] font-bold text-center">
-            EIGEN CORE VALUES
+        <div class="relative w-full lg:w-[50%] pr-0 lg:pr-[31px]">
+          <img
+            src="./assets/images/map.png"
+            alt="World Map"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="font-['Montserrat'] bg-[#E6F3F7] relative">
+      <div class="relative max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <!-- Background Vector Image -->
+
+        <!-- Section Heading -->
+        <div class="relative z-10 mb-[40px]">
+          <h2
+            class="text-[30px] sm:text-[40px] lg:text-[50px] font-bold text-[#333333]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            data-aos-once="true"
+          >
+            Our Latest Blogs
           </h2>
           <p
-            class="text-[#FFFFFF] text-[18px] sm:text-[20px] lg:text-[22px] font-[400] leading-[27px] lg:leading-[31px]">
-            Eigen’s work ethic is built upon the cornerstones of Quality, Persistence, and Valuable Service.
-            These are our
-            top priorities, and they apply to all aspects of our business. We believe in:
+            class="text-[#606060] text-base sm:text-lg max-w-[100%] sm:max-w-[415px] mt-4"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            data-aos-once="true"
+          >
+            Discover insights, innovations, and industry trends that drive
+            precision and performance
           </p>
-          <ul class="list-disc pl-6 sm:pl-[35px] flex flex-col items-start gap-[10px]" data-aos="fade-up"
-            data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
-            <li
-              class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]">
-              Continuous Improvement
-            </li>
-            <li
-              class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]">
-              Innovation, Adaptability and Creativity
-            </li>
-            <li
-              class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]">
-              Reliability, Flexibility and Consistency
-            </li>
-            <li
-              class="text-[#FFFFFF] text-[20px] sm:text-[21px] lg:text-[23px] font-[400] leading-[26px] lg:leading-[30px]">
-              Proposition and Responsive Development
-            </li>
-          </ul>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="py-16 font-['Montserrat'] bg-white">
-    <div class="max-w-[1720px] mx-auto px-4 lg:px-8">
-      <div class="flex flex-col lg:flex-row justify-between items-start gap-10">
-        <!-- Left Content -->
-        <div class="max-w-[560px]">
-          <div class="mb-6">
-            <p class="text-[32px] sm:text-[40px] md:text-[48px] font-bold text-[#333333] leading-[1.3]"
-              data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800" data-aos-once="true">
-              Trusted by<br />
-              Great Brands
-            </p>
+        <!-- Blog Cards -->
+        <div
+          class="relative z-10 grid gap-8 md:gap-10 lg:gap-[60px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- Blog Card 1 -->
+          <div
+            class="w-full"
+            data-aos="slide-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            data-aos-once="true"
+          >
+            <img
+              src="assets/images/blog1.jpg"
+              alt=""
+              class="w-full h-[250px] md:h-[300px] lg:h-[350px] object-cover"
+            />
+            <div class="py-5">
+              <h3 class="text-[#004990] text-xl md:text-2xl font-semibold mt-6">
+                Revolutionizing Precision Engineering
+              </h3>
+              <p class="text-gray-600 mt-2.5 text-sm md:text-base">
+                Discover how cutting-edge technology and innovative techniques
+                are shaping the future of precision manufacturing, ensuring
+                accuracy and efficiency in every component.
+              </p>
+              <button
+                class="mt-6 text-[#0B90BF] font-medium hover:text-[#004990] transition-all duration-300 ease-in-out"
+              >
+                Read More →
+              </button>
+            </div>
           </div>
 
-          <div class="mb-6">
-            <p class="text-[#606060] text-base sm:text-lg" data-aos="fade-up" data-aos-easing="linear"
-              data-aos-duration="1000" data-aos-once="true">
+          <!-- Blog Card 2 -->
+          <div
+            class="w-full"
+            data-aos="slide-up"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-once="true"
+          >
+            <img
+              src="assets/images/blog2.jpg"
+              alt=""
+              class="w-full h-[250px] md:h-[300px] lg:h-[350px] object-cover"
+            />
+            <div class="py-5">
+              <h3 class="text-[#004990] text-xl md:text-2xl font-semibold mt-6">
+                The Art of Progressive Tooling
+              </h3>
+              <p class="text-gray-600 mt-2.5 text-sm md:text-base">
+                Dive into the world of progressive tooling and learn how this
+                advanced process enables the creation of complex, high-quality
+                metal components at scale.
+              </p>
+              <button
+                class="mt-6 text-[#0B90BF] font-medium hover:text-[#004990] transition-all duration-300 ease-in-out"
+              >
+                Read More →
+              </button>
+            </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div
+            class="w-full"
+            data-aos="slide-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <img
+              src="assets/images/blog3.jpg"
+              alt=""
+              class="w-full h-[250px] md:h-[300px] lg:h-[350px] object-cover"
+            />
+            <div class="py-5">
+              <h3 class="text-[#004990] text-xl md:text-2xl font-semibold mt-6">
+                Sustainability in Manufacturing
+              </h3>
+              <p class="text-gray-600 mt-2.5 text-sm md:text-base">
+                Explore how sustainable practices and eco-friendly solutions are
+                transforming the manufacturing industry, paving the way for a
+                greener future.
+              </p>
+              <button
+                class="mt-6 text-[#0B90BF] font-medium hover:text-[#004990] transition-all duration-300 ease-in-out"
+              >
+                Read More →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute right-0 top-0 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[614px] h-auto"
+      >
+        <img
+          src="assets/images/Vector.png"
+          class="opacity-30 w-full h-full"
+          alt="Vector Background"
+        />
+      </div>
+    </section>
+    <footer class="bg-[#001D39] w-[100%] overflow-hidden">
+      <div
+        class="w-full sm:w-[95%] 2xl:w-[90%] mx-auto pt-0 sm:pt-[60px] font-['Montserrat'] tracking-[1px]"
+      >
+        <div
+          class="bg-[#004990] px-10 py-[18px] text-center md:text-start md:flex justify-center items-center"
+        >
+          <p
+            class="text-white text-[12px] sm:text-lg font-[300] tracking-[1px]"
+          >
+            Backed by decades of expertise in design, development, manufacturing
+            and supply of progressive met
+          </p>
+          <button
+            class="bg-[#FFFFFF] text-[#004990] sm:min-w-[250px] mt-3 lg:mt-0 text-md sm:text-lg font-semibold px-[30px] py-2 rounded-full cursor-pointer hover:bg-gray-300 hover:text-[#004990] transition-all"
+            style="transition: all 0.5s ease-in-out"
+          >
+            Request a Quote
+          </button>
+        </div>
+        <div class="my-[40px] ps-[20px] sm:ps-0 sm:my-[82px] xl:flex">
+          <div
+            class="w-full xl:min-w-[300px] text-white text-xl font-[400] flex flex-col justify-center items-start sm:items-center xl:items-start"
+          >
+            <div
+              class="max-w-[200px] max-h-[100px] sm:max-h-[121px] sm:max-w-[267px]"
+            >
+              <img
+                src="./assets/images/footer-logo.png"
+                alt=""
+                class="h-full w-full"
+              />
+            </div>
+            <p
+              class="mt-3 lg:mt-[50px] font-[100] text-[14px] xl:max-w-[317px] text-start sm:text-center lg:text-start"
+            >
               Empowering industry leaders with precision engineering,
               cutting-edge solutions, and unwavering commitment to quality.
-              Our partnerships are built on trust, innovation, and proven
-              excellence.
             </p>
-          </div>
+            <div
+              class="flex items-center justify-between w-[102px] mt-3 lg:mt-[40px]"
+            >
+              <a
+                href="#"
+                target="_blank"
+                class="text-[22px] hover:text-gray-300 transition-all"
+                style="transition: all 0.5s ease-in-out"
+                ><i class="fab fa-facebook"></i
+              ></a>
 
-          <div class="mb-6">
-            <p class="text-[#606060] text-base sm:text-lg" data-aos="fade-up" data-aos-easing="linear"
-              data-aos-duration="1500" data-aos-once="true">
-              Eigen works and delivers precision to the best in the industry.
-              Here's a look at some of the companies we've partnered with.
-            </p>
-          </div>
-        </div>
-
-        <!-- Right Brands Grid -->
-        <div class="relative max-w-[890px]">
-          <div class="flex justify-start flex-wrap gap-2" data-aos="fade-in" data-aos-easing="linear"
-            data-aos-duration="1200" data-aos-once="true">
-            <!-- Brand Logos -->
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand1.png" alt="Brand 1" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand2.png" alt="Brand 2" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand3.png" alt="Brand 3" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand4.png" alt="Brand 4" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand5.png" alt="Brand 5" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand6.png" alt="Brand 6" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand7.png" alt="Brand 7" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand8.jpg" alt="Brand 8" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand9.png" alt="Brand 9" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand10.png" alt="Brand 10" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand11.png" alt="Brand 11" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand12.png" alt="Brand 12" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand13.png" alt="Brand 13" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand14.png" alt="Brand 14" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand15.png" alt="Brand 15" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand16.png" alt="Brand 16" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand17.png" alt="Brand 17" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand18.png" alt="Brand 18" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand19.png" alt="Brand 19" class="max-w-[120px]" />
-            </div>
-            <div class="h-[80px] lg:w-[200px] flex justify-center items-center">
-              <img src="./assets/images/brand20.png" alt="Brand 20" class="max-w-[120px]" />
+              <a
+                href="#"
+                target="_blank"
+                class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
+                style="transition: all 0.5s ease-in-out"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
+                style="transition: all 0.5s ease-in-out"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
             </div>
           </div>
+          <div
+            class="text-white mt-6 lg:mt-0 text-xl font-[400] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px] 2xl:gap-[60px]"
+          >
+            <div class="">
+              <ul
+                class="flex flex-col items-start justify-between text-start text-sm text-white space-y-2 leading-[1.9]"
+              >
+                <li class="text-[21px] font-[500] text-[#94E3FF]">
+                  Customer Services
+                </li>
+                <li>
+                  <a
+                    href="./fact_sheet.html"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    >Company Fact Sheet</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./faq.html"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    >Request a Quote</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./term_and_use.html"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    >Terms of Use</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    >Privacy & Cookies</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="flex flex-col items-start justify-between text-start text-sm text-white leading-relaxed space-y-2"
+              >
+                <li class="text-[21px] font-[500] text-[#94E3FF]">
+                  Learn More
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-[65%]"
+                  >
+                    Tool and Die Design Engineering Service
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Tooling
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Assembly & Sub-Assembly
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Plating
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Plastic Injection Molding
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="flex flex-col items-start justify-start text-start text-sm text-white space-y-2 leading-[1.9]"
+              >
+                <li class="text-[21px] font-[500] text-[#94E3FF]">Eigen USA</li>
+                <li class="mt-[3px]">
+                  <p class="font-[500]">Address - 1:</p>
+                  <p class="font-light">4201 Military Highway</p>
+                  <p class="font-light">McAllen, Texas 78503 USA.</p>
+                  <p class="font-light">
+                    Phone:
+                    <a href="tel:+12489334593" class="transition-all"
+                      >+1 248 933 4593</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p class="font-[500]">Address - 2:</p>
+                  <p class="font-light">409 Rivanna Lane</p>
+                  <p class="font-light">Greenville, SC 29607.</p>
+                  <p class="font-light">
+                    Phone:
+                    <a href="tel:+12489334593" class="transition-all"
+                      >+1 248 933 4593</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="flex flex-col items-start justify-start text-start text-white space-y-2 leading-[1.95]"
+              >
+                <li class="text-[21px] font-[500] text-[#94E3FF] mt-1">
+                  Eigen
+                </li>
+                <li class="text-sm">
+                  KDDL Ltd. Unit Eigen No.55-A, Hunachur Village, Jala Hobli,
+                  Yelahanka Taluk, Bangalore North Near Kiadb Aerospace Park
 
-          <!-- Blur Effect -->
-          <div class="absolute bottom-[-80px] left-0 w-full" data-aos="fade-in" data-aos-easing="linear"
-            data-aos-duration="1200" data-aos-once="true">
-            <img src="./assets/images/blur.png" alt="Blur Effect" class="w-full" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="h-[1080px] font-['Montserrat'] relative bg-[#F7F7F7]">
-    <div class="flex">
-      <div class="w-[612px] h-[1080px]">
-        <img src="./assets/images/77214.jpg" alt="" class="w-full h-full" data-aos="zoom-in-right"
-          data-aos-easing="linear" data-aos-duration="500" data-aos-once="true" />
-      </div>
-      <div class="pl-[60px] mt-[202px]">
-        <div class="h-[120px] overflow-hidden">
-          <p class="text-[46px] font-semibold text-[#4A4A4A]" data-aos="fade-up" data-aos-easing="linear"
-            data-aos-duration="1000" data-aos-once="true">
-            What Our Clients Say
-          </p>
-          <p class="text-[30px] font-['Montserrat'] font-[200] mt-2" data-aos="fade-up" data-aos-easing="linear"
-            data-aos-duration="1000" data-aos-once="true">
-            Delivering Precision, Quality, and Trust
-          </p>
-        </div>
-        <!-- owl -->
-        <div class="relative w-[1255px] overflow-hidden mt-20 font-[400]">
-          <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-            <div class="owl-carousel owl-theme">
-              <div class="pl-[30px]">
-                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]">
-                  <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#004990]">
-                    Exceptional Precision and Reliability
-                  </h3> -->
-                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
-                    Good experience in fine stamping.
+                  <p class="font-light">
+                    Phone:
+                    <a href="tel:+918068476500">(+91) 80 68476500</a>
                   </p>
-                </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2">
-                  <p class="mt-4 font-medium text-white/90">Steiner Jurgen</p>
-                  <p>Bosch, Germany</p>
-                </div>
-              </div>
-
-              <div class="pl-[30px]">
-                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
-                  <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    A Partner, Not Just a Vendor
-                  </h3> -->
-                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
-                    Good management makes good association – good association
-                    makes good products. That is Eigen for you!
+                  <p class="font-light">Ext: 312</p>
+                  <p class="font-light">
+                    Email:
+                    <a href="mailto:info@eigenengineering.com"
+                      >info@eigenengineering.com</a
+                    >
                   </p>
-                </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
-                  <p class="mt-4 font-medium text-white/90">Ashida Koji</p>
-                  <p>Denso corporation, Japan,</p>
-                </div>
-              </div>
-
-              <div class="pl-[30px]">
-                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
-                  <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    Seamless Collaboration and Outstanding Results
-                  </h3> -->
-                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
-                    Great systems and organisation. You are our potential
-                    supplier for stamped parts.
-                  </p>
-                </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
-                  <p class="mt-4 font-medium text-white/90">Umesh Kini</p>
-                  <p>Global sourcing, Tyco Health care</p>
-                </div>
-              </div>
-              <div class="pl-[30px]">
-                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
-                  <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    A Partner, Not Just a Vendor
-                  </h3> -->
-                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
-                    The parts I saw adds to my conviction that you are a
-                    quality Operation. This lends credibility to the nation
-                    and you will be successful in making our parts.
-                  </p>
-                </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
-                  <p class="mt-4 font-medium text-white/90">
-                    Leonard Challenger
-                  </p>
-                  <p>Saft, USA</p>
-                </div>
-              </div>
-
-              <div class="pl-[30px]">
-                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px">
-                  <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    Seamless Collaboration and Outstanding Results
-                  </h3> -->
-                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
-                    Excellent tool room facilities, very satisfied customers.
-                  </p>
-                </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2">
-                  <p class="mt-4 font-medium text-white/90">
-                    Anil.K.Srivastava
-                  </p>
-                  <p>DGM, Connectwell Industries (P) Ltd.</p>
-                </div>
-              </div>
-              <div class="pl-[30px] invisible">
-                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]">
-                  <h3 class="w-[270px] text-[21px] font-semibold text-[#004990]">
-                    Exceptional Precision and Reliability
-                  </h3>
-                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
-                    Eigen Engineering has been a game-changer for our
-                    manufacturing process. Their attention to detail,
-                    precision, and consistent quality have significantly
-                    improved our product line. Their team truly understands
-                    the importance of delivering on time without compromising
-                    standards.
-                  </p>
-                </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2">
-                  <p class="mt-4 font-medium text-white/90">
-                    – John D., Operations Manager
-                  </p>
-                  <p>Automotive Sector</p>
-                </div>
-              </div>
-              <div class="pl-[30px] invisible">
-                <div class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]">
-                  <h3 class="w-[270px] text-[21px] font-semibold text-[#004990]">
-                    Exceptional Precision and Reliability
-                  </h3>
-                  <p class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]">
-                    Eigen Engineering has been a game-changer for our
-                    manufacturing process. Their attention to detail,
-                    precision, and consistent quality have significantly
-                    improved our product line. Their team truly understands
-                    the importance of delivering on time without compromising
-                    standards.
-                  </p>
-                </div>
-                <div class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2">
-                  <p class="mt-4 font-medium text-white/90">
-                    – John D., Operations Manager
-                  </p>
-                  <p>Automotive Sector</p>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="flex gap-4 mt-8 pl-[30px]">
-          <button class="prev-btn text-[#004990] opacity-40 text-xl flex items-center justify-center transition"
-            style="transition: all 0.5s ease-in-out">
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-
-          <button class="next-btn text-[#004990] text-3xl flex items-center justify-center transition cursor-pointer"
-            style="transition: all 0.5s ease-in-out">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
       </div>
-    </div>
-    <div class="absolute right-0 top-[130px] z-30">
-      <img src="./assets/images/format_quote.png" alt="" class="h-[186px] grayscale-[100%] opacity-5" />
-    </div>
-  </section>
-
-  <section class="font-['Montserrat'] py-12 lg:h-[636px]">
-    <div
-      class="flex flex-col lg:flex-row justify-between items-start lg:items-center max-w-[1720px] mx-auto px-4 lg:px-8 gap-10">
-      <!-- Left Content -->
-      <div class="w-full lg:w-[50%]">
-        <div class="overflow-hidden">
-          <h1 class="font-bold text-[32px] sm:text-[40px] lg:text-[50px] leading-snug" data-aos="fade-up"
-            data-aos-easing="linear" data-aos-duration="700" data-aos-once="true">
-            A Multinational Clientele
-          </h1>
-        </div>
-        <div class="overflow-hidden mt-5">
-          <p class="text-[16px] sm:text-[18px] lg:text-[20px] text-[#606060] font-[400] max-w-[100%] sm:max-w-[90%] lg:max-w-[565px]"
-            data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" data-aos-once="true">
-            With operations around the world, chances are Eigen has a presence
-            where you are. Find out what we do in your country, who our
-            partners are and how we're working to develop an even stronger,
-            more satisfied clientele across the globe.
-          </p>
-        </div>
-        <div class="mt-8">
-          <button
-            class="text-[18px] sm:text-[20px] lg:text-[21px] font-semibold text-white bg-[#004990] py-3 px-6 rounded-full hover:bg-[#046acd] transition-all duration-300 ease-in-out"
-            data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700" data-aos-once="true">
-            Get in Touch <i class="fa-solid fa-arrow-right ml-2"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="relative w-full lg:w-[50%] pr-0 lg:pr-[31px]">
-        <img src="./assets/images/map.png" alt="World Map" class="w-full h-auto" />
-      </div>
-    </div>
-  </section>
-
-  <section class="font-['Montserrat'] bg-[#E6F3F7] relative">
-    <div class="relative max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <!-- Background Vector Image -->
-
-      <!-- Section Heading -->
-      <div class="relative z-10 mb-[40px]">
-        <h2 class="text-[30px] sm:text-[40px] lg:text-[50px] font-bold text-[#333333]" data-aos="fade-up"
-          data-aos-easing="linear" data-aos-duration="500" data-aos-once="true">
-          Our Latest Blogs
-        </h2>
-        <p class="text-[#606060] text-base sm:text-lg max-w-[100%] sm:max-w-[415px] mt-4" data-aos="fade-up"
-          data-aos-easing="linear" data-aos-duration="500" data-aos-once="true">
-          Discover insights, innovations, and industry trends that drive
-          precision and performance
+      <div class="bg-[#002B55]">
+        <p
+          class="text-nowrap font-[300] text-[10px] sm:text-[14px] text-[#FFFFFF] text-center py-5"
+        >
+          Non Copyrighted © 2022 Design and upload by rich technologies
         </p>
       </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-      <!-- Blog Cards -->
-      <div class="relative z-10 grid gap-8 md:gap-10 lg:gap-[60px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Blog Card 1 -->
-        <div class="w-full" data-aos="slide-up" data-aos-easing="linear" data-aos-duration="500" data-aos-once="true">
-          <img src="assets/images/blog1.jpg" alt="" class="w-full h-[250px] md:h-[300px] lg:h-[350px] object-cover" />
-          <div class="py-5">
-            <h3 class="text-[#004990] text-xl md:text-2xl font-semibold mt-6">
-              Revolutionizing Precision Engineering
-            </h3>
-            <p class="text-gray-600 mt-2.5 text-sm md:text-base">
-              Discover how cutting-edge technology and innovative techniques
-              are shaping the future of precision manufacturing, ensuring
-              accuracy and efficiency in every component.
-            </p>
-            <button
-              class="mt-6 text-[#0B90BF] font-medium hover:text-[#004990] transition-all duration-300 ease-in-out">
-              Read More →
-            </button>
-          </div>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <!-- Blog Card 2 -->
-        <div class="w-full" data-aos="slide-up" data-aos-easing="linear" data-aos-duration="800" data-aos-once="true">
-          <img src="assets/images/blog2.jpg" alt="" class="w-full h-[250px] md:h-[300px] lg:h-[350px] object-cover" />
-          <div class="py-5">
-            <h3 class="text-[#004990] text-xl md:text-2xl font-semibold mt-6">
-              The Art of Progressive Tooling
-            </h3>
-            <p class="text-gray-600 mt-2.5 text-sm md:text-base">
-              Dive into the world of progressive tooling and learn how this
-              advanced process enables the creation of complex, high-quality
-              metal components at scale.
-            </p>
-            <button
-              class="mt-6 text-[#0B90BF] font-medium hover:text-[#004990] transition-all duration-300 ease-in-out">
-              Read More →
-            </button>
-          </div>
-        </div>
+    <script>
+      AOS.init();
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector("nav");
 
-        <!-- Blog Card 3 -->
-        <div class="w-full" data-aos="slide-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-          <img src="assets/images/blog3.jpg" alt="" class="w-full h-[250px] md:h-[300px] lg:h-[350px] object-cover" />
-          <div class="py-5">
-            <h3 class="text-[#004990] text-xl md:text-2xl font-semibold mt-6">
-              Sustainability in Manufacturing
-            </h3>
-            <p class="text-gray-600 mt-2.5 text-sm md:text-base">
-              Explore how sustainable practices and eco-friendly solutions are
-              transforming the manufacturing industry, paving the way for a
-              greener future.
-            </p>
-            <button
-              class="mt-6 text-[#0B90BF] font-medium hover:text-[#004990] transition-all duration-300 ease-in-out">
-              Read More →
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="absolute right-0 top-0 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[614px] h-auto">
-      <img src="assets/images/Vector.png" class="opacity-30 w-full h-full" alt="Vector Background" />
-    </div>
-  </section>
-  <footer class="bg-[#001D39] w-[100%] overflow-hidden">
-    <div class="w-full sm:w-[95%] 2xl:w-[90%] mx-auto pt-0 sm:pt-[60px] font-['Montserrat'] tracking-[1px]">
-      <div class="bg-[#004990] px-10 py-[18px] text-center md:text-start md:flex justify-center items-center">
-        <p class="text-white text-[12px] sm:text-lg font-[300] tracking-[1px]">
-          Backed by decades of expertise in design, development, manufacturing
-          and supply of progressive met
-        </p>
-        <button
-          class="bg-[#FFFFFF] text-[#004990]  sm:min-w-[250px] mt-3 lg:mt-0 text-md sm:text-lg font-semibold px-[30px] py-2 rounded-full cursor-pointer hover:bg-gray-300 hover:text-[#004990] transition-all"
-          style="transition: all 0.5s ease-in-out">
-          Request a Quote
-        </button>
-      </div>
-      <div class="my-[40px] ps-[20px] sm:ps-0 sm:my-[82px] xl:flex">
+        // Elements to animate
+        const elements = [
+          document.getElementById("home_heading"),
+          document.getElementById("home_para"),
+          document.getElementById("home_img"),
+        ].filter((el) => el !== null);
+        const homeBox = document.getElementById("home_box");
+        homeBox.style.transition = "bottom 1s ease-out, opacity 1s ease-out";
+        // Apply transition to all elements
+        elements.forEach((el) => {
+          el.style.transition = "top 1s ease-out, opacity 1s ease-out";
+          el.style.opacity = "0"; // Hide initially
+        });
+        elements.forEach((el) => {
+          el.style.top = "0";
+          el.style.opacity = "1";
+        });
+        homeBox.style.bottom = "0";
+        homeBox.style.opacity = "1";
+        function handleScroll() {
+          if (window.scrollY > 50) {
+            // Change navbar color when scrolling
+            navbar.style.backgroundColor = "rgba(0, 49, 97, 0.8)";
 
-        <div
-          class="w-full xl:min-w-[300px] text-white text-xl font-[400] flex flex-col justify-center items-start sm:items-center xl:items-start">
-          <div class="max-w-[200px] max-h-[100px] sm:max-h-[121px] sm:max-w-[267px]">
-            <img src="./assets/images/footer-logo.png" alt="" class="h-full w-full" />
-          </div>
-          <p class="mt-3 lg:mt-[50px] font-[100] text-[14px] xl:max-w-[317px] text-start sm:text-center lg:text-start">
-            Empowering industry leaders with precision engineering,
-            cutting-edge solutions, and unwavering commitment to quality.
-          </p>
-          <div class="flex items-center justify-between w-[102px] mt-3 lg:mt-[40px]">
-            <a href="#" target="_blank" class="text-[22px] hover:text-gray-300 transition-all"
-              style="transition: all 0.5s ease-in-out"><i class="fab fa-facebook"></i></a>
-
-            <a href="#" target="_blank"
-              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
-              style="transition: all 0.5s ease-in-out"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" target="_blank"
-              class="text-[16px] bg-white opacity-90 rounded-full h-[25px] w-[25px] text-[#004990] flex justify-center items-center hover:bg-gray-300 transition-all"
-              style="transition: all 0.5s ease-in-out"><i class="fa-brands fa-x-twitter"></i></a>
-          </div>
-        </div>
-        <div
-          class="text-white mt-6 lg:mt-0 text-xl font-[400] grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]  2xl:gap-[60px]">
-          <div class="">
-            <ul class="flex flex-col items-start justify-between text-start text-sm text-white space-y-2 leading-[1.9]">
-              <li class="text-[21px] font-[500] text-[#94E3FF]">
-                Customer Services
-              </li>
-              <li>
-                <a href="./fact_sheet.html" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Company
-                  Fact Sheet</a>
-              </li>
-              <li>
-                <a href="./faq.html" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">FAQ</a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Request
-                  a Quote</a>
-              </li>
-              <li>
-                <a href="./term_and_use.html" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Terms
-                  of Use</a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Privacy
-                  & Cookies</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul
-              class="flex flex-col items-start justify-between text-start text-sm text-white leading-relaxed space-y-2">
-              <li class="text-[21px] font-[500] text-[#94E3FF]">
-                Learn More
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-[65%]">
-                  Tool and Die Design Engineering Service
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
-                  Tooling
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
-                  Assembly & Sub-Assembly
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
-                  Plating
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  class="relative after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
-                  Plastic Injection Molding
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="flex flex-col items-start justify-start text-start text-sm text-white space-y-2 leading-[1.9]">
-              <li class="text-[21px] font-[500] text-[#94E3FF]">Eigen USA</li>
-              <li class="mt-[3px]">
-                <p class="font-[500]">Address - 1:</p>
-                <p class="font-light">4201 Military Highway</p>
-                <p class="font-light">McAllen, Texas 78503 USA.</p>
-                <p class="font-light">
-                  Phone:
-                  <a href="tel:+12489334593" class="transition-all">+1 248 933 4593</a>
-                </p>
-              </li>
-              <li>
-                <p class="font-[500]">Address - 2:</p>
-                <p class="font-light">409 Rivanna Lane</p>
-                <p class="font-light">Greenville, SC 29607.</p>
-                <p class="font-light">
-                  Phone:
-                  <a href="tel:+12489334593" class="transition-all">+1 248 933 4593</a>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="flex flex-col items-start justify-start text-start  text-white space-y-2 leading-[1.95]">
-              <li class="text-[21px] font-[500] text-[#94E3FF] mt-1">
-                Eigen
-              </li>
-              <li class="text-sm">
-                KDDL Ltd. Unit Eigen No.55-A, Hunachur Village, Jala Hobli,
-                Yelahanka Taluk, Bangalore North Near Kiadb Aerospace Park
-
-                <p class="font-light">
-                  Phone:
-                  <a href="tel:+918068476500">(+91) 80 68476500</a>
-                </p>
-                <p class="font-light">Ext: 312</p>
-                <p class="font-light">
-                  Email:
-                  <a href="mailto:info@eigenengineering.com">info@eigenengineering.com</a>
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-[#002B55]">
-      <p class="text-nowrap font-[300] text-[10px] sm:text-[14px] text-[#FFFFFF] text-center py-5">
-        Non Copyrighted © 2022 Design and upload by rich technologies
-      </p>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    AOS.init();
-    document.addEventListener("DOMContentLoaded", function () {
-      const navbar = document.querySelector("nav");
-
-      // Elements to animate
-      const elements = [
-        document.getElementById("home_heading"),
-        document.getElementById("home_para"),
-        document.getElementById("home_img"),
-      ].filter((el) => el !== null);
-      const homeBox = document.getElementById("home_box");
-      homeBox.style.transition = "bottom 1s ease-out, opacity 1s ease-out";
-      // Apply transition to all elements
-      elements.forEach((el) => {
-        el.style.transition = "top 1s ease-out, opacity 1s ease-out";
-        el.style.opacity = "0"; // Hide initially
-      });
-      elements.forEach((el) => {
-        el.style.top = "0";
-        el.style.opacity = "1";
-      });
-      homeBox.style.bottom = "0";
-      homeBox.style.opacity = "1";
-      function handleScroll() {
-        if (window.scrollY > 50) {
-          // Change navbar color when scrolling
-          navbar.style.backgroundColor = "rgba(0, 49, 97, 0.8)";
-
-          // Animate elements by setting bottom to 0
-        } else {
-          // Reset navbar color when at the top
-          navbar.style.backgroundColor = "rgba(0, 49, 97, 1)";
+            // Animate elements by setting bottom to 0
+          } else {
+            // Reset navbar color when at the top
+            navbar.style.backgroundColor = "rgba(0, 49, 97, 1)";
+          }
         }
-      }
 
-      // Listen for scroll events
-      window.addEventListener("scroll", handleScroll);
-    });
-    const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    // owl
-    $(document).ready(function () {
-      var owl = $(".owl-carousel");
-      var nextBtn = $(".next-btn");
-      var prevBtn = $(".prev-btn");
-      owl.owlCarousel({
-        loop: false,
-        margin: 30,
-        nav: false,
-        dots: false,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: { items: 1 },
-          600: { items: 1 },
-          1400: { items: 2 },
-          1920: { items: 2.5 },
+        // Listen for scroll events
+        window.addEventListener("scroll", handleScroll);
+      });
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
-
-      owl.on("changed.owl.carousel", function (event) {
-        var currentIndex = event.item.index;
-        var totalItems = event.item.count;
-        var visibleItems = event.page.size;
-        // console.log(currentIndex);
-        // const element_h3 = document.querySelectorAll(".owl-carousel h3");
-        const element_div = document.querySelectorAll(
-          ".owl-carousel div.absolute"
-        );
-
-        // element_h3.forEach((h3) => {
-        //   h3.classList.remove("text-[#004990]");
-        //   h3.classList.add("text-[#0B90BF]");
-        // });
-
-        element_div.forEach((div) => {
-          div.classList.remove("bg-[#004990]");
-          div.classList.add("bg-[#0B90BF]");
+      // owl
+      $(document).ready(function () {
+        var owl = $(".owl-carousel");
+        var nextBtn = $(".next-btn");
+        var prevBtn = $(".prev-btn");
+        owl.owlCarousel({
+          loop: false,
+          margin: 30,
+          nav: false,
+          dots: false,
+          autoplay: false,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            1400: { items: 2 },
+            1920: { items: 2.5 },
+          },
         });
-        // if (element_h3[currentIndex] && element_div[currentIndex]) {
-        if (element_div[currentIndex]) {
-          // element_h3[currentIndex].classList.add("text-[#004990]");
-          element_div[currentIndex].classList.add("bg-[#004990]");
-          // element_h3[currentIndex].classList.remove("text-[#0B90BF]");
-          element_div[currentIndex].classList.remove("bg-[#0B90BF]");
+
+        owl.on("changed.owl.carousel", function (event) {
+          var currentIndex = event.item.index;
+          var totalItems = event.item.count;
+          var visibleItems = event.page.size;
+          // console.log(currentIndex);
+          // const element_h3 = document.querySelectorAll(".owl-carousel h3");
+          const element_div = document.querySelectorAll(
+            ".owl-carousel div.absolute"
+          );
+
+          // element_h3.forEach((h3) => {
+          //   h3.classList.remove("text-[#004990]");
+          //   h3.classList.add("text-[#0B90BF]");
+          // });
+
+          element_div.forEach((div) => {
+            div.classList.remove("bg-[#004990]");
+            div.classList.add("bg-[#0B90BF]");
+          });
+          // if (element_h3[currentIndex] && element_div[currentIndex]) {
+          if (element_div[currentIndex]) {
+            // element_h3[currentIndex].classList.add("text-[#004990]");
+            element_div[currentIndex].classList.add("bg-[#004990]");
+            // element_h3[currentIndex].classList.remove("text-[#0B90BF]");
+            element_div[currentIndex].classList.remove("bg-[#0B90BF]");
+          }
+
+          // Hide left arrow when first item is active
+          if (currentIndex === 0) {
+            document
+              .querySelector(".prev-btn")
+              .classList.remove("text-3xl", "cursor-pointer");
+            document
+              .querySelector(".prev-btn")
+              .classList.add("opacity-40", "text-xl");
+            document.querySelector(".next-btn").disabled = true;
+          } else {
+            document
+              .querySelector(".prev-btn")
+              .classList.add("text-3xl", "cursor-pointer");
+            document
+              .querySelector(".prev-btn")
+              .classList.remove("opacity-40", "text-xl");
+            document.querySelector(".next-btn").disabled = false;
+          }
+
+          // Hide right arrow when last item is reached
+          if (Math.ceil(currentIndex + visibleItems) >= totalItems) {
+            document
+              .querySelector(".next-btn")
+              .classList.remove("text-3xl", "cursor-pointer");
+            document
+              .querySelector(".next-btn")
+              .classList.add("opacity-40", "text-xl");
+
+            document.querySelector(".next-btn").disabled = true;
+          } else {
+            document
+              .querySelector(".next-btn")
+              .classList.add("text-3xl", "cursor-pointer");
+            document
+              .querySelector(".next-btn")
+              .classList.remove("opacity-40", "text-xl");
+            document.querySelector(".next-btn").disabled = false;
+          }
+        });
+
+        prevBtn.click(function () {
+          owl.trigger("prev.owl.carousel");
+        });
+
+        nextBtn.click(function () {
+          owl.trigger("next.owl.carousel");
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const openVideo = document.getElementById("openVideo");
+        const closeVideo = document.getElementById("closeVideo");
+        const videoModal = document.getElementById("videoModal");
+        const videoPlayer = document.getElementById("videoPlayer");
+
+        openVideo.addEventListener("click", () => {
+          videoModal.classList.remove("hidden");
+          // document.body.style.overflow = "hidden"; // Prevent scrolling
+          videoPlayer.play();
+        });
+
+        function closePopup() {
+          videoModal.classList.add("hidden");
+          // document.body.style.overflow = "auto"; // Restore scrolling
+          videoPlayer.pause();
+          videoPlayer.currentTime = 0;
         }
 
-        // Hide left arrow when first item is active
-        if (currentIndex === 0) {
-          document
-            .querySelector(".prev-btn")
-            .classList.remove("text-3xl", "cursor-pointer");
-          document
-            .querySelector(".prev-btn")
-            .classList.add("opacity-40", "text-xl");
-          document.querySelector(".next-btn").disabled = true;
-        } else {
-          document
-            .querySelector(".prev-btn")
-            .classList.add("text-3xl", "cursor-pointer");
-          document
-            .querySelector(".prev-btn")
-            .classList.remove("opacity-40", "text-xl");
-          document.querySelector(".next-btn").disabled = false;
-        }
+        closeVideo.addEventListener("click", closePopup);
+        videoModal.addEventListener("click", (e) => {
+          if (e.target === videoModal) closePopup(); // Click outside to close
+        });
 
-        // Hide right arrow when last item is reached
-        if (Math.ceil(currentIndex + visibleItems) >= totalItems) {
-          document
-            .querySelector(".next-btn")
-            .classList.remove("text-3xl", "cursor-pointer");
-          document
-            .querySelector(".next-btn")
-            .classList.add("opacity-40", "text-xl");
-
-          document.querySelector(".next-btn").disabled = true;
-        } else {
-          document
-            .querySelector(".next-btn")
-            .classList.add("text-3xl", "cursor-pointer");
-          document
-            .querySelector(".next-btn")
-            .classList.remove("opacity-40", "text-xl");
-          document.querySelector(".next-btn").disabled = false;
-        }
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closePopup(); // Escape key to close
+        });
       });
-
-      prevBtn.click(function () {
-        owl.trigger("prev.owl.carousel");
-      });
-
-      nextBtn.click(function () {
-        owl.trigger("next.owl.carousel");
-      });
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const openVideo = document.getElementById("openVideo");
-      const closeVideo = document.getElementById("closeVideo");
-      const videoModal = document.getElementById("videoModal");
-      const videoPlayer = document.getElementById("videoPlayer");
-
-      openVideo.addEventListener("click", () => {
-        videoModal.classList.remove("hidden");
-        // document.body.style.overflow = "hidden"; // Prevent scrolling
-        videoPlayer.play();
-      });
-
-      function closePopup() {
-        videoModal.classList.add("hidden");
-        // document.body.style.overflow = "auto"; // Restore scrolling
-        videoPlayer.pause();
-        videoPlayer.currentTime = 0;
-      }
-
-      closeVideo.addEventListener("click", closePopup);
-      videoModal.addEventListener("click", (e) => {
-        if (e.target === videoModal) closePopup(); // Click outside to close
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closePopup(); // Escape key to close
-      });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

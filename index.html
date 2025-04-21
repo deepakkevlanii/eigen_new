@@ -35,12 +35,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-
   <body
     style="font-family: Montserrat !important"
     class="overflow-x-hidden w-[100vw]"
   >
-    <header class="fixed z-[999] w-full">
+    <header class="w-[100%]">
       <!-- Mobile Layout (Below lg) -->
       <div class="bg-[#004990] text-white opacity-100 h-20 pt-2 md:pt-0">
         <div
@@ -232,7 +231,7 @@
                 ></a>
 
                 <div
-                  class="absolute left-0 top-full hidden group-hover:block z-10 w-[460px]"
+                  class="absolute left-0 top-full hidden group-hover:block z-40 w-[460px]"
                 >
                   <div class="relative">
                     <ul
@@ -650,8 +649,9 @@
         </div>
       </div>
     </header>
+
     <section
-      class="relative min-h-[900px] md:min-h-[1080px] px-4 lg:px-8 bg-[#004990] overflow-hidden"
+      class="relative min-h-[900px] md:min-h-[1080px] px-4 lg:px-8 bg-[#004990] overflow-hidden -z-30"
     >
       <div class="max-w-[1700px] mx-auto pt-[100px] md:pt-[186px]">
         <!-- Heading + Paragraph Container -->
@@ -768,7 +768,7 @@
         <img
           src="./assets/images/hero-vector.png"
           alt="Vector"
-          class="absolute top-0 right-0 w-[280px] sm:w-[400px] lg:w-[500px] -z-10"
+          class="absolute top-0 right-0 w-[280px] sm:w-[400px] lg:w-[500px] -z-30"
         />
       </div>
     </section>
@@ -908,11 +908,12 @@
       </div>
     </section>
 
+    <!-- done -->
     <section class="relative z-0 bg-[#F7F7F7]">
       <div class="relative flex h-full lg:min-h-[1125px] overflow-hidden">
         <!-- Right Side Background Image -->
         <div
-          class="absolute top-0 right-0 w-[50%] 2xl:w-full h-[100%] bg-contain bg-right z-0 bg-no-repeat"
+          class="absolute top-0 right-0 xl:w-1/2 h-[100%] bg-cover bg-right z-0 bg-no-repeat hidden lg:block"
           style="background-image: url('./assets/images/DSC00777.jpg')"
           data-aos="zoom-in"
           data-aos-easing="linear"
@@ -922,10 +923,10 @@
 
         <!-- Left Content -->
         <div
-          class="relative z-10 w-full px-4 lg:px-8 max-w-[1720px] mx-auto py-[100px]"
+          class="relative z-10 w-full lg:px-8 max-w-[1720px] mx-auto py-[100px]"
         >
           <!-- Heading -->
-          <div class="max-w-[800px]">
+          <div class="max-w-[800px] px-4">
             <h1
               class="font-semibold text-[32px] md:text-[38px] lg:text-[46px] text-[#4A4A4A] max-w-[515px] leading-[1.3] mb-6"
               data-aos="slide-up"
@@ -951,218 +952,251 @@
 
           <!-- Cards -->
           <div
-            class="max-w-[980px] flex justify-start flex-wrap gap-[25px]"
+            class="2xl:max-w-[980px] lg:min-h-[700px] 2xl:min-h-[100%] flex lg:flex-col justify-start items-start lg:justify-center xl:justify-start relative gap-[10px] p-8 sm:p-16 xl:p-0"
             data-aos="slide-up"
             data-aos-easing="linear"
             data-aos-duration="1000"
             data-aos-once="true"
           >
             <!-- Card Template -->
-            <!-- Repeat this block for each card with different icon & text -->
             <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+              class="absolute top-0 right-0 w-full h-[100%] bg-cover bg-right z-0 bg-no-repeat xl:hidden"
+              style="background-image: url('./assets/images/DSC00777.jpg')"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            ></div>
+
+            <div
+              class="grid grid-cols-1 lg:grid-cols-4 gap-[10px] md:gap-[25px]"
             >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/designing.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
-                >
-                  Precision Metal Stamping
-                </p>
-              </div>
+              <!-- Card 1 -->
               <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2 px-0"
               >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
+                >
+                  <img
+                    src="./assets/images/designing.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Precision Metal Stamping
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                >
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2"
+              >
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
+                >
+                  <img
+                    src="./assets/images/tools.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Press Tool Design and Development
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                >
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2"
+              >
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
+                >
+                  <img
+                    src="./assets/images/stamping.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Busbar manufacturing
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                >
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2"
+              >
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
+                >
+                  <img
+                    src="./assets/images/assembly.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Sub - Assembly
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                >
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
               </div>
             </div>
 
-            <!-- Card 2 -->
             <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
+              class="grid grid-cols-1 lg:grid-cols-4 gap-[10px] md:gap-[25px]"
             >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/tools.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
-                >
-                  Press Tool Design and Development
-                </p>
-              </div>
+              <!-- Card 5 -->
               <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2"
               >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
+                >
+                  <img
+                    src="./assets/images/plating.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Welding
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                >
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
-            >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/stamping.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
-                >
-                  Busbar manufacturing
-                </p>
-              </div>
+              <!-- Card 6 -->
               <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2"
               >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
+                >
+                  <img
+                    src="./assets/images/plastic.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Surface Treatment
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                >
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <!-- Card 4 -->
-            <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
-            >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/assembly.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
-                >
-                  Sub - Assembly
-                </p>
-              </div>
+              <!-- Card 7 -->
               <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2"
               >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
+                >
+                  <img
+                    src="./assets/images/molding.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Prototyping
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                >
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <!-- Card 5 -->
-            <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
-            >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/plating.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
-                >
-                  Welding
-                </p>
-              </div>
+              <!-- Card 8 -->
               <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
+                class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[120px] h-[120px] sm:w-[180px] sm:h-[160px] xl:w-[225px] xl:h-[188px] sm:px-2"
               >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
-            >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/plastic.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                <div
+                  class="flex flex-col gap-3 px-4 pt-4 sm:gap-5 sm:px-[30px] sm:pt-[22.5px]"
                 >
-                  Surface Treatment
-                </p>
-              </div>
-              <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
-              >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 7 -->
-            <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
-            >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/molding.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  <img
+                    src="./assets/images/over-molding.png"
+                    alt=""
+                    class="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]"
+                  />
+                  <p
+                    class="text-[10px] sm:text-[14px] xl:text-lg text-[#002B55] font-semibold font-['Montserrat']"
+                  >
+                    Other Services
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-2 sm:px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
                 >
-                  Prototyping
-                </p>
-              </div>
-              <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
-              >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div
-              class="relative group overflow-hidden border-l-4 border-[#004990] bg-white w-[225px] h-[188px]"
-            >
-              <div class="flex flex-col gap-5 px-[30px] pt-[22.5px]">
-                <img
-                  src="./assets/images/over-molding.png"
-                  alt=""
-                  class="w-[60px] h-[60px]"
-                />
-                <p
-                  class="text-lg text-[#002B55] font-semibold font-['Montserrat']"
-                >
-                  Other Services
-                </p>
-              </div>
-              <div
-                class="absolute inset-0 bg-[#004990] text-white flex items-center justify-center px-4 transition-transform duration-1000 translate-x-[-100%] group-hover:translate-x-0"
-              >
-                <p class="text-center text-sm">
-                  We Help Design and Manufacture complex die design with close
-                  tolerance
-                </p>
+                  <p class="text-center text-xs sm:text-sm">
+                    We Help Design and Manufacture complex die design with close
+                    tolerance
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -1170,61 +1204,73 @@
       </div>
     </section>
 
-    <section class="h-[1080px] bg-[#001D39] overflow-hidden">
-      <div class="flex">
-        <div class="w-1/2">
-          <!-- images -->
+    <!-- done -->
+    <section class="2xl:h-[1080px] bg-[#001D39]">
+      <div class="lg:flex w-[100%] overflow-hidden">
+        <div
+          class="w-full sm:w-[90%] md:w-[80%] lg:w-1/2 mx-auto relative h-[500px] sm:h-[800px] 2xl:h-[1080px]"
+        >
           <div
-            class="relative h-[439px] w-[468px] top-[182px] left-[100px] z-50"
+            class="absolute top-[15%] 2xl:top-[182px] left-[10%] 2xl:left-[100px] z-20 sm:z-40"
           >
-            <img
-              src="./assets/images/DSC07066.jpg"
-              alt=""
-              class="h-full w-full"
-              data-aos="fade-up-left"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            />
             <div
-              class="w-[112px] h-[112px] bg-[#0B90BF] absolute top-[-56px] right-[-56px] z-[-1]"
-              data-aos="fade-up-right"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            ></div>
+              class="relative w-[215px] h-[215px] sm:w-[350px] sm:h-[350px] 2xl:h-[439px] 2xl:w-[468px]"
+            >
+              <img
+                src="./assets/images/DSC07066.jpg"
+                alt=""
+                class="h-full w-full"
+                data-aos="fade-up-left"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              />
+              <div
+                class="w-[50px] h-[50px] md:w-[112px] md:h-[112px] bg-[#0B90BF] absolute top-[-40px] right-[-40px] z-[-1]"
+                data-aos="fade-up-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              ></div>
+            </div>
           </div>
-          <div
-            class="relative h-[410px] w-[418px] left-[425px] top-[88px] z-20"
-          >
-            <img
-              src="./assets/images/DSC06864.jpg"
-              alt=""
-              class="h-full w-full"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            />
 
+          <div
+            class="absolute right-[10%] sm:right-[100px] bottom-[10%] sm:bottom-[88px] z-30 sm:z-10"
+          >
             <div
-              class="w-[77px] h-[77px] bg-[#004990] absolute top-[65px] left-[-55px] z-[-1]"
-              data-aos="fade-up-right"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            ></div>
-            <div
-              class="w-[48px] h-[48px] bg-[#004990] absolute bottom-[-30px] right-[-30px] z-[-1]"
-              data-aos="fade-right"
-              data-aos-easing=" linear"
-              data-aos-duration="1000"
-              data-aos-once="true"
-            ></div>
+              class="relative w-[190px] h-[190px] sm:w-[280px] sm:h-[280px] 2xl:h-[410px] 2xl:w-[418px]"
+            >
+              <img
+                src="./assets/images/DSC06864.jpg"
+                alt=""
+                class="h-full w-full"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              />
+
+              <div
+                class="w-[40px] h-[40px] sm:w-[77px] sm:h-[77px] bg-[#004990] absolute top-[30px] sm:top-[65px] left-[-40px] z-[-1]"
+                data-aos="fade-up-right"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              ></div>
+              <div
+                class="w-[48px] h-[48px] bg-[#004990] absolute bottom-[-30px] right-[-30px] z-[-1]"
+                data-aos="fade-right"
+                data-aos-easing=" linear"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              ></div>
+            </div>
           </div>
         </div>
+
         <div
-          class="w-1/2 flex flex-col justify-start h-[1080px] gap-0 border-l-1 border-white"
+          class="w-full lg:w-1/2 flex flex-col justify-start 2xl:h-[1080px] gap-0 border-l-1 border-white"
           data-aos="slide-down"
           data-aos-easing="linear"
           data-aos-duration="1000"
@@ -1232,7 +1278,7 @@
         >
           <!-- Electrical & Electronics 1 -->
           <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+            class="2xl:h-[216px] flex justify-start items-start lg:items-center border-b-1 border-white p-4 2xl:px-[60px] py-8 gap-[30px] font-['Montserrat']"
           >
             <img
               src="assets/images/cpu.png"
@@ -1251,7 +1297,9 @@
               data-aos-once="true"
             >
               <p class="font-semibold text-2xl">Electrical & Electronics</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+              <p
+                class="text-lg lg:lg:max-w-[690px] text-wrap font-extralight mt-2"
+              >
                 O/L relays, circuit breakers, miniature motors, switch gears,
                 electronic article surveillance, tube fuses, and electronic time
                 locks.
@@ -1260,7 +1308,7 @@
           </div>
           <!-- Aerospace 2 -->
           <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+            class="2xl:h-[216px] flex justify-start items-start lg:items-center border-b-1 border-white p-4 2xl:px-[60px] py-8 gap-[30px] font-['Montserrat']"
           >
             <img
               src="assets/images/flight.png"
@@ -1279,7 +1327,9 @@
               data-aos-once="true"
             >
               <p class="font-semibold text-2xl">Aerospace</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+              <p
+                class="text-lg lg:max-w-[690px] text-wrap font-extralight mt-2"
+              >
                 HV relays, connectors, cabin light sensors, electromechanical
                 relays, and aerospace batteries.
               </p>
@@ -1287,7 +1337,7 @@
           </div>
           <!-- Automotive & Ancillary 3 -->
           <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+            class="2xl:h-[216px] flex justify-start items-start lg:items-center border-b-1 border-white p-4 2xl:px-[60px] py-8 gap-[30px] font-['Montserrat']"
           >
             <img
               src="assets/images/car.png"
@@ -1306,7 +1356,9 @@
               data-aos-once="true"
             >
               <p class="font-semibold text-2xl">Automotive & Ancillary</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+              <p
+                class="text-lg lg:max-w-[690px] text-wrap font-extralight mt-2"
+              >
                 Window lift motors, car door lock actuators, steering locks,
                 coolant pump sealing, light indicators, engine knock sensors,
                 starter solenoid valves, and safety applications.
@@ -1315,7 +1367,7 @@
           </div>
           <!-- Consumer Durables 4 -->
           <div
-            class="h-[212px] flex justify-start items-center border-b-1 border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+            class="2xl:h-[216px] flex justify-start items-start lg:items-center border-b-1 border-white p-4 2xl:px-[60px] py-8 gap-[30px] font-['Montserrat']"
           >
             <img
               src="assets/images/retail.png"
@@ -1334,14 +1386,16 @@
               data-aos-once="true"
             >
               <p class="font-semibold text-2xl">Mobile Device</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+              <p
+                class="text-lg lg:max-w-[690px] text-wrap font-extralight mt-2"
+              >
                 Mobile charger contacts, LH & RH terminals, and connectors.
               </p>
             </div>
           </div>
           <!-- Industrial Engineering 5 -->
           <div
-            class="h-[212px] flex justify-start items-center border-white px-[80px] py-8 gap-[30px] font-['Montserrat']"
+            class="2xl:h-[216px] flex justify-start items-start lg:items-center border-b-1 border-white p-4 2xl:px-[60px] py-8 gap-[30px] font-['Montserrat']"
           >
             <img
               src="assets/images/claw.png"
@@ -1360,7 +1414,9 @@
               data-aos-once="true"
             >
               <p class="font-semibold text-2xl">Connectors</p>
-              <p class="text-lg w-[690px] text-wrap font-extralight mt-2">
+              <p
+                class="text-lg lg:max-w-[690px] text-wrap font-extralight mt-2"
+              >
                 Industrial batteries, current bars, and solder tags.
               </p>
             </div>
@@ -1368,106 +1424,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="h-[1080px] font-['Montserrat'] bg-cover bg-no-repeat bg-center overflow-hidden"
-    style="background-image: url('./assets/images/bg.jpg')">
-    <div class="pt-[122px] text-[#FFFFFF]">
-      <div class="h-[75px] overflow-hidden">
-        <h1 class="font-bold text-[50px] text-center" data-aos="slide-up" data-aos-easing="linear"
-          data-aos-duration="1000" data-aos-once="true">
-          Eigen Core Values
-        </h1>
-      </div>
-
-      <div class="h-[48px] mt-5">
-        <p class="mx-auto w-[791px] text-center" data-aos="slide-up" data-aos-easing="linear" data-aos-duration="1000"
-          data-aos-once="true">
-          Eigen’s work ethic is built upon the cornerstones of Quality,
-          Persistence and Valuable Service. These are our top priorities, and
-          they apply to all aspects of our business.
-        </p>
-      </div>
-      <div class="mt-[68px] mx-auto h-[667px] w-[1000px] relative" data-aos="slide-up" data-aos-easing="linear"
-        data-aos-duration="1000" data-aos-once="true">
-        <img src="./assets/images/core.jpg" alt="" class="h-full w-full" />
-
-        <div
-          class="absolute top-[-55px] left-[-336px] w-[408px] h-[111px] text-[24px] flex justify-center items-center font-bold"
-          style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            ">
-          <p>Continuous Improvement</p>
-        </div>
-        <div
-          class="absolute top-[106px] left-[-257px] w-[371px] h-[140px] text-[24px] flex justify-center items-center font-bold"
-          style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            ">
-          <p class="w-[287px]">Reliability, Flexibility and Consistency</p>
-        </div>
-        <div
-          class="absolute top-[298px] left-[-177px] w-[368px] h-[140px] text-[24px] flex justify-center items-center font-bold"
-          style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            ">
-          <p class="w-[287px]">Quality, Persistence and Valuable Service</p>
-        </div>
-        <div
-          class="absolute top-[82px] right-[-285px] w-[407px] h-[140px] text-[24px] flex justify-center items-center font-bold px-[30px]"
-          style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            ">
-          <p class="w-w-[360px]">Innovation, Adaptability and Creativity</p>
-        </div>
-        <div
-          class="absolute top-[274px] right-[-366px] w-[407px] h-[140px] text-[24px] flex justify-center items-center font-bold"
-          style="
-              background: rgba(255, 255, 255, 0.15);
-              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(6.9px);
-              -webkit-backdrop-filter: blur(6.9px);
-              border: 1px solid rgba(255, 255, 255, 0.36);
-            ">
-          <p class="w-[340px]">Proposition and Responsive Development</p>
-        </div>
-
-        <div class="absolute top-[-2px] left-[71px]">
-          <img src="./assets/images/Vector2.png" alt="" />
-          <div class="absolute top-[41px] left-[38px]">
-            <img src="./assets/images/box.png" alt="" />
-          </div>
-          <div class="absolute top-[241px] left-[126px]">
-            <img src="./assets/images/box.png" alt="" />
-          </div>
-          <div class="absolute top-[490px] left-[158px]">
-            <img src="./assets/images/box.png" alt="" />
-          </div>
-          <div class="absolute top-[255px] right-[98px]">
-            <img src="./assets/images/box.png" alt="" />
-          </div>
-          <div class="absolute top-[462px] right-[115px]">
-            <img src="./assets/images/box.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
     <section
       class="w-full bg-cover bg-center bg-no-repeat overflow-hidden"
@@ -1551,7 +1507,7 @@
       </div>
     </section>
 
-    <section class="py-16 font-['Montserrat'] bg-white">
+    <section class="py-10 font-['Montserrat'] bg-white overflow-hidden">
       <div class="max-w-[1720px] mx-auto px-4 lg:px-8">
         <div
           class="flex flex-col lg:flex-row justify-between items-start gap-10"
@@ -1603,7 +1559,7 @@
           <!-- Right Brands Grid -->
           <div class="relative max-w-[890px]">
             <div
-              class="flex justify-start flex-wrap gap-2"
+              class="flex justify-center md:justify-start flex-wrap gap-2"
               data-aos="fade-in"
               data-aos-easing="linear"
               data-aos-duration="1200"
@@ -1611,7 +1567,7 @@
             >
               <!-- Brand Logos -->
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand1.png"
@@ -1620,7 +1576,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand2.png"
@@ -1629,7 +1585,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand3.png"
@@ -1638,7 +1594,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand4.png"
@@ -1647,7 +1603,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand5.png"
@@ -1656,7 +1612,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand6.png"
@@ -1665,7 +1621,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand7.png"
@@ -1674,7 +1630,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand8.jpg"
@@ -1683,7 +1639,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand9.png"
@@ -1692,7 +1648,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand10.png"
@@ -1701,7 +1657,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand11.png"
@@ -1710,7 +1666,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand12.png"
@@ -1719,7 +1675,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand13.png"
@@ -1728,7 +1684,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand14.png"
@@ -1737,7 +1693,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand15.png"
@@ -1746,7 +1702,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand16.png"
@@ -1755,7 +1711,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand17.png"
@@ -1764,7 +1720,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand18.png"
@@ -1773,7 +1729,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand19.png"
@@ -1782,7 +1738,7 @@
                 />
               </div>
               <div
-                class="h-[80px] lg:w-[200px] flex justify-center items-center"
+                class="h-[80px] w-[120px] sm:w-[150px] lg:w-[200px] flex justify-center items-center"
               >
                 <img
                   src="./assets/images/brand20.png"
@@ -1811,23 +1767,23 @@
       </div>
     </section>
 
-    <section class="h-[1080px] font-['Montserrat'] relative bg-[#F7F7F7]">
-      <div class="flex">
-        <div class="w-[612px] h-[1080px]">
+    <section class="h-[800px] 2xl:h-[1080px] font-['Montserrat'] bg-[#F7F7F7]">
+      <div class="flex justify-between items-center gap-4 2xl:gap-10 h-full">
+        <div class="w-2/5 xl:w-1/4 hidden md:block">
           <img
             src="./assets/images/77214.jpg"
             alt=""
-            class="w-full h-full"
+            class="w-full max-h-[700px] 2xl:h-full object-cover"
             data-aos="zoom-in-right"
             data-aos-easing="linear"
             data-aos-duration="500"
             data-aos-once="true"
           />
         </div>
-        <div class="pl-[60px] mt-[202px]">
-          <div class="h-[120px] overflow-hidden">
+        <div class="w-[90%] mx-auto md:w-3/5 xl:w-3/4">
+          <div class="overflow-hidden">
             <p
-              class="text-[46px] font-semibold text-[#4A4A4A]"
+              class="text-[30px] 2xl:text-[46px] font-semibold text-[#4A4A4A]"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="1000"
@@ -1836,7 +1792,7 @@
               What Our Clients Say
             </p>
             <p
-              class="text-[30px] font-['Montserrat'] font-[200] mt-2"
+              class="text-[20px] font-medium 2xl:text-[30px] font-['Montserrat'] mt-2"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="1000"
@@ -1845,8 +1801,8 @@
               Delivering Precision, Quality, and Trust
             </p>
           </div>
-          <!-- owl -->
-          <div class="relative w-[1255px] overflow-hidden mt-20 font-[400]">
+
+          <div class="overflow-hidden mt-6 2xl:mt-20 font-[400]">
             <div
               data-aos="fade-left"
               data-aos-easing="linear"
@@ -1856,19 +1812,21 @@
               <div class="owl-carousel owl-theme">
                 <div class="pl-[30px]">
                   <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
+                    class="relative w-[280px] min-h-[360px] sm:w-[350px] sm:h-[350px] 2xl:h-[450px] 2xl:w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
                   >
-                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#004990]">
-                    Exceptional Precision and Reliability
-                  </h3> -->
+                    <h3
+                      class="2xl:w-[270px] text-[21px] font-semibold text-[#004990]"
+                    >
+                      Exceptional Precision and Reliability
+                    </h3>
                     <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                      class="mt-2 text-[16px] font-[400] leading-relaxed max-w-[387px] text-[#333333]"
                     >
                       Good experience in fine stamping.
                     </p>
                   </div>
                   <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
+                    class="absolute bottom-[14px] sm:bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
                   >
                     <p class="mt-4 font-medium text-white/90">Steiner Jurgen</p>
                     <p>Bosch, Germany</p>
@@ -1877,20 +1835,22 @@
 
                 <div class="pl-[30px]">
                   <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                    class="relative w-[280px] min-h-[360px] sm:w-[350px] sm:h-[350px] 2xl:h-[450px] 2xl:w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
                   >
-                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    A Partner, Not Just a Vendor
-                  </h3> -->
+                    <h3
+                      class="2xl:w-[270px] text-[21px] font-semibold text-[#0B90BF]"
+                    >
+                      A Partner, Not Just a Vendor
+                    </h3>
                     <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                      class="mt-2 text-[16px] font-[400] leading-relaxed max-w-[387px] text-[#333333]"
                     >
                       Good management makes good association – good association
                       makes good products. That is Eigen for you!
                     </p>
                   </div>
                   <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                    class="absolute bottom-[14px] sm:bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
                   >
                     <p class="mt-4 font-medium text-white/90">Ashida Koji</p>
                     <p>Denso corporation, Japan,</p>
@@ -1899,20 +1859,22 @@
 
                 <div class="pl-[30px]">
                   <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                    class="relative w-[280px] min-h-[360px] sm:w-[350px] sm:h-[350px] 2xl:h-[450px] 2xl:w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
                   >
-                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    Seamless Collaboration and Outstanding Results
-                  </h3> -->
+                    <h3
+                      class="2xl:w-[270px] text-[21px] font-semibold text-[#0B90BF]"
+                    >
+                      Seamless Collaboration and Outstanding Results
+                    </h3>
                     <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                      class="mt-2 text-[16px] font-[400] leading-relaxed max-w-[387px] text-[#333333]"
                     >
                       Great systems and organisation. You are our potential
                       supplier for stamped parts.
                     </p>
                   </div>
                   <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                    class="absolute bottom-[14px] sm:bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
                   >
                     <p class="mt-4 font-medium text-white/90">Umesh Kini</p>
                     <p>Global sourcing, Tyco Health care</p>
@@ -1920,13 +1882,15 @@
                 </div>
                 <div class="pl-[30px]">
                   <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                    class="relative w-[280px] min-h-[360px] sm:w-[350px] sm:h-[350px] 2xl:h-[450px] 2xl:w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
                   >
-                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    A Partner, Not Just a Vendor
-                  </h3> -->
+                    <h3
+                      class="2xl:w-[270px] text-[21px] font-semibold text-[#0B90BF]"
+                    >
+                      A Partner, Not Just a Vendor
+                    </h3>
                     <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                      class="mt-2 text-[16px] font-[400] leading-relaxed max-w-[387px] text-[#333333]"
                     >
                       The parts I saw adds to my conviction that you are a
                       quality Operation. This lends credibility to the nation
@@ -1934,7 +1898,7 @@
                     </p>
                   </div>
                   <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                    class="absolute bottom-[14px] sm:bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
                   >
                     <p class="mt-4 font-medium text-white/90">
                       Leonard Challenger
@@ -1945,19 +1909,21 @@
 
                 <div class="pl-[30px]">
                   <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
+                    class="relative w-[280px] min-h-[360px] h-full sm:w-[350px] sm:h-[350px] 2xl:h-[450px] 2xl:w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px] ml-20px"
                   >
-                    <!-- <h3 class="w-[270px] text-[21px] font-semibold text-[#0B90BF]">
-                    Seamless Collaboration and Outstanding Results
-                  </h3> -->
+                    <h3
+                      class="2xl:w-[270px] text-[21px] font-semibold text-[#0B90BF]"
+                    >
+                      Seamless Collaboration and Outstanding Results
+                    </h3>
                     <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                      class="mt-2 text-[16px] font-[400] leading-relaxed max-w-[387px] text-[#333333]"
                     >
                       Excellent tool room facilities, very satisfied customers.
                     </p>
                   </div>
                   <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2"
+                    class="absolute bottom-[14px] sm:bottom-[14px] left-[-10px] bg-[#0B90BF] text-white px-4 py-2 w-[80%]"
                   >
                     <p class="mt-4 font-medium text-white/90">
                       Anil.K.Srivastava
@@ -1965,62 +1931,35 @@
                     <p>DGM, Connectwell Industries (P) Ltd.</p>
                   </div>
                 </div>
-                <div class="pl-[30px] invisible">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#004990]"
+                <div class="hidden sm:block">
+                  <div class="pl-[30px] invisible">
+                    <div
+                      class="relative w-[280px] min-h-[360px] sm:w-[350px] sm:h-[350px] 2xl:h-[450px] 2xl:w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
                     >
-                      Exceptional Precision and Reliability
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
+                      <h3
+                        class="2xl:w-[270px] text-[21px] font-semibold text-[#004990]"
+                      >
+                        Exceptional Precision and Reliability
+                      </h3>
+                      <p
+                        class="mt-2 text-[16px] font-[400] leading-relaxed max-w-[387px] text-[#333333]"
+                      >
+                        Eigen Engineering has been a game-changer for our
+                        manufacturing process. Their attention to detail,
+                        precision, and consistent quality have significantly
+                        improved our product line. Their team truly understands
+                        the importance of delivering on time without
+                        compromising standards.
+                      </p>
+                    </div>
+                    <div
+                      class="absolute bottom-[14px] sm:bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
                     >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
-                  </div>
-                </div>
-                <div class="pl-[30px] invisible">
-                  <div
-                    class="relative h-[450px] w-[450px] bg-[#E6F3F7] pt-[30px] pl-[30px]"
-                  >
-                    <h3
-                      class="w-[270px] text-[21px] font-semibold text-[#004990]"
-                    >
-                      Exceptional Precision and Reliability
-                    </h3>
-                    <p
-                      class="mt-2 text-[16px] font-[400] leading-relaxed w-[387px] text-[#333333]"
-                    >
-                      Eigen Engineering has been a game-changer for our
-                      manufacturing process. Their attention to detail,
-                      precision, and consistent quality have significantly
-                      improved our product line. Their team truly understands
-                      the importance of delivering on time without compromising
-                      standards.
-                    </p>
-                  </div>
-                  <div
-                    class="absolute bottom-[30px] left-[-10px] bg-[#004990] text-white px-4 py-2"
-                  >
-                    <p class="mt-4 font-medium text-white/90">
-                      – John D., Operations Manager
-                    </p>
-                    <p>Automotive Sector</p>
+                      <p class="mt-4 font-medium text-white/90">
+                        – John D., Operations Manager
+                      </p>
+                      <p>Automotive Sector</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2238,6 +2177,7 @@
         />
       </div>
     </section>
+
     <footer class="bg-[#001D39] w-[100%] overflow-hidden">
       <div
         class="w-full sm:w-[95%] 2xl:w-[90%] mx-auto pt-0 sm:pt-[60px] font-['Montserrat'] tracking-[1px]"
@@ -2475,6 +2415,7 @@
         </p>
       </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
@@ -2530,6 +2471,47 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("menu-toggle");
+        const closeBtn = document.getElementById("close-menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const overlay = document.getElementById("overlay");
+
+        function openMenu() {
+          mobileMenu.classList.remove("-translate-x-full");
+          overlay.classList.remove("hidden");
+        }
+
+        function closeMenu() {
+          mobileMenu.classList.add("-translate-x-full");
+          overlay.classList.add("hidden");
+        }
+
+        toggleBtn.addEventListener("click", openMenu);
+        closeBtn.addEventListener("click", closeMenu);
+        overlay.addEventListener("click", closeMenu);
+      });
+
+      const toggles = document.querySelectorAll(".accordion-toggle");
+      const contents = document.querySelectorAll(".accordion-content");
+
+      toggles.forEach((toggle, index) => {
+        toggle.addEventListener("click", () => {
+          contents.forEach((content, i) => {
+            if (index === i) {
+              const icon = toggle.querySelector("i");
+              const isOpen = content.classList.contains("hidden") === false;
+              content.classList.toggle("hidden");
+              icon.classList.toggle("rotate-180", !isOpen);
+            } else {
+              contents[i].classList.add("hidden");
+              toggles[i].querySelector("i").classList.remove("rotate-180");
+            }
+          });
+        });
+      });
+
       // owl
       $(document).ready(function () {
         var owl = $(".owl-carousel");
@@ -2545,8 +2527,10 @@
           autoplayHoverPause: true,
           responsive: {
             0: { items: 1 },
-            600: { items: 1 },
-            1400: { items: 2 },
+            550: { items: 1.3 },
+            740: { items: 1.2 },
+            1000: { items: 1.6 },
+            1400: { items: 2.2 },
             1920: { items: 2.5 },
           },
         });
